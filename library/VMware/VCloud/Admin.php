@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2013. All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2014. All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,7 +16,7 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.5.0
+ * @SDK version 5.7.0
  */
 
 /**
@@ -272,6 +272,89 @@ class VMware_VCloud_SDK_Admin extends VMware_VCloud_SDK_Abstract
     {
         $url = $this->url . '/groups/query?&format=references';
         return $this->svc->get($url, 200);
+    }
+
+    /**
+     * Get a list of admin events.
+     *
+     *
+     * @return list of all the audit events.
+     * @since SDK Version 5.6.0
+     * @since SDK Version 5.6.3
+     */
+    public function getAuditEventRefs()
+    {
+        $type = 'adminEvent';
+        return $this->svc->queryReferencesByType($type);
+    }
+
+    /**
+     * Get all AMQP configuration information. Includes broker configuration and component specific configuration.
+     *
+     * @return VMware_VCloud_API_AmqpConfigurationType
+     * @since API Version 5.8.0
+     * @since SDK Version 5.8.0
+     */
+    public function getAmqpConfiguration()
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::AMQP_URL;
+        return $this->svc->get($url, 200);
+    }
+
+    /**
+     * Update all AMQP configuration information.
+     *
+     * @param VMware_VCloud_API_AmqpConfigurationType $params
+     * @return VMware_VCloud_API_AmqpConfigurationType
+     * @since API Version 5.8.0
+     * @since SDK Version 5.8.0
+     */
+    public function modifyAmqpConfiguration($params)
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::AMQP_URL;
+        $type = VMware_VCloud_SDK_Constants::AMQP_CONFIGURATION_CONTENT_TYPE;
+        return $this->svc->put($url, 200, $type, $params);
+    }
+
+    /**
+     * Get AMQP brokers configuration information.
+     *
+     * @return VMware_VCloud_API_AmqpBrokersType
+     * @since API Version 5.8.0
+     * @since SDK Version 5.8.0
+     */
+    public function getAmqpBrokerConfiguration()
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::AMQP_BROKER_URL;
+        return $this->svc->get($url, 200);
+    }
+
+    /**
+     * Update AMQP brokers configuration information.
+     *
+     * @param VMware_VCloud_API_AmqpBrokersType $params
+     * @return VMware_VCloud_API_AmqpBrokersType
+     * @since API Version 5.8.0
+     * @since SDK Version 5.8.0
+     */
+    public function modifyAmqpBrokerConfiguration($params)
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::AMQP_BROKER_URL;
+        $type = VMware_VCloud_SDK_Constants::AMQP_BROKERS_CONTENT_TYPE;
+        return $this->svc->put($url, 200, $type, $params);
+    }
+
+    /**
+     * Resets AMQP certificate.
+     *
+     * @return null
+     * @since API Version 5.8.0
+     * @since SDK Version 5.8.0
+     */
+    public function resetAmqpCertificate()
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::AMQP_BROKER_ACTION_RESET_AMQP_CERTIFICATE_URL;
+        return $this->svc->post($url, 204);
     }
 }
 // end of class VMware_VCloud_SDK_Admin
@@ -670,6 +753,34 @@ class VMware_VCloud_SDK_AdminOrg extends VMware_VCloud_SDK_Abstract
     {
         $url = $this->url . '/settings';
         $type = VMware_VCloud_SDK_Constants::ORG_SETTINGS_CONTENT_TYPE;
+        return $this->svc->put($url, 200, $type, $settings);
+    }
+
+    /**
+     * Retrieves organization OAuth settings.
+     *
+     * @return VMware_VCloud_API_OrgOAuthSettingsType
+     * @since API Version 9.0.0
+     * @since SDK Version 8.0.0
+     */
+    public function getOrgOauthSettings()
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::SETTINGS_OAUTH_URL;
+        return $this->svc->get($url);
+    }
+
+    /**
+     * Updates organization OAuth settings for this organization.
+     *
+     * @param VMware_VCloud_API_OrgOAuthSettingsType $settings
+     * @return VMware_VCloud_API_OrgOAuthSettingsType
+     * @since API Version 9.0.0
+     * @since SDK Version 8.0.0
+     */
+    public function updateOrgOauthSettings($settings)
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::SETTINGS_OAUTH_URL;
+        $type = VMware_VCloud_SDK_Constants::ORGANIZATION_OAUTH_SETTINGS_TYPE;
         return $this->svc->put($url, 200, $type, $settings);
     }
 
@@ -1077,6 +1188,90 @@ class VMware_VCloud_SDK_AdminOrg extends VMware_VCloud_SDK_Abstract
         $type = VMware_VCloud_SDK_Constants::
                   ORG_OPERATION_LIMITS_SETTINGS_CONTENT_TYPE;
         return $this->svc->put($url, 202, $type, $settings);
+    }
+
+    /**
+     * Regenerates the certificates used to establish trust between an organization and its identity provider.
+     *
+     * @since API Version 5.6.0
+     * @since SDK Version 5.6.3
+     */
+    public function regenerateFederationCertificate()
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::SETTINGS_FEDERATION_ACTION_REGENERATE_FEDERATION_CERTIFICATE_URL;
+        $this->svc->post($url, 204);
+    }
+
+    /**
+     * Retrieves the complete list of Organizations associated with this organization.
+     *
+     * @return VMware_VCloud_API_OrgAssociationsType
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function getOrgAssociations()
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::ASSOCIATION_URL;
+        return $this->svc->get($url);
+    }
+
+    /**
+     * Adds a new member to this organization's associations.
+     *
+     * @param VMware_VCloud_API_OrgAssociationType $params
+     * @return VMware_VCloud_API_TaskType
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function addOrgAssociations($params)
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::ASSOCIATION_URL;
+        $type = VMware_VCloud_SDK_Constants::ADMIN_ORGANIZATION_ASSOCIATION_CONTENT_TYPE;
+        return $this->svc->post($url, 200, $type, $params);
+    }
+
+    /**
+     * Replaces the organization's current list of association members with the specified list of members.
+     * If the list is empty, all existing members will be deleted.
+     *
+     * @param VMware_VCloud_API_OrgAssociationsType $params
+     * @return VMware_VCloud_API_TaskType
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function updateOrgAssociations($params)
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::ASSOCIATION_URL;
+        $type = VMware_VCloud_SDK_Constants::ADMIN_ORGANIZATION_ASSOCIATIONS_CONTENT_TYPE;
+        return $this->svc->put($url, 200, $type, $params);
+    }
+
+    /**
+     * Retrieves a specific member from the organization's associations as identified by identifier included in the request.
+     * @param string $associatedOrgId
+     *
+     * @return VMware_VCloud_API_OrgAssociationType
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function getOrgAssociation($associatedOrgId)
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::ASSOCIATION_URL . VMware_VCloud_SDK_Constants::FORWARD_SLASH . $associatedOrgId;
+        return $this->svc->get($url);
+    }
+
+    /**
+     * Removes the specified member from this organization's associations.
+     * @param string $associatedOrgId
+     *
+     * @return VMware_VCloud_API_TaskType
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function removeOrgAssociation($associatedOrgId)
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::ASSOCIATION_URL . VMware_VCloud_SDK_Constants::FORWARD_SLASH . $associatedOrgId;
+        return $this->svc->delete($url, 200);
     }
 }
 // end of class VMware_VCloud_SDK_AdminOrg
@@ -1561,6 +1756,21 @@ class VMware_VCloud_SDK_EdgeGateway extends VMware_VCloud_SDK_Abstract
     {
         $url = $this->url . '/action/configureServices';
         $type = VMware_VCloud_SDK_Constants::EDGEGATEWAY_SERVICECONFIGURATION_CONTENT_TYPE;
+        return $this->svc->post($url, 202, $type, $params);
+    }
+
+    /**
+     * Configure Syslog server settings for the org vdc edge gateway.
+     *
+     * @param VMware_VCloud_API_SyslogServerType $params
+     * @return VMware_VCloud_API_TaskType
+     * @since API Version 5.11.0
+     * @since SDK Version 8.0.0
+     */
+    public function configureSyslogServerSettings($params)
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::CONFIGURE_SYSLOG_SERVER_SETTINGS_URL;
+        $type = VMware_VCloud_SDK_Constants::SYSLOG_SETTINGS_CONTENT_TYPE;
         return $this->svc->post($url, 202, $type, $params);
     }
 
@@ -2051,6 +2261,18 @@ class VMware_VCloud_SDK_User extends VMware_VCloud_SDK_Abstract
     {
         $url = $this->url . '/grantedRights';
         return $this->svc->get($url);
+    }
+
+    /**
+     * Takes ownership of specified user's vApps, media, and catalogs.
+     *
+     * @since API Version 5.6.0
+     * @since SDK Version 5.6.3
+     */
+    public function takeOwnership()
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::ACTION_TAKE_OWNERSHIP_URL;
+        return $this->svc->post($url, 204);
     }
 }
 // end of class VMware_VCloud_SDK_User
@@ -2965,4 +3187,51 @@ class VMware_VCloud_SDK_ProviderVdcStorageProfile extends VMware_VCloud_SDK_Abst
     }
 }
 // end of class VMware_VCloud_SDK_ProviderVdcStorageProfile
+
+
+/**
+ * A class provides convenient admininistrative methods on a VMware vCloud
+ * audit event entity
+ *
+ * @package VMware_VCloud_SDK_AuditEvent
+ */
+class VMware_VCloud_SDK_AuditEvent extends VMware_VCloud_SDK_Abstract
+{
+    /**
+     * Retrieve audit event details.
+     *
+     * @return VMware_VCloud_API_AuditEventType
+     * @since API Version 5.6.0
+     * @since SDK Version 5.6.3
+     */
+    public function getAuditEvent()
+    {
+        return $this->getDataObj();
+    }
+
+    /**
+     * Get a reference to an audit event entity.
+     *
+     * @return VMware_VCloud_API_ReferenceType
+     * @since API Version 5.6.0
+     * @since SDK Version 5.6.3
+     */
+    public function getAuditEventRef()
+    {
+        return $this->getRef(VMware_VCloud_SDK_Constants::EVENT_CONTENT_TYPE);
+    }
+
+    /**
+     * Constructs vCloud ID of this event from its UUID.
+     *
+     * @return string
+     * @since API Version 5.6.0
+     * @since SDK Version 5.6.3
+     */
+    public function getId()
+    {
+        return 'urn:vcloud:event:' . $this->getUuid();
+    }
+}
+// end of class VMware_VCloud_SDK_AuditEvent
 ?>

@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2013. All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2014. All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,7 +16,7 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.5.0
+ * @SDK version 5.7.0
  */
 
 require_once dirname(__FILE__) . '/config.php';
@@ -374,7 +374,7 @@ function usage()
     echo "     -u|--user <username>             [req] User name in the form user@organization\n";
     echo "                                             for the vCloud Director.\n";
     echo "     -p|--pswd <password>             [req] Password for user.\n";
-    echo "     -v|--sdkver <sdkversion>         [req] SDK Version e.g. 1.5, 5.1 and 5.5.\n";
+    echo "     -v|--sdkver <sdkversion>         [req] SDK Version e.g. 1.5, 5.1, 5.5, 5.6 and 5.7.\n";
     echo "\n";
     echo "  [Options]\n";
     echo "     -a|--vimn <vimName>              [req] Specifying the name of the vim server to be registered.\n";
@@ -390,8 +390,8 @@ function usage()
     echo "     -l|--list                        [opt] List registered vim servers.\n";
     echo "\n";
     echo "  [Examples]\n";
-    echo "     # php vimserver.php -s 127.0.0.1 -u admin@Org -p password -v 5.5 -o=reg -a vimName -b=https://<vim ip>:443 -c=vimUser -d=vimPswd -f=https://<vsm ip>:443 -g=vsmUser -h=vsmPswd\n";
-    echo "     # php vimserver.php -s 127.0.0.1 -u admin@Org -p password -v 5.5 -o=reg -a vimName -b=https://<vim ip>:443 -c=vimUser -d=vimPswd -f=https://<vsm ip>:443 -g=vsmUser -h=vsmPswd -i certificatepath\n";
+    echo "     # php vimserver.php -s 127.0.0.1 -u admin@Org -p password -v 5.7 -o=reg -a vimName -b=https://<vim ip>:443 -c=vimUser -d=vimPswd -f=https://<vsm ip>:443 -g=vsmUser -h=vsmPswd\n";
+    echo "     # php vimserver.php -s 127.0.0.1 -u admin@Org -p password -v 5.7 -o=reg -a vimName -b=https://<vim ip>:443 -c=vimUser -d=vimPswd -f=https://<vsm ip>:443 -g=vsmUser -h=vsmPswd -i certificatepath\n";
     echo "     # php vimserver.php -a vimName -o=unreg // unregister the vim server; using config.php to set login credentials\n";
     echo "     # php vimserver.php -a vimName -o=dis   // disable the vim server\n";
     echo "     # php vimserver.php -a vimName -o=en    // enable the vim server\n";

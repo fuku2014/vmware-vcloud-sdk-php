@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2013. All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2014. All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,7 +16,7 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.5.0
+ * @SDK version 5.7.0
  */
 require_once dirname(__FILE__) . '/config.php';
 
@@ -195,11 +195,11 @@ function usage()
     echo "     -s|--server <IP|hostname>        [req] IP or hostname of the vCloud Director.\n";
     echo "     -o|--org <organizationname>      [req] organization name.\n";
     echo "                                      for the vCloud Director.\n";
-    echo "     -v|--sdkver <sdkversion>         [req] SDK Version e.g. 1.5, 5.1 and 5.5.\n";
+    echo "     -v|--sdkver <sdkversion>         [req] SDK Version e.g. 1.5, 5.1, 5.5, 5.6 and 5.7.\n";
     echo "     -c|--certpath <certificatepath>  [opt] Local certificate's full path.\n";
     echo "  [Examples]\n";
-    echo "     # php ssologin.php -s 127.0.0.1 -o Org -v 5.5\n";
-    echo "     # php ssologin.php -s 127.0.0.1 -o Org -v 5.5 -c certificatepath\n";
+    echo "     # php ssologin.php -s 127.0.0.1 -o Org -v 5.7\n";
+    echo "     # php ssologin.php -s 127.0.0.1 -o Org -v 5.7 -c certificatepath\n";
     echo "     # php ssologin.php  // using config.php to set login credentials\n\n";
 }
 ?>

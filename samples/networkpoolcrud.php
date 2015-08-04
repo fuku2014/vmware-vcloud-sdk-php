@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2013. All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2014. All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,7 +16,7 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.5.0
+ * @SDK version 5.7.0
  */
 
 require_once dirname(__FILE__) . '/config.php';
@@ -600,7 +600,7 @@ function usage()
     echo "     -u|--user <username>             [req] User name in the form user@organization\n";
     echo "                                            for the vCloud Director.\n";
     echo "     -p|--pswd <password>             [req] Password for user.\n";
-    echo "     -v|--sdkver <sdkversion>         [req] SDK Version e.g. 1.5, 5.1 and 5.5.\n";
+    echo "     -v|--sdkver <sdkversion>         [req] SDK Version e.g. 1.5, 5.1, 5.5, 5.6 and 5.7.\n";
     echo "\n";
     echo "  [Options]\n";
     echo "     -a|--type <netpooltype>          [req] Network Pool type as 1. portgroup-backed 2. vlan-backed 3. isolation-backed.\n";
@@ -612,8 +612,8 @@ function usage()
 
     echo "\n";
     echo "  [Examples]\n";
-    echo "     # php networkpoolcrud.php -s 127.0.0.1 -u admin@Org -p password -v 5.5 -a portgroup-backed -b vim -c pool -d name -e dvswitch\n";
-    echo "     # php networkpoolcrud.php -s 127.0.0.1 -u admin@Org -p password -v 5.5 -a portgroup-backed -b vim -c pool -d name -e dvswitch -f certificatepath\n";
+    echo "     # php networkpoolcrud.php -s 127.0.0.1 -u admin@Org -p password -v 5.7 -a portgroup-backed -b vim -c pool -d name -e dvswitch\n";
+    echo "     # php networkpoolcrud.php -s 127.0.0.1 -u admin@Org -p password -v 5.7 -a portgroup-backed -b vim -c pool -d name -e dvswitch -f certificatepath\n";
     echo "     # php networkpoolcrud.php -a portgroup-backed -b vim -c pool -d name -e dvswitch// using config.php to set login credentials\n\n";
 }
 ?>

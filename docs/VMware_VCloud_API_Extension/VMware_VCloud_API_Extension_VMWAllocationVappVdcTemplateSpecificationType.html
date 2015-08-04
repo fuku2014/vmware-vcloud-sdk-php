@@ -1,0 +1,1212 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class VMware_VCloud_API_Extension_VMWAllocationVappVdcTemplateSpecificationType</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class VMware_VCloud_API_Extension_VMWAllocationVappVdcTemplateSpecificationType</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Specification for a VDC template using the AllocationVApp allocation model.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Ecosystem Engineering</li>
+				<li><span class="field">version:</span> 8.0.0</li>
+				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2013.  All Rights Reserved.</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118147">118147</a></span>)
+		</p>
+		
+				
+		<pre><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType</a>
+   |
+   --VMware_VCloud_API_Extension_VMWAllocationVappVdcTemplateSpecificationType</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																				<div class="var-title">
+					static <span class="var-type">mixed</span>
+					<a href="#$defaultNS" title="details" class="var-name">$defaultNS</a>
+				</div>
+																																																												<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$CpuAllocationMhz" title="details" class="var-name">$CpuAllocationMhz</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$CpuGuaranteedPercentage" title="details" class="var-name">$CpuGuaranteedPercentage</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$CpuLimitMhzPerVcpu" title="details" class="var-name">$CpuLimitMhzPerVcpu</a>
+				</div>
+																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$MemoryAllocationMB" title="details" class="var-name">$MemoryAllocationMB</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$MemoryGuaranteedPercentage" title="details" class="var-name">$MemoryGuaranteedPercentage</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$namespace" title="details" class="var-name">$namespace</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$namespacedef" title="details" class="var-name">$namespacedef</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$tagName" title="details" class="var-name">$tagName</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																														
+				<div class="method-definition">
+											<span class="method-result">VMware_VCloud_API_Extension_VMWAllocationVappVdcTemplateSpecificationType</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type">int</span>&nbsp;<span class="var-name">$NicQuota</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$VmQuota</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ProvisionedNetworkQuota</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_VdcTemplateSpecificationGatewayConfigurationType.html">VMware_VCloud_API_VdcTemplateSpecificationGatewayConfigurationType</a></span>&nbsp;<span class="var-name">$GatewayConfiguration</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$StorageProfile</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ThinProvision</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$FastProvisioningEnabled</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$NetworkPoolReference</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AutomaticNetworkPoolReferenceType.html">VMware_VCloud_API_Extension_AutomaticNetworkPoolReferenceType</a></span>&nbsp;<span class="var-name">$AutomaticNetworkPoolReference</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$CpuAllocationMhz</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$CpuLimitMhzPerVcpu</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$MemoryAllocationMB</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$CpuGuaranteedPercentage</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$MemoryGuaranteedPercentage</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#build" title="details" class="method-name">build</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#buildAttributes" title="details" class="method-name">buildAttributes</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#buildChildren" title="details" class="method-name">buildChildren</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$child</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nodeName</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#export" title="details" class="method-name">export</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$out</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$level</span> = <span class="var-default">0</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespacedef</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#exportAttributes" title="details" class="method-name">exportAttributes</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#exportChildren" title="details" class="method-name">exportChildren</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getCpuAllocationMhz" title="details" class="method-name">getCpuAllocationMhz</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getCpuGuaranteedPercentage" title="details" class="method-name">getCpuGuaranteedPercentage</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getCpuLimitMhzPerVcpu" title="details" class="method-name">getCpuLimitMhzPerVcpu</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getMemoryAllocationMB" title="details" class="method-name">getMemoryAllocationMB</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getMemoryGuaranteedPercentage" title="details" class="method-name">getMemoryGuaranteedPercentage</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_tagName" title="details" class="method-name">get_tagName</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#hasContent" title="details" class="method-name">hasContent</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setCpuAllocationMhz" title="details" class="method-name">setCpuAllocationMhz</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$CpuAllocationMhz</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setCpuGuaranteedPercentage" title="details" class="method-name">setCpuGuaranteedPercentage</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$CpuGuaranteedPercentage</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setCpuLimitMhzPerVcpu" title="details" class="method-name">setCpuLimitMhzPerVcpu</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$CpuLimitMhzPerVcpu</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setMemoryAllocationMB" title="details" class="method-name">setMemoryAllocationMB</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$MemoryAllocationMB</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setMemoryGuaranteedPercentage" title="details" class="method-name">setMemoryGuaranteedPercentage</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$MemoryGuaranteedPercentage</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_tagName" title="details" class="method-name">set_tagName</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$tagName</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$defaultNS" id="$defaultNS"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			static <span class="var-type">mixed</span>
+			<span class="var-name">$defaultNS</span>
+			 = <span class="var-default"> 'http://www.vmware.com/vcloud/extension/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118156">118156</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#var$defaultNS">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::$defaultNS</a></dt>
+					</dl>
+		
+		
+
+</div>
+
+<a name="var$CpuAllocationMhz" id="$CpuAllocationMhz"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$CpuAllocationMhz</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118148">118148</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$CpuGuaranteedPercentage" id="$CpuGuaranteedPercentage"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$CpuGuaranteedPercentage</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118151">118151</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$CpuLimitMhzPerVcpu" id="$CpuLimitMhzPerVcpu"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$CpuLimitMhzPerVcpu</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118149">118149</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$MemoryAllocationMB" id="$MemoryAllocationMB"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$MemoryAllocationMB</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118150">118150</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$MemoryGuaranteedPercentage" id="$MemoryGuaranteedPercentage"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$MemoryGuaranteedPercentage</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118152">118152</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$namespace" id="$namespace"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$namespace</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118153">118153</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#var$namespace">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::$namespace</a></dt>
+					</dl>
+		
+		
+
+</div>
+<a name="var$namespacedef" id="$namespacedef"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$namespacedef</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118154">118154</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#var$namespacedef">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::$namespacedef</a></dt>
+					</dl>
+		
+		
+
+</div>
+<a name="var$tagName" id="$tagName"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$tagName</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118155">118155</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#var$tagName">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::$tagName</a></dt>
+					</dl>
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#var$AutomaticNetworkPoolReference">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::$AutomaticNetworkPoolReference</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#var$FastProvisioningEnabled">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::$FastProvisioningEnabled</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#var$GatewayConfiguration">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::$GatewayConfiguration</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#var$NetworkPoolReference">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::$NetworkPoolReference</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#var$NicQuota">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::$NicQuota</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#var$ProvisionedNetworkQuota">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::$ProvisionedNetworkQuota</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#var$StorageProfile">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::$StorageProfile</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#var$ThinProvision">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::$ThinProvision</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#var$VmQuota">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::$VmQuota</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118174">118174</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">VMware_VCloud_API_Extension_VMWAllocationVappVdcTemplateSpecificationType</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type">int</span>&nbsp;<span class="var-name">$NicQuota</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$VmQuota</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ProvisionedNetworkQuota</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_VdcTemplateSpecificationGatewayConfigurationType.html">VMware_VCloud_API_VdcTemplateSpecificationGatewayConfigurationType</a></span>&nbsp;<span class="var-name">$GatewayConfiguration</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$StorageProfile</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ThinProvision</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$FastProvisioningEnabled</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$NetworkPoolReference</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AutomaticNetworkPoolReferenceType.html">VMware_VCloud_API_Extension_AutomaticNetworkPoolReferenceType</a></span>&nbsp;<span class="var-name">$AutomaticNetworkPoolReference</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$CpuAllocationMhz</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$CpuLimitMhzPerVcpu</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$MemoryAllocationMB</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$CpuGuaranteedPercentage</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$MemoryGuaranteedPercentage</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$NicQuota</span><span class="var-description">: - [required]</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$VmQuota</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$ProvisionedNetworkQuota</span><span class="var-description">: - [required]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_VdcTemplateSpecificationGatewayConfigurationType.html">VMware_VCloud_API_VdcTemplateSpecificationGatewayConfigurationType</a></span>
+				<span class="var-name">$GatewayConfiguration</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$StorageProfile</span><span class="var-description">: - [required] an array of VMware_VCloud_API_VdcStorageProfileType objects</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$ThinProvision</span><span class="var-description">: - [required]</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$FastProvisioningEnabled</span><span class="var-description">: - [required]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>
+				<span class="var-name">$NetworkPoolReference</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AutomaticNetworkPoolReferenceType.html">VMware_VCloud_API_Extension_AutomaticNetworkPoolReferenceType</a></span>
+				<span class="var-name">$AutomaticNetworkPoolReference</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$CpuAllocationMhz</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$CpuLimitMhzPerVcpu</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$MemoryAllocationMB</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$CpuGuaranteedPercentage</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$MemoryGuaranteedPercentage</span><span class="var-description">: - [optional]</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#method__construct">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::__construct()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodbuild" id="build"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118300">118300</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			build
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$node</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespaces</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodbuild">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::build()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodbuildAttributes" id="buildAttributes"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118321">118321</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			buildAttributes
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$node</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespaces</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodbuildAttributes">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::buildAttributes()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodbuildChildren" id="buildChildren"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118329">118329</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			buildChildren
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$child</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nodeName</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$child</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nodeName</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodbuildChildren">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::buildChildren()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodexport" id="export"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118216">118216</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			export
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$out</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$level</span> = <span class="var-default">0</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespacedef</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$out</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$level</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespacedef</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rootNS</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodexport">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::export()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodexportAttributes" id="exportAttributes"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118246">118246</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			exportAttributes
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$out</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$level</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rootNS</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodexportAttributes">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::exportAttributes()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodexportChildren" id="exportChildren"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118251">118251</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			exportChildren
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$out</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$level</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rootNS</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodexportChildren">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::exportChildren()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodgetCpuAllocationMhz" id="getCpuAllocationMhz"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCpuAllocationMhz</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118184">118184</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getCpuAllocationMhz
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetCpuGuaranteedPercentage" id="getCpuGuaranteedPercentage"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCpuGuaranteedPercentage</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118202">118202</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getCpuGuaranteedPercentage
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetCpuLimitMhzPerVcpu" id="getCpuLimitMhzPerVcpu"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCpuLimitMhzPerVcpu</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118190">118190</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getCpuLimitMhzPerVcpu
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetMemoryAllocationMB" id="getMemoryAllocationMB"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMemoryAllocationMB</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118196">118196</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getMemoryAllocationMB
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetMemoryGuaranteedPercentage" id="getMemoryGuaranteedPercentage"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMemoryGuaranteedPercentage</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118208">118208</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getMemoryGuaranteedPercentage
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_tagName" id="get_tagName"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118214">118214</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_tagName
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodget_tagName">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::get_tagName()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodhasContent" id="hasContent"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118286">118286</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			hasContent
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodhasContent">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::hasContent()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodsetCpuAllocationMhz" id="setCpuAllocationMhz"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setCpuAllocationMhz</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118187">118187</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setCpuAllocationMhz
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$CpuAllocationMhz</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$CpuAllocationMhz</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetCpuGuaranteedPercentage" id="setCpuGuaranteedPercentage"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setCpuGuaranteedPercentage</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118205">118205</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setCpuGuaranteedPercentage
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$CpuGuaranteedPercentage</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$CpuGuaranteedPercentage</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetCpuLimitMhzPerVcpu" id="setCpuLimitMhzPerVcpu"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setCpuLimitMhzPerVcpu</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118193">118193</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setCpuLimitMhzPerVcpu
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$CpuLimitMhzPerVcpu</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$CpuLimitMhzPerVcpu</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetMemoryAllocationMB" id="setMemoryAllocationMB"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setMemoryAllocationMB</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118199">118199</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setMemoryAllocationMB
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$MemoryAllocationMB</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$MemoryAllocationMB</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetMemoryGuaranteedPercentage" id="setMemoryGuaranteedPercentage"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setMemoryGuaranteedPercentage</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118211">118211</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setMemoryGuaranteedPercentage
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$MemoryGuaranteedPercentage</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$MemoryGuaranteedPercentage</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_tagName" id="set_tagName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118215">118215</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_tagName
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$tagName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$tagName</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodset_tagName">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::set_tagName()</a></dt>
+					</dl>
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#method__construct">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::__construct()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodaddStorageProfile">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::addStorageProfile()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodbuild">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::build()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodbuildAttributes">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::buildAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodbuildChildren">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::buildChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodexport">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::export()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodexportAttributes">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::exportAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodexportChildren">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::exportChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodgetAutomaticNetworkPoolReference">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::getAutomaticNetworkPoolReference()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodgetFastProvisioningEnabled">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::getFastProvisioningEnabled()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodgetGatewayConfiguration">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::getGatewayConfiguration()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodgetNetworkPoolReference">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::getNetworkPoolReference()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodgetNicQuota">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::getNicQuota()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodgetProvisionedNetworkQuota">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::getProvisionedNetworkQuota()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodgetStorageProfile">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::getStorageProfile()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodgetThinProvision">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::getThinProvision()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodgetVmQuota">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::getVmQuota()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodget_tagName">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::get_tagName()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodhasContent">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::hasContent()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodsetAutomaticNetworkPoolReference">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::setAutomaticNetworkPoolReference()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodsetFastProvisioningEnabled">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::setFastProvisioningEnabled()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodsetGatewayConfiguration">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::setGatewayConfiguration()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodsetNetworkPoolReference">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::setNetworkPoolReference()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodsetNicQuota">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::setNicQuota()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodsetProvisionedNetworkQuota">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::setProvisionedNetworkQuota()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodsetStorageProfile">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::setStorageProfile()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodsetThinProvision">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::setThinProvision()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodsetVmQuota">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::setVmQuota()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html#methodset_tagName">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType::set_tagName()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sat, 30 May 2015 00:41:05 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

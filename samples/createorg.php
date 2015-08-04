@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2013. All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2014 All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,7 +16,7 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.5.0
+ * @SDK version 5.7.0
  */
 require_once dirname(__FILE__) . '/config.php';
 
@@ -245,7 +245,7 @@ function usage()
     echo "     -u|--user <username>             [req] User name in the form user@organization\n";
     echo "                                             for the vCloud Director.\n";
     echo "     -p|--pswd <password>             [req] Password for user.\n";
-    echo "     -v|--sdkver <sdkversion>         [req] SDK Version e.g. 1.5, 5.1 and 5.5.\n";
+    echo "     -v|--sdkver <sdkversion>         [req] SDK Version e.g. 1.5, 5.1, 5.5, 5.6 and 5.7.\n";
     echo "\n";
     echo "  [Options]\n";
     echo "     -a|--org <orgName>               [opt] Name of the organization to be created in the vCloud Director. Required when creating.\n";
@@ -254,8 +254,8 @@ function usage()
     echo "     -l|--list                        [opt] List all organizations in vCloud Director\n";
     echo "\n";
     echo "  [Examples]\n";
-    echo "     # php createorg.php -s 127.0.0.1 -u admin@Org -p password -v 5.5 -a=org -b=full\n";
-    echo "     # php createorg.php -s 127.0.0.1 -u admin@Org -p password -v 5.5 -a=org -b=full -c certificatepath\n";
+    echo "     # php createorg.php -s 127.0.0.1 -u admin@Org -p password -v 5.7 -a=org -b=full\n";
+    echo "     # php createorg.php -s 127.0.0.1 -u admin@Org -p password -v 5.7 -a=org -b=full -c certificatepath\n";
     echo "     # php createorg.php -a=org -b=full // using config.php to set login credentials\n";
     echo "     # php createorg.php -l // list all organizations in vCloud Director\n\n";
 }

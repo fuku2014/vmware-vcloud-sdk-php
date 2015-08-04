@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2013. All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2014. All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,7 +16,7 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.5.0
+ * @SDK version 5.7.0
  */
 
 /**
@@ -1078,6 +1078,62 @@ class VMware_VCloud_SDK_Extension extends VMware_VCloud_SDK_Abstract
         $url = $this->url . '/service/query?&format=references';
         return $this->svc->get($url);
     }
+
+    /**
+     * Retrieve a list of all VDC templates.
+     *
+     * @return VMware_VCloud_API_ReferencesType object
+     * @access private
+     */
+    private function getVMWVdcTemplateReferences()
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::VMW_VDC_TEMPLATE_REFERENCES_URL;
+        return $this->svc->get($url);
+    }
+
+    /**
+     * Retrieve a list of all VDC templates.
+     *
+     * @param string $name   Name of the vdcTemplate to get. If null, returns all
+     * @return array         VMware_VCloud_API_ReferenceType object array
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function getVMWVdcTemplateRefs($name=null)
+    {
+        $vdcTemplateRefs = $this->getVMWVdcTemplateReferences();
+        return $this->getContainedRefs(null, $name, 'getReference',
+                                       $vdcTemplateRefs);
+    }
+
+    /**
+     * Get all vdcTemplates.
+     *
+     * @param string $name   Name of the vdcTemplate. If null, returns all
+     * @return array         VMware_VCloud_API_Extension_VMWVdcTemplateType object array
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function getVMWVdcTemplates($name=null)
+    {
+        $refs = $this->getVMWVdcTemplateRefs($name);
+        return $this->getObjsByContainedRefs($refs);
+    }
+
+    /**
+     * Create a vdc template.
+     *
+     * @param VMware_VCloud_API_Extension_VMWVdcTemplateType $params
+     * @return VMware_VCloud_API_Extension_VMWVdcTemplateType
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function createVMWVdcTemplate($params)
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::VMW_VDC_TEMPLATES_URL;
+        $type = VMware_VCloud_SDK_Constants::VMW_VDC_TEMPLATE_CONTENT_TYPE;
+        return $this->svc->post($url, 201, $type, $params);
+    }
 }
 // end of class VMware_VCloud_SDK_Extension
 
@@ -1136,7 +1192,7 @@ class VMware_VCloud_SDK_Extension_StrandedItem extends
         return $this->svc->post($url, 202);
     }
 }
-// end of class VMware_VCloud_SDK_StrandedItem
+// end of class VMware_VCloud_SDK_Extension_StrandedItem
 
 
 /**
@@ -3195,6 +3251,97 @@ class VMware_VCloud_SDK_Extension_serviceResources extends
     }
 }
 // end of class VMware_VCloud_SDK_Extension_serviceResources
+
+
+/**
+ * A class provides convenient methods on a VMware vCloud VdcTemplate.
+ *
+ * @package VMware_VCloud_SDK_Extension
+ */
+class VMware_VCloud_SDK_Extension_VMWVdcTemplate extends
+      VMware_VCloud_SDK_Abstract
+{
+    /**
+     * Returns the vdc template.
+     *
+     * @return VMware_VCloud_API_ReferenceType
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function getVMWVdcTemplateRef()
+    {
+        return $this->getRef(
+                       VMware_VCloud_SDK_Constants::VMW_VDC_TEMPLATE_CONTENT_TYPE);
+    }
+
+    /**
+     * Gets the vdc template data object.
+     *
+     * @return VMware_VCloud_API_Extension_VMWVdcTemplateType
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function getVMWVdcTemplate()
+    {
+        return $this->getDataObj();
+    }
+
+    /**
+     * Update a vDC template.
+     *
+     * @param VMware_VCloud_API_Extension_VMWVdcTemplateType $params
+     * @return VMware_VCloud_API_Extension_VMWVdcTemplateType
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function updateVMWVdcTemplate($params)
+    {
+        $url = $this->url;
+        $type = VMware_VCloud_SDK_Constants::VMW_VDC_TEMPLATE_CONTENT_TYPE;
+        return $this->svc->put($url, 200, $type, $params);
+    }
+
+    /**
+     * Update access control information for a VDC template.
+     *
+     * @param VMware_VCloud_API_ControlAccessParamsType $params
+     * @return VMware_VCloud_API_ControlAccessParamsType
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function updateControlAccess($params)
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::ACTION_CONTROL_ACCESS_URL;
+        $type = VMware_VCloud_SDK_Constants::CONTROL_ACCESS_CONTENT_TYPE;
+        return $this->svc->put($url, 200, $type, $params);
+    }
+
+    /**
+     * Retrieve access control information for a VDC template.
+     *
+     * @return VMware_VCloud_API_ControlAccessParamsType
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function getControlAccess()
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::CONTROL_ACCESS_URL;
+        return $this->svc->get($url);
+    }
+
+    /**
+     * Delete Vdc Template.
+     *
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function delete()
+    {
+        $this->svc->delete($this->url, 204);
+        $this->destroy();
+    }
+}
+// end of class VMware_VCloud_SDK_Extension_VMWVdcTemplate
 
 
 /**

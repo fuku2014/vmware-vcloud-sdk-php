@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2013. All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2014. All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,7 +16,7 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.5.0
+ * @SDK version 5.7.0
  */
 require_once dirname(__FILE__) . '/config.php';
 
@@ -259,15 +259,15 @@ k1ZVFw==</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature><saml2:Su
         echo "     # php hokssologin.php -s <server> -v <sdkversion> -o <organizationname>  -a <signature_alg>\n";
         echo "\n";
         echo "     -s|--server <IP|hostname>          [req] IP or hostname of the vCloud Director should be something like [https://<ip>:<port>].\n";
-        echo "     -v|--sdkver <sdkversion>           [req] SDK Version e.g. 1.5, 5.1 and 5.5.\n";
-        echo "     -o|--org <organizationname>        [req] organization name.\n";
+        echo "     -v|--sdkver <sdkversion>           [req] SDK Version e.g. 1.5, 5.1, 5.5, 5.6 and 5.7.\n";
+        echo "     -o|--org <organizationname>    [req] organization name.\n";
         echo "                                              for the vCloud Director.\n";
-        echo "     -a|--signalgo <signature_alg>      [req] Standard signature algorithm name such as 'SHA512withRSA'.\n";
-        echo "     -u|--useHok <useHok>               [req] Set true for HOK Token and false for Bearer Token.\n";
-        echo "     -c|--certpath <certificatepath>    [opt] Local certificate's full path.\n";
+        echo "     -a|--signalgo <signature_alg>   [req] Standard signature algorithm name such as 'SHA512withRSA'.\n";
+        echo "     -u|--useHok <useHok>              [req] Set true for HOK Token and false for Bearer Token.\n";
+        echo "     -c|--certpath <certificatepath>   [opt] Local certificate's full path.\n";
         echo "  [Examples]\n";
-        echo "     # php hokssologin.php -s 127.0.0.1 -v 5.5 -o Org -a signaturealgorithmname -u true\n";
-        echo "     # php hokssologin.php -s 127.0.0.1 -v 5.5 -o Org -a signaturealgorithmname -u false -c certificatepath\n";
+        echo "     # php hokssologin.php -s 127.0.0.1 -v 5.7 -o Org -a signaturealgorithmname -u true\n";
+        echo "     # php hokssologin.php -s 127.0.0.1 -v 5.7 -o Org -a signaturealgorithmname -u false -c certificatepath\n";
         echo "     # php hokssologin.php  // using config.php to set all required parameters\n\n";
     }
 ?>

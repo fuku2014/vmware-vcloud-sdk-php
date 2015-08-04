@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2013. All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2014. All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,13 +16,18 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.5.0
+ * @SDK version 5.7.0
  */
 
 /**
  * Contains VMware vCloud SDK for PHP global utility functions
  */
 require_once 'VMware/VCloud/Helper.php';
+
+/**
+ * Log package for getting log info
+ */
+require_once 'Log.php';
 
 /**
  * An abstract base class for VMware vCloud SDK service object, providing
@@ -120,6 +125,42 @@ abstract class VMware_VCloud_SDK_Service_Abstract
         $this->httpClient->setVcloudToken($vcloudToken);
     }
 
+   /**
+    * GetLogger
+    */
+    private function getLogger()
+    {
+
+        if ( file_exists( "Configuration.ini" ))
+        {
+            $log_conf = parse_ini_file("Configuration.ini", true);
+        }
+        else if(defined("VCLOUD_CONFIG"))
+        {
+            $log_conf = unserialize(VCLOUD_CONFIG);
+        }
+        else
+        {
+            $log_conf = array(
+              'log_section' => array(
+                 'log_handler_name' => 'console',
+                 'log_level'        => PEAR_LOG_ERR,
+               ),
+            );
+        }
+        if ($log_conf['log_section']['log_handler_name'] == 'file')
+        {
+            $log_file_location = $log_conf['log_section']['log_file_location'];
+        }else{
+            $log_file_location = '';
+        }
+        $file = Log::factory($log_conf['log_section']['log_handler_name'], $log_file_location);
+        //To compute the mask for all priorities up to, and including, a certain level (i.e. PEAR_LOG_DEBUG and PEAR_LOG_INFO)
+        $mask = Log::MAX($log_conf['log_section']['log_level']);
+        $file->setMask($mask);
+        return $file;
+    }
+
     /**
      * Sets HTTP configuration
      *
@@ -130,20 +171,32 @@ abstract class VMware_VCloud_SDK_Service_Abstract
      * @param string $return   Expected response data type name
      * @return mixed           VMware vCloud data object or response body
      * @throws VMware_VCloud_SDK_Exception
-     * @since Version 1.0.0
+     * @since API Version 1.0.0
+     * @since SDK Version 5.7.0
      */
     public function get($url, $type='', $reObj=true, $return=null)
     {
         $headers=array('Content-Type'=>$type);
         $response = $this->httpClient->get($url, $headers);
         $code = $response->getStatus();
+        $responseHeaders = $response->getHeader();
+        $body = $response->getBody();
+        $status = $response->getReasonPhrase();
+
+        $file = $this->getLogger();
+        $file->log("Get Request URL: $url", PEAR_LOG_INFO);
+        $file->log("Status Code: $code", PEAR_LOG_INFO);
+        $file->log("Status: $status", PEAR_LOG_INFO);
+        $file->log("Response Header: " . var_export($responseHeaders, true), PEAR_LOG_DEBUG);
+        $file->log("Response: $body", PEAR_LOG_DEBUG);
+
         $body = $response->getBody();
         if (200 != $code)
         {
             throw new VMware_VCloud_SDK_Exception (
                         "$body");
         }
-        return (true === $reObj)? 
+        return (true === $reObj)?
              VMware_VCloud_SDK_Helper::getObjByXml($body, $return) : $body;
     }
 
@@ -160,7 +213,8 @@ abstract class VMware_VCloud_SDK_Service_Abstract
      * @param string $auth     Authorization token
      * @return mixed           A VMware vCloud data object
      * @throws VMware_VCloud_SDK_Exception
-     * @since Version 1.0.0
+     * @since API Version 1.0.0
+     * @since SDK Version 5.7.0
      */
     public function post($url, $expect=null, $type=null, $data=null, $return=null, $auth=null)
     {
@@ -184,6 +238,19 @@ abstract class VMware_VCloud_SDK_Service_Abstract
         $response = $this->httpClient->post($url, $headers, $data);
         $code = $response->getStatus();
         $body = $response->getBody();
+        $responseHeaders = $response->getHeader();
+        $status = $response->getReasonPhrase();
+
+        $file = $this->getLogger();
+        $file->log("Post Request URL: $url", PEAR_LOG_INFO);
+        $file->log("Post Content-Type: " . $type, PEAR_LOG_INFO);
+        $file->log("Post Request Headers: " . var_export($headers, true), PEAR_LOG_INFO);
+        $file->log("POST Request Body: " . var_export($data, true), PEAR_LOG_DEBUG);
+        $file->log("Status Code: $code", PEAR_LOG_INFO);
+        $file->log("Status: $status", PEAR_LOG_INFO);
+        $file->log("Response Header: " . var_export($responseHeaders, true), PEAR_LOG_DEBUG);
+        $file->log("Response: $body", PEAR_LOG_DEBUG);
+
         if (isset($expect) && $expect != $code)
         {
             throw new VMware_VCloud_SDK_Exception ("POST $url failed, return " .
@@ -221,6 +288,19 @@ abstract class VMware_VCloud_SDK_Service_Abstract
         $response = $this->httpClient->put($url, $headers, $data);
         $code = $response->getStatus();
         $body = $response->getBody();
+        $status = $response->getReasonPhrase();
+        $responseHeaders = $response->getHeader();
+
+        $file = $this->getLogger();
+        $file->log("Put Request URL: $url", PEAR_LOG_INFO);
+        $file->log("Put Content-Type: " . $type, PEAR_LOG_INFO);
+        $file->log("Put Request Headers: " . var_export($headers, true), PEAR_LOG_INFO);
+        $file->log("Put Request Body: " . var_export($data, true), PEAR_LOG_DEBUG);
+        $file->log("Status Code: $code", PEAR_LOG_INFO);
+        $file->log("Status: $status", PEAR_LOG_INFO);
+        $file->log("Response Header: " . var_export($responseHeaders, true), PEAR_LOG_DEBUG);
+        $file->log("Response: $body", PEAR_LOG_DEBUG);
+
         if (isset($expect) && $expect != $code)
         {
             throw new VMware_VCloud_SDK_Exception ("PUT $url failed, error " .
@@ -243,6 +323,16 @@ abstract class VMware_VCloud_SDK_Service_Abstract
         $response = $this->httpClient->delete($url);
         $code = $response->getStatus();
         $body = $response->getBody();
+        $responseHeaders = $response->getHeader();
+        $status = $response->getReasonPhrase();
+
+        $file = $this->getLogger();
+        $file->log("Delete Request URL: $url", PEAR_LOG_INFO);
+        $file->log("Status Code: $code", PEAR_LOG_INFO);
+        $file->log("Status: $status", PEAR_LOG_INFO);
+        $file->log("Response Header: " . var_export($responseHeaders, true), PEAR_LOG_DEBUG);
+        $file->log("Response: $body", PEAR_LOG_DEBUG);
+
         if (isset($expect) && $expect != $code)
         {
             throw new VMware_VCloud_SDK_Exception ("DELETE $url failed, " .

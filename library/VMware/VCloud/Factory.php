@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2013. All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2014. All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,7 +16,7 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.5.0
+ * @SDK version 5.7.0
  */
 
 /**
@@ -29,6 +29,7 @@ class VMware_VCloud_SDK_Factory extends VMware_VCloud_SDK_Abstract
      private static $typeMap = array (
         VMware_VCloud_SDK_Constants::ORG_REFERENCE_CONTENT_TYPE => 'Org',
         VMware_VCloud_SDK_Constants::VDC_CONTENT_TYPE => 'Vdc',
+        VMware_VCloud_SDK_Constants::VDC_TEMPLATE_CONTENT_TYPE => 'VdcTemplate',
         VMware_VCloud_SDK_Constants::VAPP_CONTENT_TYPE => 'VApp',
         VMware_VCloud_SDK_Constants::VM_CONTENT_TYPE => 'Vm',
         VMware_VCloud_SDK_Constants::VAPP_TEMPLATE_CONTENT_TYPE => 'VAppTemplate',
@@ -58,12 +59,14 @@ class VMware_VCloud_SDK_Factory extends VMware_VCloud_SDK_Abstract
         VMware_VCloud_SDK_Constants::ADMIN_VDC_STORAGE_PROFILE_CONTENT_TYPE => 'AdminVdcStorageProfile',
         VMware_VCloud_SDK_Constants::PROVIDER_VDC_CONTENT_TYPE => 'ProviderVdc',
         VMware_VCloud_SDK_Constants::PROVIDER_VDC_STORAGE_PROFILE_CONTENT_TYPE => 'ProviderVdcStorageProfile',
+        VMware_VCloud_SDK_Constants::EVENT_CONTENT_TYPE => 'AuditEvent',
         VMware_VCloud_SDK_Constants::DATASTORE_CONTENT_TYPE => 'Extension_Datastore',
         VMware_VCloud_SDK_Constants::HOST_CONTENT_TYPE => 'Extension_Host',
         VMware_VCloud_SDK_Constants::EXTERNAL_NET_CONTENT_TYPE => 'Extension_VMWExternalNetwork',
         VMware_VCloud_SDK_Constants::EXTENSION_NETWORK_CONTENT_TYPE => 'Extension_VMWExternalNetwork',
         VMware_VCloud_SDK_Constants::NETWORK_POOL_CONTENT_TYPE => 'Extension_VMWNetworkPool',
         VMware_VCloud_SDK_Constants::EXTENSION_PROVIDER_VDC_CONTENT_TYPE => 'Extension_VMWProviderVdc',
+        VMware_VCloud_SDK_Constants::VMW_VDC_TEMPLATE_CONTENT_TYPE => 'Extension_VMWVdcTemplate',
         VMware_VCloud_SDK_Constants::PROVIDER_VDC_RESOURCE_POOL_CONTENT_TYPE => 'Extension_VMWProviderVdcResourcePool',
         VMware_VCloud_SDK_Constants::BLOCKING_TASK_CONTENT_TYPE => 'Extension_BlockingTask',
         VMware_VCloud_SDK_Constants::VIM_SERVER_CONTENT_TYPE => 'Extension_VimServer',
@@ -78,12 +81,14 @@ class VMware_VCloud_SDK_Factory extends VMware_VCloud_SDK_Abstract
         VMware_VCloud_SDK_Constants::VMW_PROVIDER_VDC_STORAGE_PROFILE_CONTENT_TYPE => 'Extension_VMWProviderVdcStorageProfile',
         VMware_VCloud_SDK_Constants::FILE_DESCRIPTOR_CONTENT_TYPE => 'Extension_File',
         VMware_VCloud_SDK_Constants::API_FILTERS_CONTENT_TYPE => 'Extension_ApiFilter',
-        VMware_VCloud_SDK_Constants::EDGE_GATEWAYS_CONTENT_TYPE => 'EdgeGateway'
+        VMware_VCloud_SDK_Constants::EDGE_GATEWAYS_CONTENT_TYPE => 'EdgeGateway',
+        VMware_VCloud_SDK_Constants::REPLICATION_GROUP_TYPE => 'ReplicationGroup'
     );
 
     private static $urlMap = array (
         'org' => 'Org',
         'vdc' => 'Vdc',
+        'vdcTemplate' => 'VdcTemplate',
         'vapp' => 'VApp',
         'vm' => 'Vm',
         'vappTemplate' => 'VAppTemplate',
@@ -99,6 +104,7 @@ class VMware_VCloud_SDK_Factory extends VMware_VCloud_SDK_Abstract
         'tasksList' => 'TasksList',
         'disk' => 'Disk',
         'vdcStorageProfile' => 'VdcStorageProfile',
+        'vr' => 'ReplicationGroup',
         'admin' => 'Admin',
         'admin/role' => 'Role',
         'admin/user' => 'User',
@@ -111,6 +117,7 @@ class VMware_VCloud_SDK_Factory extends VMware_VCloud_SDK_Abstract
         'admin/network' => 'AdminNetwork',
         'admin/vdcStorageProfile' => 'AdminVdcStorageProfile',
         'admin/pvdcStorageProfile' => 'ProviderVdcStorageProfile',
+        'admin/event' => 'AuditEvent',
         'admin/right' => 'Right',
         'admin/extension' => 'Extension',
         'admin/extension/datastore' => 'Extension_Datastore',
@@ -123,6 +130,7 @@ class VMware_VCloud_SDK_Factory extends VMware_VCloud_SDK_Abstract
         'admin/extension/vimServer' => 'Extension_VimServer',
         'admin/extension/strandedItem' => 'Extension_StrandedItem',
         'admin/extension/pvdcStorageProfile' => 'Extension_VMWProviderVdcStorageProfile',
+        'admin/extension/vdcTemplate' => 'Extension_VMWVdcTemplate',
         'admin/extension/service' => 'Extension_Service',
         'admin/extension/service/link' => 'Extension_ServiceLink',
         'admin/extension/service/apidefinition' => 'Extension_APIDefinition',
@@ -148,6 +156,7 @@ class VMware_VCloud_SDK_Factory extends VMware_VCloud_SDK_Abstract
      *                           ->[Method to get ReferenceType object]
      *  <ul>
      *    <li>Org          <= Service->getOrgRefs()
+     *    <li>VdcTemplate  <= Service->getVdcTemplateRefs()
      *
      *    <li>Vdc          <= Org->getVdcRefs()
      *    <li>Catalog      <= Org->getCatalogRefs()
@@ -172,12 +181,14 @@ class VMware_VCloud_SDK_Factory extends VMware_VCloud_SDK_Abstract
      *    <li>Right        <= Admin->getRightRefs()
      *    <li>AdminVdcStorageProfile <= AdminVdc->getAdminVdcStorageProfileRefs()
      *    <li>ProviderVdcStorageProfile <= AdminVdcStorageProfile->getProviderVdcStorageProfileRefs()
+     *    <li>AuditEvent   <= Admin->getAuditEventRefs()
      *
      *    <li>Extension_Datastore           <= Extension->getDatastoreRefs()
      *    <li>Extension_Host                <= Extension->getHostRefs()
      *    <li>Extension_VMWExternalNetwork  <= Extension->getVMWExternalNetworkRefs()
      *    <li>Extension_VMWNetworkPool      <= Extension->getVMWNetworkPoolRefs()
      *    <li>Extension_VMWProviderVdc      <= Extension->getVMWProviderVdcRefs()
+     *    <li>Extension_VMWVdcTemplate      <= Extension->getVdcTemplateRefs()
      *    <li>Extension_VimServer           <= Extension->getVimServerRefs()
      *    <li>Extension_BlockingTask        <= Extension->getBlockingTaskRefs()
      *    <li>Extension_StrandedItem        <= Extension->getStrandedItems()

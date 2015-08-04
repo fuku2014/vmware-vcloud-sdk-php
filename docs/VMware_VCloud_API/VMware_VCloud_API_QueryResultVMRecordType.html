@@ -25,11 +25,11 @@
 <p class="short-description">Type for a single vm query result in records format.</p>
 	<ul class="tags">
 				<li><span class="field">author:</span> Ecosystem Engineering</li>
-				<li><span class="field">version:</span> 5.5.0</li>
+				<li><span class="field">version:</span> 8.0.0</li>
 				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2013.  All Rights Reserved.</li>
 			</ul>
 		<p class="notes">
-			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a51991">51991</a></span>)
+			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54203">54203</a></span>)
 		</p>
 		
 				
@@ -58,7 +58,7 @@
 					static <span class="var-type">mixed</span>
 					<a href="#$defaultNS" title="details" class="var-name">$defaultNS</a>
 				</div>
-																																																																																																																																																												<div class="var-title">
+																																																																																																																																																																																																				<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$catalogName" title="details" class="var-name">$catalogName</a>
 				</div>
@@ -77,6 +77,10 @@
 																<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$hardwareVersion" title="details" class="var-name">$hardwareVersion</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$ipAddress" title="details" class="var-name">$ipAddress</a>
 				</div>
 																<div class="var-title">
 					<span class="var-type">mixed</span>
@@ -120,7 +124,23 @@
 				</div>
 																<div class="var-title">
 					<span class="var-type">mixed</span>
+					<a href="#$network" title="details" class="var-name">$network</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$networkName" title="details" class="var-name">$networkName</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
 					<a href="#$numberOfCpus" title="details" class="var-name">$numberOfCpus</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$owner" title="details" class="var-name">$owner</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$ownerName" title="details" class="var-name">$ownerName</a>
 				</div>
 																<div class="var-title">
 					<span class="var-type">mixed</span>
@@ -154,11 +174,11 @@
 		</div>
 		<div class="info-box-body">			
 			<div class="method-summary">
-																																																																																																																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																																																																																																																																																																																																														
 				<div class="method-definition">
 											<span class="method-result">VMware_VCloud_API_QueryResultVMRecordType</span>
 										<a href="#__construct" title="details" class="method-name">__construct</a>
-											([<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_MetadataType.html">VMware_VCloud_API_MetadataType</a></span>&nbsp;<span class="var-name">$Metadata</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$status</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$containerName</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isDeployed</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$container</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$storageProfileName</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isPublished</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$memoryMB</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$numberOfCpus</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$vdc</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$hardwareVersion</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isBusy</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$guestOs</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isInMaintenanceMode</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isVAppTemplate</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isDeleted</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$catalogName</span> = <span class="var-default">null</span>])
+											([<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_MetadataType.html">VMware_VCloud_API_MetadataType</a></span>&nbsp;<span class="var-name">$Metadata</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$memoryMB</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ownerName</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$owner</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isVAppTemplate</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isDeleted</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$catalogName</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isDeployed</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$network</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isBusy</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$status</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$storageProfileName</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$hardwareVersion</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$guestOs</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$container</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$networkName</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$containerName</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isInMaintenanceMode</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isPublished</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$numberOfCpus</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$vdc</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ipAddress</span> = <span class="var-default">null</span>])
 									</div>
 														
 				<div class="method-definition">
@@ -229,6 +249,12 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
+										<a href="#get_ipAddress" title="details" class="method-name">get_ipAddress</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
 										<a href="#get_isBusy" title="details" class="method-name">get_isBusy</a>
 										()
 									</div>
@@ -277,7 +303,31 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
+										<a href="#get_network" title="details" class="method-name">get_network</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_networkName" title="details" class="method-name">get_networkName</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
 										<a href="#get_numberOfCpus" title="details" class="method-name">get_numberOfCpus</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_owner" title="details" class="method-name">get_owner</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_ownerName" title="details" class="method-name">get_ownerName</a>
 										()
 									</div>
 														
@@ -343,6 +393,12 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
+										<a href="#set_ipAddress" title="details" class="method-name">set_ipAddress</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$ipAddress</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
 										<a href="#set_isBusy" title="details" class="method-name">set_isBusy</a>
 											(<span class="var-type"></span>&nbsp;<span class="var-name">$isBusy</span>)
 									</div>
@@ -391,8 +447,32 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
+										<a href="#set_network" title="details" class="method-name">set_network</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$network</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_networkName" title="details" class="method-name">set_networkName</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$networkName</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
 										<a href="#set_numberOfCpus" title="details" class="method-name">set_numberOfCpus</a>
 											(<span class="var-type"></span>&nbsp;<span class="var-name">$numberOfCpus</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_owner" title="details" class="method-name">set_owner</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$owner</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_ownerName" title="details" class="method-name">set_ownerName</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$ownerName</span>)
 									</div>
 														
 				<div class="method-definition">
@@ -436,13 +516,13 @@
 					</div>
 		<div class="info-box-body">
 			<a name="var$defaultNS" id="$defaultNS"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			static <span class="var-type">mixed</span>
 			<span class="var-name">$defaultNS</span>
-			 = <span class="var-default"> 'http://www.vmware.com/vcloud/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52012">52012</a></span>)
+			 = <span class="var-default"> 'http://www.vmware.com/vcloud/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54229">54229</a></span>)
 		</span>
 	</div>
 
@@ -463,13 +543,13 @@
 </div>
 
 <a name="var$catalogName" id="$catalogName"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$catalogName</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52008">52008</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54209">54209</a></span>)
 		</span>
 	</div>
 
@@ -484,13 +564,13 @@
 
 </div>
 <a name="var$container" id="$container"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$container</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a51995">51995</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54217">54217</a></span>)
 		</span>
 	</div>
 
@@ -505,13 +585,13 @@
 
 </div>
 <a name="var$containerName" id="$containerName"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$containerName</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a51993">51993</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54219">54219</a></span>)
 		</span>
 	</div>
 
@@ -526,13 +606,13 @@
 
 </div>
 <a name="var$guestOs" id="$guestOs"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$guestOs</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52004">52004</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54216">54216</a></span>)
 		</span>
 	</div>
 
@@ -547,13 +627,34 @@
 
 </div>
 <a name="var$hardwareVersion" id="$hardwareVersion"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$hardwareVersion</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52002">52002</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54215">54215</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$ipAddress" id="$ipAddress"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$ipAddress</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54225">54225</a></span>)
 		</span>
 	</div>
 
@@ -574,7 +675,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$isBusy</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52003">52003</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54212">54212</a></span>)
 		</span>
 	</div>
 
@@ -595,7 +696,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$isDeleted</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52007">52007</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54208">54208</a></span>)
 		</span>
 	</div>
 
@@ -616,7 +717,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$isDeployed</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a51994">51994</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54210">54210</a></span>)
 		</span>
 	</div>
 
@@ -637,7 +738,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$isInMaintenanceMode</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52005">52005</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54220">54220</a></span>)
 		</span>
 	</div>
 
@@ -658,7 +759,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$isPublished</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a51998">51998</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54222">54222</a></span>)
 		</span>
 	</div>
 
@@ -679,7 +780,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$isVAppTemplate</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52006">52006</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54207">54207</a></span>)
 		</span>
 	</div>
 
@@ -700,7 +801,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$memoryMB</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a51999">51999</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54204">54204</a></span>)
 		</span>
 	</div>
 
@@ -721,7 +822,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$name</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a51996">51996</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54221">54221</a></span>)
 		</span>
 	</div>
 
@@ -742,7 +843,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespace</span>
-			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52009">52009</a></span>)
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54226">54226</a></span>)
 		</span>
 	</div>
 
@@ -768,7 +869,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespacedef</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52010">52010</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54227">54227</a></span>)
 		</span>
 	</div>
 
@@ -787,6 +888,48 @@
 		
 
 </div>
+<a name="var$network" id="$network"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$network</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54211">54211</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$networkName" id="$networkName"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$networkName</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54218">54218</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
 <a name="var$numberOfCpus" id="$numberOfCpus"><!-- --></A>
 <div class="oddrow">
 
@@ -794,7 +937,49 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$numberOfCpus</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52000">52000</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54223">54223</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$owner" id="$owner"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$owner</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54206">54206</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$ownerName" id="$ownerName"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$ownerName</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54205">54205</a></span>)
 		</span>
 	</div>
 
@@ -815,7 +1000,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$status</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a51992">51992</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54213">54213</a></span>)
 		</span>
 	</div>
 
@@ -836,7 +1021,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$storageProfileName</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a51997">51997</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54214">54214</a></span>)
 		</span>
 	</div>
 
@@ -857,7 +1042,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$tagName</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52011">52011</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54228">54228</a></span>)
 		</span>
 	</div>
 
@@ -883,7 +1068,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$vdc</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52001">52001</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54224">54224</a></span>)
 		</span>
 	</div>
 
@@ -936,7 +1121,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52038">52038</a></span>)
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54260">54260</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -949,7 +1134,7 @@
 		<span class="method-name">
 			__construct
 		</span>
-					([<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_MetadataType.html">VMware_VCloud_API_MetadataType</a></span>&nbsp;<span class="var-name">$Metadata</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$status</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$containerName</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isDeployed</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$container</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$storageProfileName</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isPublished</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$memoryMB</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$numberOfCpus</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$vdc</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$hardwareVersion</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isBusy</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$guestOs</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isInMaintenanceMode</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isVAppTemplate</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isDeleted</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$catalogName</span> = <span class="var-default">null</span>])
+					([<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_MetadataType.html">VMware_VCloud_API_MetadataType</a></span>&nbsp;<span class="var-name">$Metadata</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$memoryMB</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ownerName</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$owner</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isVAppTemplate</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isDeleted</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$catalogName</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isDeployed</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$network</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isBusy</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$status</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$storageProfileName</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$hardwareVersion</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$guestOs</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$container</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$networkName</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$containerName</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isInMaintenanceMode</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isPublished</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$numberOfCpus</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$vdc</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ipAddress</span> = <span class="var-default">null</span>])
 			</div>
 	
 			<ul class="parameters">
@@ -969,47 +1154,14 @@
 				<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_MetadataType.html">VMware_VCloud_API_MetadataType</a></span>
 				<span class="var-name">$Metadata</span><span class="var-description">: - [optional]</span>			</li>
 					<li>
-				<span class="var-type">string</span>
-				<span class="var-name">$status</span><span class="var-description">: - [optional] an attribute,</span>			</li>
-					<li>
-				<span class="var-type">string</span>
-				<span class="var-name">$containerName</span><span class="var-description">: - [optional] an attribute,</span>			</li>
-					<li>
-				<span class="var-type">boolean</span>
-				<span class="var-name">$isDeployed</span><span class="var-description">: - [optional] an attribute,</span>			</li>
-					<li>
-				<span class="var-type">string</span>
-				<span class="var-name">$container</span><span class="var-description">: - [optional] an attribute,</span>			</li>
-					<li>
-				<span class="var-type">string</span>
-				<span class="var-name">$name</span><span class="var-description">: - [optional] an attribute,</span>			</li>
-					<li>
-				<span class="var-type">string</span>
-				<span class="var-name">$storageProfileName</span><span class="var-description">: - [optional] an attribute,</span>			</li>
-					<li>
-				<span class="var-type">boolean</span>
-				<span class="var-name">$isPublished</span><span class="var-description">: - [optional] an attribute,</span>			</li>
-					<li>
 				<span class="var-type">int</span>
 				<span class="var-name">$memoryMB</span><span class="var-description">: - [optional] an attribute,</span>			</li>
 					<li>
-				<span class="var-type">int</span>
-				<span class="var-name">$numberOfCpus</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+				<span class="var-type">string</span>
+				<span class="var-name">$ownerName</span><span class="var-description">: - [optional] an attribute,</span>			</li>
 					<li>
 				<span class="var-type">string</span>
-				<span class="var-name">$vdc</span><span class="var-description">: - [optional] an attribute,</span>			</li>
-					<li>
-				<span class="var-type">int</span>
-				<span class="var-name">$hardwareVersion</span><span class="var-description">: - [optional] an attribute,</span>			</li>
-					<li>
-				<span class="var-type">boolean</span>
-				<span class="var-name">$isBusy</span><span class="var-description">: - [optional] an attribute,</span>			</li>
-					<li>
-				<span class="var-type">string</span>
-				<span class="var-name">$guestOs</span><span class="var-description">: - [optional] an attribute,</span>			</li>
-					<li>
-				<span class="var-type">boolean</span>
-				<span class="var-name">$isInMaintenanceMode</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+				<span class="var-name">$owner</span><span class="var-description">: - [optional] an attribute,</span>			</li>
 					<li>
 				<span class="var-type">boolean</span>
 				<span class="var-name">$isVAppTemplate</span><span class="var-description">: - [optional] an attribute,</span>			</li>
@@ -1019,6 +1171,54 @@
 					<li>
 				<span class="var-type">string</span>
 				<span class="var-name">$catalogName</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$isDeployed</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$network</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$isBusy</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$status</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$storageProfileName</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$hardwareVersion</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$guestOs</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$container</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$networkName</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$containerName</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$isInMaintenanceMode</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$isPublished</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$numberOfCpus</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$vdc</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$ipAddress</span><span class="var-description">: - [optional] an attribute,</span>			</li>
 				</ul>
 		
 			<hr class="separator" />
@@ -1032,7 +1232,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52281">52281</a></span>)
+		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54558">54558</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1068,7 +1268,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52302">52302</a></span>)
+		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54579">54579</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1104,7 +1304,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52497">52497</a></span>)
+		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54829">54829</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1143,7 +1343,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52164">52164</a></span>)
+		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54421">54421</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1191,7 +1391,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52194">52194</a></span>)
+		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54451">54451</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1236,7 +1436,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52267">52267</a></span>)
+		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54544">54544</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1281,7 +1481,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_catalogName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52156">52156</a></span>)
+		<span class="method-title">get_catalogName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54317">54317</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1304,7 +1504,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_container</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52078">52078</a></span>)
+		<span class="method-title">get_container</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54365">54365</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1327,7 +1527,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_containerName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52066">52066</a></span>)
+		<span class="method-title">get_containerName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54377">54377</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1350,7 +1550,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_guestOs</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52132">52132</a></span>)
+		<span class="method-title">get_guestOs</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54359">54359</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1373,7 +1573,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_hardwareVersion</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52120">52120</a></span>)
+		<span class="method-title">get_hardwareVersion</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54353">54353</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1392,11 +1592,34 @@
 		
 			
 	</div>
-<a name="methodget_isBusy" id="get_isBusy"><!-- --></a>
+<a name="methodget_ipAddress" id="get_ipAddress"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_isBusy</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52126">52126</a></span>)
+		<span class="method-title">get_ipAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54413">54413</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_ipAddress
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_isBusy" id="get_isBusy"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_isBusy</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54335">54335</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1416,10 +1639,10 @@
 			
 	</div>
 <a name="methodget_isDeleted" id="get_isDeleted"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_isDeleted</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52150">52150</a></span>)
+		<span class="method-title">get_isDeleted</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54311">54311</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1439,10 +1662,10 @@
 			
 	</div>
 <a name="methodget_isDeployed" id="get_isDeployed"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_isDeployed</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52072">52072</a></span>)
+		<span class="method-title">get_isDeployed</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54323">54323</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1462,10 +1685,10 @@
 			
 	</div>
 <a name="methodget_isInMaintenanceMode" id="get_isInMaintenanceMode"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_isInMaintenanceMode</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52138">52138</a></span>)
+		<span class="method-title">get_isInMaintenanceMode</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54383">54383</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1485,10 +1708,10 @@
 			
 	</div>
 <a name="methodget_isPublished" id="get_isPublished"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_isPublished</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52096">52096</a></span>)
+		<span class="method-title">get_isPublished</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54395">54395</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1508,10 +1731,10 @@
 			
 	</div>
 <a name="methodget_isVAppTemplate" id="get_isVAppTemplate"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_isVAppTemplate</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52144">52144</a></span>)
+		<span class="method-title">get_isVAppTemplate</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54305">54305</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1531,10 +1754,10 @@
 			
 	</div>
 <a name="methodget_memoryMB" id="get_memoryMB"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_memoryMB</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52102">52102</a></span>)
+		<span class="method-title">get_memoryMB</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54287">54287</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1554,10 +1777,10 @@
 			
 	</div>
 <a name="methodget_name" id="get_name"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_name</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52084">52084</a></span>)
+		<span class="method-title">get_name</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54389">54389</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1576,11 +1799,57 @@
 		
 			
 	</div>
-<a name="methodget_numberOfCpus" id="get_numberOfCpus"><!-- --></a>
+<a name="methodget_network" id="get_network"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_network</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54329">54329</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_network
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_networkName" id="get_networkName"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_numberOfCpus</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52108">52108</a></span>)
+		<span class="method-title">get_networkName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54371">54371</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_networkName
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_numberOfCpus" id="get_numberOfCpus"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_numberOfCpus</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54401">54401</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1599,11 +1868,57 @@
 		
 			
 	</div>
-<a name="methodget_status" id="get_status"><!-- --></a>
+<a name="methodget_owner" id="get_owner"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_owner</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54299">54299</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_owner
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_ownerName" id="get_ownerName"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_status</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52060">52060</a></span>)
+		<span class="method-title">get_ownerName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54293">54293</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_ownerName
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_status" id="get_status"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_status</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54341">54341</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1623,10 +1938,10 @@
 			
 	</div>
 <a name="methodget_storageProfileName" id="get_storageProfileName"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_storageProfileName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52090">52090</a></span>)
+		<span class="method-title">get_storageProfileName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54347">54347</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1646,10 +1961,10 @@
 			
 	</div>
 <a name="methodget_tagName" id="get_tagName"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52162">52162</a></span>)
+		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54419">54419</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1674,10 +1989,10 @@
 			
 	</div>
 <a name="methodget_vdc" id="get_vdc"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_vdc</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52114">52114</a></span>)
+		<span class="method-title">get_vdc</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54407">54407</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1697,10 +2012,10 @@
 			
 	</div>
 <a name="methodhasContent" id="hasContent"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52272">52272</a></span>)
+		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54549">54549</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1725,10 +2040,10 @@
 			
 	</div>
 <a name="methodset_catalogName" id="set_catalogName"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_catalogName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52159">52159</a></span>)
+		<span class="method-title">set_catalogName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54320">54320</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1753,10 +2068,10 @@
 			
 	</div>
 <a name="methodset_container" id="set_container"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_container</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52081">52081</a></span>)
+		<span class="method-title">set_container</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54368">54368</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1781,10 +2096,10 @@
 			
 	</div>
 <a name="methodset_containerName" id="set_containerName"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_containerName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52069">52069</a></span>)
+		<span class="method-title">set_containerName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54380">54380</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1809,10 +2124,10 @@
 			
 	</div>
 <a name="methodset_guestOs" id="set_guestOs"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_guestOs</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52135">52135</a></span>)
+		<span class="method-title">set_guestOs</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54362">54362</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1837,10 +2152,10 @@
 			
 	</div>
 <a name="methodset_hardwareVersion" id="set_hardwareVersion"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_hardwareVersion</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52123">52123</a></span>)
+		<span class="method-title">set_hardwareVersion</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54356">54356</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1864,11 +2179,39 @@
 		
 			
 	</div>
+<a name="methodset_ipAddress" id="set_ipAddress"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_ipAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54416">54416</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_ipAddress
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$ipAddress</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$ipAddress</span>			</li>
+				</ul>
+		
+			
+	</div>
 <a name="methodset_isBusy" id="set_isBusy"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_isBusy</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52129">52129</a></span>)
+		<span class="method-title">set_isBusy</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54338">54338</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1896,7 +2239,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_isDeleted</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52153">52153</a></span>)
+		<span class="method-title">set_isDeleted</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54314">54314</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1924,7 +2267,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_isDeployed</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52075">52075</a></span>)
+		<span class="method-title">set_isDeployed</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54326">54326</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1952,7 +2295,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_isInMaintenanceMode</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52141">52141</a></span>)
+		<span class="method-title">set_isInMaintenanceMode</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54386">54386</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1980,7 +2323,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_isPublished</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52099">52099</a></span>)
+		<span class="method-title">set_isPublished</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54398">54398</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2008,7 +2351,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_isVAppTemplate</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52147">52147</a></span>)
+		<span class="method-title">set_isVAppTemplate</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54308">54308</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2036,7 +2379,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_memoryMB</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52105">52105</a></span>)
+		<span class="method-title">set_memoryMB</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54290">54290</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2064,7 +2407,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_name</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52087">52087</a></span>)
+		<span class="method-title">set_name</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54392">54392</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2088,11 +2431,67 @@
 		
 			
 	</div>
+<a name="methodset_network" id="set_network"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_network</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54332">54332</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_network
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$network</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$network</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_networkName" id="set_networkName"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_networkName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54374">54374</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_networkName
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$networkName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$networkName</span>			</li>
+				</ul>
+		
+			
+	</div>
 <a name="methodset_numberOfCpus" id="set_numberOfCpus"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_numberOfCpus</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52111">52111</a></span>)
+		<span class="method-title">set_numberOfCpus</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54404">54404</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2116,11 +2515,67 @@
 		
 			
 	</div>
+<a name="methodset_owner" id="set_owner"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_owner</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54302">54302</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_owner
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$owner</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$owner</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_ownerName" id="set_ownerName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_ownerName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54296">54296</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_ownerName
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$ownerName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$ownerName</span>			</li>
+				</ul>
+		
+			
+	</div>
 <a name="methodset_status" id="set_status"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_status</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52063">52063</a></span>)
+		<span class="method-title">set_status</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54344">54344</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2148,7 +2603,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_storageProfileName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52093">52093</a></span>)
+		<span class="method-title">set_storageProfileName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54350">54350</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2176,7 +2631,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52163">52163</a></span>)
+		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54420">54420</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2209,7 +2664,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_vdc</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a52117">52117</a></span>)
+		<span class="method-title">set_vdc</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a54410">54410</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2268,7 +2723,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Mon, 26 Aug 2013 10:59:23 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Sat, 30 May 2015 00:41:30 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>

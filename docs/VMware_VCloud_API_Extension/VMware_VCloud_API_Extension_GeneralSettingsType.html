@@ -25,11 +25,11 @@
 <p class="short-description">General system settings.</p>
 	<ul class="tags">
 				<li><span class="field">author:</span> Ecosystem Engineering</li>
-				<li><span class="field">version:</span> 5.5.0</li>
+				<li><span class="field">version:</span> 8.0.0</li>
 				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2013.  All Rights Reserved.</li>
 			</ul>
 		<p class="notes">
-			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90450">90450</a></span>)
+			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99636">99636</a></span>)
 		</p>
 		
 				
@@ -56,11 +56,11 @@
 								</div>
 		<div class="info-box-body">
 			<div class="var-summary">
-																																																																				<div class="var-title">
+																																																																																																												<div class="var-title">
 					static <span class="var-type">mixed</span>
 					<a href="#$defaultNS" title="details" class="var-name">$defaultNS</a>
 				</div>
-																																																																																																																																																																																																																																				<div class="var-title">
+																																																																																																																																																																																																																																																																												<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$AbsoluteSessionTimeoutMinutes" title="details" class="var-name">$AbsoluteSessionTimeoutMinutes</a>
 				</div>
@@ -71,6 +71,26 @@
 																<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$ActivityLogKeepDays" title="details" class="var-name">$ActivityLogKeepDays</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$AdvancedNetworkingDfwApiUrl" title="details" class="var-name">$AdvancedNetworkingDfwApiUrl</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$AdvancedNetworkingDfwUiUrl" title="details" class="var-name">$AdvancedNetworkingDfwUiUrl</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$AdvancedNetworkingEnabled" title="details" class="var-name">$AdvancedNetworkingEnabled</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$AdvancedNetworkingGatewayApiUrl" title="details" class="var-name">$AdvancedNetworkingGatewayApiUrl</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$AdvancedNetworkingGatewayUiUrl" title="details" class="var-name">$AdvancedNetworkingGatewayUiUrl</a>
 				</div>
 																<div class="var-title">
 					<span class="var-type">mixed</span>
@@ -114,6 +134,10 @@
 				</div>
 																<div class="var-title">
 					<span class="var-type">mixed</span>
+					<a href="#$MaxVdcQuota" title="details" class="var-name">$MaxVdcQuota</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
 					<a href="#$namespace" title="details" class="var-name">$namespace</a>
 				</div>
 																<div class="var-title">
@@ -134,7 +158,15 @@
 				</div>
 																<div class="var-title">
 					<span class="var-type">mixed</span>
+					<a href="#$RestApiBaseHttpUri" title="details" class="var-name">$RestApiBaseHttpUri</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
 					<a href="#$RestApiBaseUri" title="details" class="var-name">$RestApiBaseUri</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$RestApiBaseUriPublicCertChain" title="details" class="var-name">$RestApiBaseUriPublicCertChain</a>
 				</div>
 																<div class="var-title">
 					<span class="var-type">mixed</span>
@@ -159,6 +191,14 @@
 																<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$SystemExternalAddress" title="details" class="var-name">$SystemExternalAddress</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$SystemExternalAddressPublicCertChain" title="details" class="var-name">$SystemExternalAddressPublicCertChain</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$SystemExternalHttpAddress" title="details" class="var-name">$SystemExternalHttpAddress</a>
 				</div>
 																<div class="var-title">
 					<span class="var-type">mixed</span>
@@ -208,11 +248,11 @@
 		</div>
 		<div class="info-box-body">			
 			<div class="method-summary">
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
 				<div class="method-definition">
 											<span class="method-result">VMware_VCloud_API_Extension_GeneralSettingsType</span>
 										<a href="#__construct" title="details" class="method-name">__construct</a>
-											([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$AbsoluteSessionTimeoutMinutes</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ActivityLogDisplayDays</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ActivityLogKeepDays</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AllowOverlappingExtNets</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ChargebackEventsKeepDays</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ChargebackTablesCleanupJobTimeInSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ConsoleProxyExternalAddress</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$HostCheckDelayInSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$HostCheckTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$InstallationId</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$IpReservationTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_SyslogServerSettingsType.html">VMware_VCloud_API_SyslogServerSettingsType</a></span>&nbsp;<span class="var-name">$SyslogServerSettings</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$LoginNameOnly</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$PrePopDefaultName</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$QuarantineEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$QuarantineResponseTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$RestApiBaseUri</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$SessionTimeoutMinutes</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ShowStackTraces</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SyncStartDate</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$SyncIntervalInHours</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SystemExternalAddress</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$TransferSessionTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$VerifyVcCertificates</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststorePassword</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststoreContents</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststoreType</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VmrcVersion</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$VerifyVsmCertificates</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ElasticAllocationPool</span> = <span class="var-default">null</span>])
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$AbsoluteSessionTimeoutMinutes</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ActivityLogDisplayDays</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ActivityLogKeepDays</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AllowOverlappingExtNets</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ChargebackEventsKeepDays</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ChargebackTablesCleanupJobTimeInSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ConsoleProxyExternalAddress</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$HostCheckDelayInSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$HostCheckTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$InstallationId</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$IpReservationTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_SyslogServerSettingsType.html">VMware_VCloud_API_SyslogServerSettingsType</a></span>&nbsp;<span class="var-name">$SyslogServerSettings</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$LoginNameOnly</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$PrePopDefaultName</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$QuarantineEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$QuarantineResponseTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$RestApiBaseHttpUri</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$RestApiBaseUri</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$RestApiBaseUriPublicCertChain</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$SessionTimeoutMinutes</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ShowStackTraces</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SyncStartDate</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$SyncIntervalInHours</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SystemExternalHttpAddress</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SystemExternalAddress</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SystemExternalAddressPublicCertChain</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$TransferSessionTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$VerifyVcCertificates</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststorePassword</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststoreContents</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststoreType</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VmrcVersion</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$VerifyVsmCertificates</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ElasticAllocationPool</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AdvancedNetworkingEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$AdvancedNetworkingDfwApiUrl</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$AdvancedNetworkingDfwUiUrl</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$AdvancedNetworkingGatewayApiUrl</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$AdvancedNetworkingGatewayUiUrl</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$MaxVdcQuota</span> = <span class="var-default">null</span>])
 									</div>
 														
 				<div class="method-definition">
@@ -266,6 +306,36 @@
 				<div class="method-definition">
 											<span class="method-result">void</span>
 										<a href="#getActivityLogKeepDays" title="details" class="method-name">getActivityLogKeepDays</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getAdvancedNetworkingDfwApiUrl" title="details" class="method-name">getAdvancedNetworkingDfwApiUrl</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getAdvancedNetworkingDfwUiUrl" title="details" class="method-name">getAdvancedNetworkingDfwUiUrl</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getAdvancedNetworkingEnabled" title="details" class="method-name">getAdvancedNetworkingEnabled</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getAdvancedNetworkingGatewayApiUrl" title="details" class="method-name">getAdvancedNetworkingGatewayApiUrl</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getAdvancedNetworkingGatewayUiUrl" title="details" class="method-name">getAdvancedNetworkingGatewayUiUrl</a>
 										()
 									</div>
 														
@@ -331,6 +401,12 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
+										<a href="#getMaxVdcQuota" title="details" class="method-name">getMaxVdcQuota</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
 										<a href="#getPrePopDefaultName" title="details" class="method-name">getPrePopDefaultName</a>
 										()
 									</div>
@@ -349,7 +425,19 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
+										<a href="#getRestApiBaseHttpUri" title="details" class="method-name">getRestApiBaseHttpUri</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
 										<a href="#getRestApiBaseUri" title="details" class="method-name">getRestApiBaseUri</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getRestApiBaseUriPublicCertChain" title="details" class="method-name">getRestApiBaseUriPublicCertChain</a>
 										()
 									</div>
 														
@@ -386,6 +474,18 @@
 				<div class="method-definition">
 											<span class="method-result">void</span>
 										<a href="#getSystemExternalAddress" title="details" class="method-name">getSystemExternalAddress</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getSystemExternalAddressPublicCertChain" title="details" class="method-name">getSystemExternalAddressPublicCertChain</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getSystemExternalHttpAddress" title="details" class="method-name">getSystemExternalHttpAddress</a>
 										()
 									</div>
 														
@@ -463,6 +563,36 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
+										<a href="#setAdvancedNetworkingDfwApiUrl" title="details" class="method-name">setAdvancedNetworkingDfwApiUrl</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$AdvancedNetworkingDfwApiUrl</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setAdvancedNetworkingDfwUiUrl" title="details" class="method-name">setAdvancedNetworkingDfwUiUrl</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$AdvancedNetworkingDfwUiUrl</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setAdvancedNetworkingEnabled" title="details" class="method-name">setAdvancedNetworkingEnabled</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$AdvancedNetworkingEnabled</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setAdvancedNetworkingGatewayApiUrl" title="details" class="method-name">setAdvancedNetworkingGatewayApiUrl</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$AdvancedNetworkingGatewayApiUrl</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setAdvancedNetworkingGatewayUiUrl" title="details" class="method-name">setAdvancedNetworkingGatewayUiUrl</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$AdvancedNetworkingGatewayUiUrl</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
 										<a href="#setAllowOverlappingExtNets" title="details" class="method-name">setAllowOverlappingExtNets</a>
 											(<span class="var-type"></span>&nbsp;<span class="var-name">$AllowOverlappingExtNets</span>)
 									</div>
@@ -523,6 +653,12 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
+										<a href="#setMaxVdcQuota" title="details" class="method-name">setMaxVdcQuota</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$MaxVdcQuota</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
 										<a href="#setPrePopDefaultName" title="details" class="method-name">setPrePopDefaultName</a>
 											(<span class="var-type"></span>&nbsp;<span class="var-name">$PrePopDefaultName</span>)
 									</div>
@@ -541,8 +677,20 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
+										<a href="#setRestApiBaseHttpUri" title="details" class="method-name">setRestApiBaseHttpUri</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$RestApiBaseHttpUri</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
 										<a href="#setRestApiBaseUri" title="details" class="method-name">setRestApiBaseUri</a>
 											(<span class="var-type"></span>&nbsp;<span class="var-name">$RestApiBaseUri</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setRestApiBaseUriPublicCertChain" title="details" class="method-name">setRestApiBaseUriPublicCertChain</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$RestApiBaseUriPublicCertChain</span>)
 									</div>
 														
 				<div class="method-definition">
@@ -579,6 +727,18 @@
 											<span class="method-result">void</span>
 										<a href="#setSystemExternalAddress" title="details" class="method-name">setSystemExternalAddress</a>
 											(<span class="var-type"></span>&nbsp;<span class="var-name">$SystemExternalAddress</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setSystemExternalAddressPublicCertChain" title="details" class="method-name">setSystemExternalAddressPublicCertChain</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$SystemExternalAddressPublicCertChain</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setSystemExternalHttpAddress" title="details" class="method-name">setSystemExternalHttpAddress</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$SystemExternalHttpAddress</span>)
 									</div>
 														
 				<div class="method-definition">
@@ -652,7 +812,7 @@
 		<span class="var-title">
 			static <span class="var-type">mixed</span>
 			<span class="var-name">$defaultNS</span>
-			 = <span class="var-default"> 'http://www.vmware.com/vcloud/extension/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90484">90484</a></span>)
+			 = <span class="var-default"> 'http://www.vmware.com/vcloud/extension/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99680">99680</a></span>)
 		</span>
 	</div>
 
@@ -679,7 +839,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$AbsoluteSessionTimeoutMinutes</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90451">90451</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99637">99637</a></span>)
 		</span>
 	</div>
 
@@ -700,7 +860,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ActivityLogDisplayDays</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90452">90452</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99638">99638</a></span>)
 		</span>
 	</div>
 
@@ -721,7 +881,112 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ActivityLogKeepDays</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90453">90453</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99639">99639</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$AdvancedNetworkingDfwApiUrl" id="$AdvancedNetworkingDfwApiUrl"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$AdvancedNetworkingDfwApiUrl</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99672">99672</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$AdvancedNetworkingDfwUiUrl" id="$AdvancedNetworkingDfwUiUrl"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$AdvancedNetworkingDfwUiUrl</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99673">99673</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$AdvancedNetworkingEnabled" id="$AdvancedNetworkingEnabled"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$AdvancedNetworkingEnabled</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99671">99671</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$AdvancedNetworkingGatewayApiUrl" id="$AdvancedNetworkingGatewayApiUrl"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$AdvancedNetworkingGatewayApiUrl</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99674">99674</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$AdvancedNetworkingGatewayUiUrl" id="$AdvancedNetworkingGatewayUiUrl"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$AdvancedNetworkingGatewayUiUrl</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99675">99675</a></span>)
 		</span>
 	</div>
 
@@ -736,13 +1001,13 @@
 
 </div>
 <a name="var$AllowOverlappingExtNets" id="$AllowOverlappingExtNets"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$AllowOverlappingExtNets</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90454">90454</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99640">99640</a></span>)
 		</span>
 	</div>
 
@@ -757,13 +1022,13 @@
 
 </div>
 <a name="var$ChargebackEventsKeepDays" id="$ChargebackEventsKeepDays"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ChargebackEventsKeepDays</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90455">90455</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99641">99641</a></span>)
 		</span>
 	</div>
 
@@ -778,13 +1043,13 @@
 
 </div>
 <a name="var$ChargebackTablesCleanupJobTimeInSeconds" id="$ChargebackTablesCleanupJobTimeInSeconds"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ChargebackTablesCleanupJobTimeInSeconds</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90456">90456</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99642">99642</a></span>)
 		</span>
 	</div>
 
@@ -799,13 +1064,13 @@
 
 </div>
 <a name="var$ConsoleProxyExternalAddress" id="$ConsoleProxyExternalAddress"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ConsoleProxyExternalAddress</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90457">90457</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99643">99643</a></span>)
 		</span>
 	</div>
 
@@ -820,13 +1085,13 @@
 
 </div>
 <a name="var$ElasticAllocationPool" id="$ElasticAllocationPool"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ElasticAllocationPool</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90480">90480</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99670">99670</a></span>)
 		</span>
 	</div>
 
@@ -841,13 +1106,13 @@
 
 </div>
 <a name="var$HostCheckDelayInSeconds" id="$HostCheckDelayInSeconds"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$HostCheckDelayInSeconds</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90458">90458</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99644">99644</a></span>)
 		</span>
 	</div>
 
@@ -862,13 +1127,13 @@
 
 </div>
 <a name="var$HostCheckTimeoutSeconds" id="$HostCheckTimeoutSeconds"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$HostCheckTimeoutSeconds</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90459">90459</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99645">99645</a></span>)
 		</span>
 	</div>
 
@@ -883,13 +1148,13 @@
 
 </div>
 <a name="var$InstallationId" id="$InstallationId"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$InstallationId</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90460">90460</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99646">99646</a></span>)
 		</span>
 	</div>
 
@@ -904,13 +1169,13 @@
 
 </div>
 <a name="var$IpReservationTimeoutSeconds" id="$IpReservationTimeoutSeconds"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$IpReservationTimeoutSeconds</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90461">90461</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99647">99647</a></span>)
 		</span>
 	</div>
 
@@ -925,13 +1190,34 @@
 
 </div>
 <a name="var$LoginNameOnly" id="$LoginNameOnly"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$LoginNameOnly</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90463">90463</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99649">99649</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$MaxVdcQuota" id="$MaxVdcQuota"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$MaxVdcQuota</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99676">99676</a></span>)
 		</span>
 	</div>
 
@@ -952,7 +1238,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespace</span>
-			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90481">90481</a></span>)
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99677">99677</a></span>)
 		</span>
 	</div>
 
@@ -978,7 +1264,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespacedef</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90482">90482</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99678">99678</a></span>)
 		</span>
 	</div>
 
@@ -1004,7 +1290,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$PrePopDefaultName</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90464">90464</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99650">99650</a></span>)
 		</span>
 	</div>
 
@@ -1025,7 +1311,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$QuarantineEnabled</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90465">90465</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99651">99651</a></span>)
 		</span>
 	</div>
 
@@ -1046,7 +1332,28 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$QuarantineResponseTimeoutSeconds</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90466">90466</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99652">99652</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$RestApiBaseHttpUri" id="$RestApiBaseHttpUri"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$RestApiBaseHttpUri</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99653">99653</a></span>)
 		</span>
 	</div>
 
@@ -1061,13 +1368,34 @@
 
 </div>
 <a name="var$RestApiBaseUri" id="$RestApiBaseUri"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$RestApiBaseUri</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90467">90467</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99654">99654</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$RestApiBaseUriPublicCertChain" id="$RestApiBaseUriPublicCertChain"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$RestApiBaseUriPublicCertChain</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99655">99655</a></span>)
 		</span>
 	</div>
 
@@ -1088,7 +1416,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$SessionTimeoutMinutes</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90468">90468</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99656">99656</a></span>)
 		</span>
 	</div>
 
@@ -1109,7 +1437,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ShowStackTraces</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90469">90469</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99657">99657</a></span>)
 		</span>
 	</div>
 
@@ -1130,7 +1458,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$SyncIntervalInHours</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90471">90471</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99659">99659</a></span>)
 		</span>
 	</div>
 
@@ -1151,7 +1479,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$SyncStartDate</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90470">90470</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99658">99658</a></span>)
 		</span>
 	</div>
 
@@ -1172,7 +1500,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$SyslogServerSettings</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90462">90462</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99648">99648</a></span>)
 		</span>
 	</div>
 
@@ -1193,7 +1521,49 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$SystemExternalAddress</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90472">90472</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99661">99661</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$SystemExternalAddressPublicCertChain" id="$SystemExternalAddressPublicCertChain"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$SystemExternalAddressPublicCertChain</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99662">99662</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$SystemExternalHttpAddress" id="$SystemExternalHttpAddress"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$SystemExternalHttpAddress</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99660">99660</a></span>)
 		</span>
 	</div>
 
@@ -1214,7 +1584,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$tagName</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90483">90483</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99679">99679</a></span>)
 		</span>
 	</div>
 
@@ -1240,7 +1610,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$TransferSessionTimeoutSeconds</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90473">90473</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99663">99663</a></span>)
 		</span>
 	</div>
 
@@ -1261,7 +1631,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VcTruststoreContents</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90476">90476</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99666">99666</a></span>)
 		</span>
 	</div>
 
@@ -1282,7 +1652,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VcTruststorePassword</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90475">90475</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99665">99665</a></span>)
 		</span>
 	</div>
 
@@ -1303,7 +1673,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VcTruststoreType</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90477">90477</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99667">99667</a></span>)
 		</span>
 	</div>
 
@@ -1324,7 +1694,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VerifyVcCertificates</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90474">90474</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99664">99664</a></span>)
 		</span>
 	</div>
 
@@ -1345,7 +1715,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VerifyVsmCertificates</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90479">90479</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99669">99669</a></span>)
 		</span>
 	</div>
 
@@ -1366,7 +1736,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VmrcVersion</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90478">90478</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99668">99668</a></span>)
 		</span>
 	</div>
 
@@ -1419,7 +1789,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90522">90522</a></span>)
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99728">99728</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1432,7 +1802,7 @@
 		<span class="method-name">
 			__construct
 		</span>
-					([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$AbsoluteSessionTimeoutMinutes</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ActivityLogDisplayDays</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ActivityLogKeepDays</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AllowOverlappingExtNets</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ChargebackEventsKeepDays</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ChargebackTablesCleanupJobTimeInSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ConsoleProxyExternalAddress</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$HostCheckDelayInSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$HostCheckTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$InstallationId</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$IpReservationTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_SyslogServerSettingsType.html">VMware_VCloud_API_SyslogServerSettingsType</a></span>&nbsp;<span class="var-name">$SyslogServerSettings</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$LoginNameOnly</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$PrePopDefaultName</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$QuarantineEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$QuarantineResponseTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$RestApiBaseUri</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$SessionTimeoutMinutes</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ShowStackTraces</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SyncStartDate</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$SyncIntervalInHours</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SystemExternalAddress</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$TransferSessionTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$VerifyVcCertificates</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststorePassword</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststoreContents</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststoreType</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VmrcVersion</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$VerifyVsmCertificates</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ElasticAllocationPool</span> = <span class="var-default">null</span>])
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$AbsoluteSessionTimeoutMinutes</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ActivityLogDisplayDays</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ActivityLogKeepDays</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AllowOverlappingExtNets</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ChargebackEventsKeepDays</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ChargebackTablesCleanupJobTimeInSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ConsoleProxyExternalAddress</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$HostCheckDelayInSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$HostCheckTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$InstallationId</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$IpReservationTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_SyslogServerSettingsType.html">VMware_VCloud_API_SyslogServerSettingsType</a></span>&nbsp;<span class="var-name">$SyslogServerSettings</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$LoginNameOnly</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$PrePopDefaultName</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$QuarantineEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$QuarantineResponseTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$RestApiBaseHttpUri</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$RestApiBaseUri</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$RestApiBaseUriPublicCertChain</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$SessionTimeoutMinutes</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ShowStackTraces</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SyncStartDate</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$SyncIntervalInHours</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SystemExternalHttpAddress</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SystemExternalAddress</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SystemExternalAddressPublicCertChain</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$TransferSessionTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$VerifyVcCertificates</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststorePassword</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststoreContents</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststoreType</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VmrcVersion</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$VerifyVsmCertificates</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ElasticAllocationPool</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AdvancedNetworkingEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$AdvancedNetworkingDfwApiUrl</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$AdvancedNetworkingDfwUiUrl</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$AdvancedNetworkingGatewayApiUrl</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$AdvancedNetworkingGatewayUiUrl</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$MaxVdcQuota</span> = <span class="var-default">null</span>])
 			</div>
 	
 			<ul class="parameters">
@@ -1483,7 +1853,7 @@
 				<span class="var-name">$IpReservationTimeoutSeconds</span><span class="var-description">: - [required]</span>			</li>
 					<li>
 				<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_SyslogServerSettingsType.html">VMware_VCloud_API_SyslogServerSettingsType</a></span>
-				<span class="var-name">$SyslogServerSettings</span><span class="var-description">: - [required]</span>			</li>
+				<span class="var-name">$SyslogServerSettings</span><span class="var-description">: - [optional]</span>			</li>
 					<li>
 				<span class="var-type">boolean</span>
 				<span class="var-name">$LoginNameOnly</span><span class="var-description">: - [required]</span>			</li>
@@ -1498,7 +1868,13 @@
 				<span class="var-name">$QuarantineResponseTimeoutSeconds</span><span class="var-description">: - [required]</span>			</li>
 					<li>
 				<span class="var-type">string</span>
+				<span class="var-name">$RestApiBaseHttpUri</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
 				<span class="var-name">$RestApiBaseUri</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$RestApiBaseUriPublicCertChain</span><span class="var-description">: - [optional]</span>			</li>
 					<li>
 				<span class="var-type">int</span>
 				<span class="var-name">$SessionTimeoutMinutes</span><span class="var-description">: - [required]</span>			</li>
@@ -1513,7 +1889,13 @@
 				<span class="var-name">$SyncIntervalInHours</span><span class="var-description">: - [required]</span>			</li>
 					<li>
 				<span class="var-type">string</span>
+				<span class="var-name">$SystemExternalHttpAddress</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
 				<span class="var-name">$SystemExternalAddress</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$SystemExternalAddressPublicCertChain</span><span class="var-description">: - [optional]</span>			</li>
 					<li>
 				<span class="var-type">int</span>
 				<span class="var-name">$TransferSessionTimeoutSeconds</span><span class="var-description">: - [required]</span>			</li>
@@ -1528,7 +1910,7 @@
 				<span class="var-name">$VcTruststoreContents</span><span class="var-description">: - [optional]</span>			</li>
 					<li>
 				<span class="var-type">string</span>
-				<span class="var-name">$VcTruststoreType</span><span class="var-description">: - [required]</span>			</li>
+				<span class="var-name">$VcTruststoreType</span><span class="var-description">: - [optional]</span>			</li>
 					<li>
 				<span class="var-type">string</span>
 				<span class="var-name">$VmrcVersion</span><span class="var-description">: - [optional]</span>			</li>
@@ -1538,6 +1920,24 @@
 					<li>
 				<span class="var-type">boolean</span>
 				<span class="var-name">$ElasticAllocationPool</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$AdvancedNetworkingEnabled</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$AdvancedNetworkingDfwApiUrl</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$AdvancedNetworkingDfwUiUrl</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$AdvancedNetworkingGatewayApiUrl</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$AdvancedNetworkingGatewayUiUrl</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$MaxVdcQuota</span><span class="var-description">: - [optional]</span>			</li>
 				</ul>
 		
 			<hr class="separator" />
@@ -1551,7 +1951,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90966">90966</a></span>)
+		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a100303">100303</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1587,7 +1987,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90987">90987</a></span>)
+		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a100324">100324</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1623,7 +2023,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90995">90995</a></span>)
+		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a100332">100332</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1662,7 +2062,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90739">90739</a></span>)
+		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a100015">100015</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1710,7 +2110,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90769">90769</a></span>)
+		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a100045">100045</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1755,7 +2155,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90774">90774</a></span>)
+		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a100050">100050</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1800,7 +2200,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getAbsoluteSessionTimeoutMinutes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90557">90557</a></span>)
+		<span class="method-title">getAbsoluteSessionTimeoutMinutes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99773">99773</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1823,7 +2223,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getActivityLogDisplayDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90563">90563</a></span>)
+		<span class="method-title">getActivityLogDisplayDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99779">99779</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1846,7 +2246,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getActivityLogKeepDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90569">90569</a></span>)
+		<span class="method-title">getActivityLogKeepDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99785">99785</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1865,11 +2265,126 @@
 		
 			
 	</div>
-<a name="methodgetAllowOverlappingExtNets" id="getAllowOverlappingExtNets"><!-- --></a>
+<a name="methodgetAdvancedNetworkingDfwApiUrl" id="getAdvancedNetworkingDfwApiUrl"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getAllowOverlappingExtNets</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90575">90575</a></span>)
+		<span class="method-title">getAdvancedNetworkingDfwApiUrl</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99983">99983</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getAdvancedNetworkingDfwApiUrl
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetAdvancedNetworkingDfwUiUrl" id="getAdvancedNetworkingDfwUiUrl"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdvancedNetworkingDfwUiUrl</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99989">99989</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getAdvancedNetworkingDfwUiUrl
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetAdvancedNetworkingEnabled" id="getAdvancedNetworkingEnabled"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdvancedNetworkingEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99977">99977</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getAdvancedNetworkingEnabled
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetAdvancedNetworkingGatewayApiUrl" id="getAdvancedNetworkingGatewayApiUrl"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdvancedNetworkingGatewayApiUrl</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99995">99995</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getAdvancedNetworkingGatewayApiUrl
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetAdvancedNetworkingGatewayUiUrl" id="getAdvancedNetworkingGatewayUiUrl"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdvancedNetworkingGatewayUiUrl</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a100001">100001</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getAdvancedNetworkingGatewayUiUrl
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetAllowOverlappingExtNets" id="getAllowOverlappingExtNets"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAllowOverlappingExtNets</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99791">99791</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1889,10 +2404,10 @@
 			
 	</div>
 <a name="methodgetChargebackEventsKeepDays" id="getChargebackEventsKeepDays"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getChargebackEventsKeepDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90581">90581</a></span>)
+		<span class="method-title">getChargebackEventsKeepDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99797">99797</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1912,10 +2427,10 @@
 			
 	</div>
 <a name="methodgetChargebackTablesCleanupJobTimeInSeconds" id="getChargebackTablesCleanupJobTimeInSeconds"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getChargebackTablesCleanupJobTimeInSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90587">90587</a></span>)
+		<span class="method-title">getChargebackTablesCleanupJobTimeInSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99803">99803</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1935,10 +2450,10 @@
 			
 	</div>
 <a name="methodgetConsoleProxyExternalAddress" id="getConsoleProxyExternalAddress"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getConsoleProxyExternalAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90593">90593</a></span>)
+		<span class="method-title">getConsoleProxyExternalAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99809">99809</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1958,10 +2473,10 @@
 			
 	</div>
 <a name="methodgetElasticAllocationPool" id="getElasticAllocationPool"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getElasticAllocationPool</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90731">90731</a></span>)
+		<span class="method-title">getElasticAllocationPool</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99971">99971</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1981,10 +2496,10 @@
 			
 	</div>
 <a name="methodgetHostCheckDelayInSeconds" id="getHostCheckDelayInSeconds"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getHostCheckDelayInSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90599">90599</a></span>)
+		<span class="method-title">getHostCheckDelayInSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99815">99815</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2004,10 +2519,10 @@
 			
 	</div>
 <a name="methodgetHostCheckTimeoutSeconds" id="getHostCheckTimeoutSeconds"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getHostCheckTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90605">90605</a></span>)
+		<span class="method-title">getHostCheckTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99821">99821</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2027,10 +2542,10 @@
 			
 	</div>
 <a name="methodgetInstallationId" id="getInstallationId"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getInstallationId</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90611">90611</a></span>)
+		<span class="method-title">getInstallationId</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99827">99827</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2050,10 +2565,10 @@
 			
 	</div>
 <a name="methodgetIpReservationTimeoutSeconds" id="getIpReservationTimeoutSeconds"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getIpReservationTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90617">90617</a></span>)
+		<span class="method-title">getIpReservationTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99833">99833</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2073,10 +2588,10 @@
 			
 	</div>
 <a name="methodgetLoginNameOnly" id="getLoginNameOnly"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getLoginNameOnly</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90629">90629</a></span>)
+		<span class="method-title">getLoginNameOnly</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99845">99845</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2095,11 +2610,34 @@
 		
 			
 	</div>
+<a name="methodgetMaxVdcQuota" id="getMaxVdcQuota"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMaxVdcQuota</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a100007">100007</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getMaxVdcQuota
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
 <a name="methodgetPrePopDefaultName" id="getPrePopDefaultName"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getPrePopDefaultName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90635">90635</a></span>)
+		<span class="method-title">getPrePopDefaultName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99851">99851</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2122,7 +2660,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getQuarantineEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90641">90641</a></span>)
+		<span class="method-title">getQuarantineEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99857">99857</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2145,7 +2683,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getQuarantineResponseTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90647">90647</a></span>)
+		<span class="method-title">getQuarantineResponseTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99863">99863</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2164,11 +2702,34 @@
 		
 			
 	</div>
-<a name="methodgetRestApiBaseUri" id="getRestApiBaseUri"><!-- --></a>
+<a name="methodgetRestApiBaseHttpUri" id="getRestApiBaseHttpUri"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getRestApiBaseUri</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90653">90653</a></span>)
+		<span class="method-title">getRestApiBaseHttpUri</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99869">99869</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getRestApiBaseHttpUri
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetRestApiBaseUri" id="getRestApiBaseUri"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getRestApiBaseUri</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99875">99875</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2187,11 +2748,34 @@
 		
 			
 	</div>
+<a name="methodgetRestApiBaseUriPublicCertChain" id="getRestApiBaseUriPublicCertChain"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getRestApiBaseUriPublicCertChain</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99881">99881</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getRestApiBaseUriPublicCertChain
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
 <a name="methodgetSessionTimeoutMinutes" id="getSessionTimeoutMinutes"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getSessionTimeoutMinutes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90659">90659</a></span>)
+		<span class="method-title">getSessionTimeoutMinutes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99887">99887</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2214,7 +2798,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getShowStackTraces</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90665">90665</a></span>)
+		<span class="method-title">getShowStackTraces</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99893">99893</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2237,7 +2821,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getSyncIntervalInHours</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90677">90677</a></span>)
+		<span class="method-title">getSyncIntervalInHours</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99905">99905</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2260,7 +2844,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getSyncStartDate</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90671">90671</a></span>)
+		<span class="method-title">getSyncStartDate</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99899">99899</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2283,7 +2867,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getSyslogServerSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90623">90623</a></span>)
+		<span class="method-title">getSyslogServerSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99839">99839</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2306,7 +2890,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getSystemExternalAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90683">90683</a></span>)
+		<span class="method-title">getSystemExternalAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99917">99917</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2325,11 +2909,57 @@
 		
 			
 	</div>
+<a name="methodgetSystemExternalAddressPublicCertChain" id="getSystemExternalAddressPublicCertChain"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSystemExternalAddressPublicCertChain</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99923">99923</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getSystemExternalAddressPublicCertChain
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSystemExternalHttpAddress" id="getSystemExternalHttpAddress"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSystemExternalHttpAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99911">99911</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getSystemExternalHttpAddress
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
 <a name="methodgetTransferSessionTimeoutSeconds" id="getTransferSessionTimeoutSeconds"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getTransferSessionTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90689">90689</a></span>)
+		<span class="method-title">getTransferSessionTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99929">99929</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2352,7 +2982,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVcTruststoreContents</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90707">90707</a></span>)
+		<span class="method-title">getVcTruststoreContents</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99947">99947</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2375,7 +3005,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVcTruststorePassword</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90701">90701</a></span>)
+		<span class="method-title">getVcTruststorePassword</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99941">99941</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2398,7 +3028,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVcTruststoreType</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90713">90713</a></span>)
+		<span class="method-title">getVcTruststoreType</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99953">99953</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2421,7 +3051,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVerifyVcCertificates</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90695">90695</a></span>)
+		<span class="method-title">getVerifyVcCertificates</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99935">99935</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2444,7 +3074,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVerifyVsmCertificates</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90725">90725</a></span>)
+		<span class="method-title">getVerifyVsmCertificates</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99965">99965</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2467,7 +3097,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVmrcVersion</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90719">90719</a></span>)
+		<span class="method-title">getVmrcVersion</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99959">99959</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2490,7 +3120,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90737">90737</a></span>)
+		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a100013">100013</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2518,7 +3148,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90927">90927</a></span>)
+		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a100254">100254</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2546,7 +3176,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setAbsoluteSessionTimeoutMinutes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90560">90560</a></span>)
+		<span class="method-title">setAbsoluteSessionTimeoutMinutes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99776">99776</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2574,7 +3204,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setActivityLogDisplayDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90566">90566</a></span>)
+		<span class="method-title">setActivityLogDisplayDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99782">99782</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2602,7 +3232,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setActivityLogKeepDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90572">90572</a></span>)
+		<span class="method-title">setActivityLogKeepDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99788">99788</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2626,11 +3256,151 @@
 		
 			
 	</div>
-<a name="methodsetAllowOverlappingExtNets" id="setAllowOverlappingExtNets"><!-- --></a>
+<a name="methodsetAdvancedNetworkingDfwApiUrl" id="setAdvancedNetworkingDfwApiUrl"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setAllowOverlappingExtNets</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90578">90578</a></span>)
+		<span class="method-title">setAdvancedNetworkingDfwApiUrl</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99986">99986</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setAdvancedNetworkingDfwApiUrl
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$AdvancedNetworkingDfwApiUrl</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$AdvancedNetworkingDfwApiUrl</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetAdvancedNetworkingDfwUiUrl" id="setAdvancedNetworkingDfwUiUrl"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setAdvancedNetworkingDfwUiUrl</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99992">99992</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setAdvancedNetworkingDfwUiUrl
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$AdvancedNetworkingDfwUiUrl</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$AdvancedNetworkingDfwUiUrl</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetAdvancedNetworkingEnabled" id="setAdvancedNetworkingEnabled"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setAdvancedNetworkingEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99980">99980</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setAdvancedNetworkingEnabled
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$AdvancedNetworkingEnabled</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$AdvancedNetworkingEnabled</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetAdvancedNetworkingGatewayApiUrl" id="setAdvancedNetworkingGatewayApiUrl"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setAdvancedNetworkingGatewayApiUrl</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99998">99998</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setAdvancedNetworkingGatewayApiUrl
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$AdvancedNetworkingGatewayApiUrl</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$AdvancedNetworkingGatewayApiUrl</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetAdvancedNetworkingGatewayUiUrl" id="setAdvancedNetworkingGatewayUiUrl"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setAdvancedNetworkingGatewayUiUrl</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a100004">100004</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setAdvancedNetworkingGatewayUiUrl
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$AdvancedNetworkingGatewayUiUrl</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$AdvancedNetworkingGatewayUiUrl</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetAllowOverlappingExtNets" id="setAllowOverlappingExtNets"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setAllowOverlappingExtNets</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99794">99794</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2655,10 +3425,10 @@
 			
 	</div>
 <a name="methodsetChargebackEventsKeepDays" id="setChargebackEventsKeepDays"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setChargebackEventsKeepDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90584">90584</a></span>)
+		<span class="method-title">setChargebackEventsKeepDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99800">99800</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2683,10 +3453,10 @@
 			
 	</div>
 <a name="methodsetChargebackTablesCleanupJobTimeInSeconds" id="setChargebackTablesCleanupJobTimeInSeconds"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setChargebackTablesCleanupJobTimeInSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90590">90590</a></span>)
+		<span class="method-title">setChargebackTablesCleanupJobTimeInSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99806">99806</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2711,10 +3481,10 @@
 			
 	</div>
 <a name="methodsetConsoleProxyExternalAddress" id="setConsoleProxyExternalAddress"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setConsoleProxyExternalAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90596">90596</a></span>)
+		<span class="method-title">setConsoleProxyExternalAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99812">99812</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2739,10 +3509,10 @@
 			
 	</div>
 <a name="methodsetElasticAllocationPool" id="setElasticAllocationPool"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setElasticAllocationPool</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90734">90734</a></span>)
+		<span class="method-title">setElasticAllocationPool</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99974">99974</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2767,10 +3537,10 @@
 			
 	</div>
 <a name="methodsetHostCheckDelayInSeconds" id="setHostCheckDelayInSeconds"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setHostCheckDelayInSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90602">90602</a></span>)
+		<span class="method-title">setHostCheckDelayInSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99818">99818</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2795,10 +3565,10 @@
 			
 	</div>
 <a name="methodsetHostCheckTimeoutSeconds" id="setHostCheckTimeoutSeconds"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setHostCheckTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90608">90608</a></span>)
+		<span class="method-title">setHostCheckTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99824">99824</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2823,10 +3593,10 @@
 			
 	</div>
 <a name="methodsetInstallationId" id="setInstallationId"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setInstallationId</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90614">90614</a></span>)
+		<span class="method-title">setInstallationId</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99830">99830</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2851,10 +3621,10 @@
 			
 	</div>
 <a name="methodsetIpReservationTimeoutSeconds" id="setIpReservationTimeoutSeconds"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setIpReservationTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90620">90620</a></span>)
+		<span class="method-title">setIpReservationTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99836">99836</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2879,10 +3649,10 @@
 			
 	</div>
 <a name="methodsetLoginNameOnly" id="setLoginNameOnly"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setLoginNameOnly</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90632">90632</a></span>)
+		<span class="method-title">setLoginNameOnly</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99848">99848</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2906,11 +3676,39 @@
 		
 			
 	</div>
+<a name="methodsetMaxVdcQuota" id="setMaxVdcQuota"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setMaxVdcQuota</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a100010">100010</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setMaxVdcQuota
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$MaxVdcQuota</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$MaxVdcQuota</span>			</li>
+				</ul>
+		
+			
+	</div>
 <a name="methodsetPrePopDefaultName" id="setPrePopDefaultName"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setPrePopDefaultName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90638">90638</a></span>)
+		<span class="method-title">setPrePopDefaultName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99854">99854</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2938,7 +3736,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setQuarantineEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90644">90644</a></span>)
+		<span class="method-title">setQuarantineEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99860">99860</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2966,7 +3764,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setQuarantineResponseTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90650">90650</a></span>)
+		<span class="method-title">setQuarantineResponseTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99866">99866</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2990,11 +3788,39 @@
 		
 			
 	</div>
-<a name="methodsetRestApiBaseUri" id="setRestApiBaseUri"><!-- --></a>
+<a name="methodsetRestApiBaseHttpUri" id="setRestApiBaseHttpUri"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setRestApiBaseUri</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90656">90656</a></span>)
+		<span class="method-title">setRestApiBaseHttpUri</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99872">99872</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setRestApiBaseHttpUri
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$RestApiBaseHttpUri</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$RestApiBaseHttpUri</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetRestApiBaseUri" id="setRestApiBaseUri"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setRestApiBaseUri</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99878">99878</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3018,11 +3844,39 @@
 		
 			
 	</div>
+<a name="methodsetRestApiBaseUriPublicCertChain" id="setRestApiBaseUriPublicCertChain"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setRestApiBaseUriPublicCertChain</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99884">99884</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setRestApiBaseUriPublicCertChain
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$RestApiBaseUriPublicCertChain</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$RestApiBaseUriPublicCertChain</span>			</li>
+				</ul>
+		
+			
+	</div>
 <a name="methodsetSessionTimeoutMinutes" id="setSessionTimeoutMinutes"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setSessionTimeoutMinutes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90662">90662</a></span>)
+		<span class="method-title">setSessionTimeoutMinutes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99890">99890</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3050,7 +3904,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setShowStackTraces</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90668">90668</a></span>)
+		<span class="method-title">setShowStackTraces</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99896">99896</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3078,7 +3932,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setSyncIntervalInHours</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90680">90680</a></span>)
+		<span class="method-title">setSyncIntervalInHours</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99908">99908</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3106,7 +3960,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setSyncStartDate</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90674">90674</a></span>)
+		<span class="method-title">setSyncStartDate</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99902">99902</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3134,7 +3988,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setSyslogServerSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90626">90626</a></span>)
+		<span class="method-title">setSyslogServerSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99842">99842</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3162,7 +4016,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setSystemExternalAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90686">90686</a></span>)
+		<span class="method-title">setSystemExternalAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99920">99920</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3186,11 +4040,67 @@
 		
 			
 	</div>
+<a name="methodsetSystemExternalAddressPublicCertChain" id="setSystemExternalAddressPublicCertChain"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setSystemExternalAddressPublicCertChain</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99926">99926</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setSystemExternalAddressPublicCertChain
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$SystemExternalAddressPublicCertChain</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$SystemExternalAddressPublicCertChain</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetSystemExternalHttpAddress" id="setSystemExternalHttpAddress"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setSystemExternalHttpAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99914">99914</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setSystemExternalHttpAddress
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$SystemExternalHttpAddress</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$SystemExternalHttpAddress</span>			</li>
+				</ul>
+		
+			
+	</div>
 <a name="methodsetTransferSessionTimeoutSeconds" id="setTransferSessionTimeoutSeconds"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setTransferSessionTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90692">90692</a></span>)
+		<span class="method-title">setTransferSessionTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99932">99932</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3218,7 +4128,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVcTruststoreContents</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90710">90710</a></span>)
+		<span class="method-title">setVcTruststoreContents</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99950">99950</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3246,7 +4156,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVcTruststorePassword</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90704">90704</a></span>)
+		<span class="method-title">setVcTruststorePassword</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99944">99944</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3274,7 +4184,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVcTruststoreType</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90716">90716</a></span>)
+		<span class="method-title">setVcTruststoreType</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99956">99956</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3302,7 +4212,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVerifyVcCertificates</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90698">90698</a></span>)
+		<span class="method-title">setVerifyVcCertificates</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99938">99938</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3330,7 +4240,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVerifyVsmCertificates</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90728">90728</a></span>)
+		<span class="method-title">setVerifyVsmCertificates</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99968">99968</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3358,7 +4268,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVmrcVersion</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90722">90722</a></span>)
+		<span class="method-title">setVmrcVersion</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a99962">99962</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3386,7 +4296,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90738">90738</a></span>)
+		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a100014">100014</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3463,7 +4373,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Mon, 26 Aug 2013 10:58:48 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Sat, 30 May 2015 00:41:00 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>

@@ -25,11 +25,11 @@
 <p class="short-description">Gateway Configuration.</p>
 	<ul class="tags">
 				<li><span class="field">author:</span> Ecosystem Engineering</li>
-				<li><span class="field">version:</span> 5.5.0</li>
+				<li><span class="field">version:</span> 8.0.0</li>
 				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2013.  All Rights Reserved.</li>
 			</ul>
 		<p class="notes">
-			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33206">33206</a></span>)
+			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33862">33862</a></span>)
 		</p>
 		
 				
@@ -54,11 +54,15 @@
 								</div>
 		<div class="info-box-body">
 			<div class="var-summary">
-																				<div class="var-title">
+																												<div class="var-title">
 					static <span class="var-type">mixed</span>
 					<a href="#$defaultNS" title="details" class="var-name">$defaultNS</a>
 				</div>
-																																																																																				<div class="var-title">
+																																																																																												<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$AdvancedNetworkingEnabled" title="details" class="var-name">$AdvancedNetworkingEnabled</a>
+				</div>
+																<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$BackwardCompatibilityMode" title="details" class="var-name">$BackwardCompatibilityMode</a>
 				</div>
@@ -88,6 +92,10 @@
 				</div>
 																<div class="var-title">
 					<span class="var-type">mixed</span>
+					<a href="#$SyslogServerSettings" title="details" class="var-name">$SyslogServerSettings</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
 					<a href="#$tagName" title="details" class="var-name">$tagName</a>
 				</div>
 																<div class="var-title">
@@ -110,11 +118,11 @@
 		</div>
 		<div class="info-box-body">			
 			<div class="method-summary">
-																																																																																																																																																																																														
+																																																																																																																																																																																																																														
 				<div class="method-definition">
 											<span class="method-result">VMware_VCloud_API_GatewayConfigurationType</span>
 										<a href="#__construct" title="details" class="method-name">__construct</a>
-											([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$BackwardCompatibilityMode</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$GatewayBackingConfig</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayInterfacesType.html">VMware_VCloud_API_GatewayInterfacesType</a></span>&nbsp;<span class="var-name">$GatewayInterfaces</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayFeaturesType.html">VMware_VCloud_API_GatewayFeaturesType</a></span>&nbsp;<span class="var-name">$EdgeGatewayServiceConfiguration</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$HaEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$UseDefaultRouteForDnsRelay</span> = <span class="var-default">null</span>])
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$BackwardCompatibilityMode</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$GatewayBackingConfig</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayInterfacesType.html">VMware_VCloud_API_GatewayInterfacesType</a></span>&nbsp;<span class="var-name">$GatewayInterfaces</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayFeaturesType.html">VMware_VCloud_API_GatewayFeaturesType</a></span>&nbsp;<span class="var-name">$EdgeGatewayServiceConfiguration</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$HaEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$UseDefaultRouteForDnsRelay</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_SyslogServerType.html">VMware_VCloud_API_SyslogServerType</a></span>&nbsp;<span class="var-name">$SyslogServerSettings</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AdvancedNetworkingEnabled</span> = <span class="var-default">null</span>])
 									</div>
 														
 				<div class="method-definition">
@@ -155,6 +163,12 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
+										<a href="#getAdvancedNetworkingEnabled" title="details" class="method-name">getAdvancedNetworkingEnabled</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
 										<a href="#getBackwardCompatibilityMode" title="details" class="method-name">getBackwardCompatibilityMode</a>
 										()
 									</div>
@@ -185,6 +199,12 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
+										<a href="#getSyslogServerSettings" title="details" class="method-name">getSyslogServerSettings</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
 										<a href="#getUseDefaultRouteForDnsRelay" title="details" class="method-name">getUseDefaultRouteForDnsRelay</a>
 										()
 									</div>
@@ -199,6 +219,12 @@
 											<span class="method-result">void</span>
 										<a href="#hasContent" title="details" class="method-name">hasContent</a>
 										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setAdvancedNetworkingEnabled" title="details" class="method-name">setAdvancedNetworkingEnabled</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$AdvancedNetworkingEnabled</span>)
 									</div>
 														
 				<div class="method-definition">
@@ -229,6 +255,12 @@
 											<span class="method-result">void</span>
 										<a href="#setHaEnabled" title="details" class="method-name">setHaEnabled</a>
 											(<span class="var-type"></span>&nbsp;<span class="var-name">$HaEnabled</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setSyslogServerSettings" title="details" class="method-name">setSyslogServerSettings</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$SyslogServerSettings</span>)
 									</div>
 														
 				<div class="method-definition">
@@ -266,7 +298,7 @@
 		<span class="var-title">
 			static <span class="var-type">mixed</span>
 			<span class="var-name">$defaultNS</span>
-			 = <span class="var-default"> 'http://www.vmware.com/vcloud/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33216">33216</a></span>)
+			 = <span class="var-default"> 'http://www.vmware.com/vcloud/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33874">33874</a></span>)
 		</span>
 	</div>
 
@@ -286,14 +318,35 @@
 
 </div>
 
-<a name="var$BackwardCompatibilityMode" id="$BackwardCompatibilityMode"><!-- --></A>
+<a name="var$AdvancedNetworkingEnabled" id="$AdvancedNetworkingEnabled"><!-- --></A>
 <div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
+			<span class="var-name">$AdvancedNetworkingEnabled</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33870">33870</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$BackwardCompatibilityMode" id="$BackwardCompatibilityMode"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
 			<span class="var-name">$BackwardCompatibilityMode</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33207">33207</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33863">33863</a></span>)
 		</span>
 	</div>
 
@@ -308,13 +361,13 @@
 
 </div>
 <a name="var$EdgeGatewayServiceConfiguration" id="$EdgeGatewayServiceConfiguration"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$EdgeGatewayServiceConfiguration</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33210">33210</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33866">33866</a></span>)
 		</span>
 	</div>
 
@@ -329,13 +382,13 @@
 
 </div>
 <a name="var$GatewayBackingConfig" id="$GatewayBackingConfig"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$GatewayBackingConfig</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33208">33208</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33864">33864</a></span>)
 		</span>
 	</div>
 
@@ -350,13 +403,13 @@
 
 </div>
 <a name="var$GatewayInterfaces" id="$GatewayInterfaces"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$GatewayInterfaces</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33209">33209</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33865">33865</a></span>)
 		</span>
 	</div>
 
@@ -371,13 +424,13 @@
 
 </div>
 <a name="var$HaEnabled" id="$HaEnabled"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$HaEnabled</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33211">33211</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33867">33867</a></span>)
 		</span>
 	</div>
 
@@ -392,13 +445,13 @@
 
 </div>
 <a name="var$namespace" id="$namespace"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespace</span>
-			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33213">33213</a></span>)
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33871">33871</a></span>)
 		</span>
 	</div>
 
@@ -418,13 +471,13 @@
 
 </div>
 <a name="var$namespacedef" id="$namespacedef"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespacedef</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33214">33214</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33872">33872</a></span>)
 		</span>
 	</div>
 
@@ -443,6 +496,27 @@
 		
 
 </div>
+<a name="var$SyslogServerSettings" id="$SyslogServerSettings"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$SyslogServerSettings</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33869">33869</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
 <a name="var$tagName" id="$tagName"><!-- --></A>
 <div class="evenrow">
 
@@ -450,7 +524,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$tagName</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33215">33215</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33873">33873</a></span>)
 		</span>
 	</div>
 
@@ -476,7 +550,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$UseDefaultRouteForDnsRelay</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33212">33212</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33868">33868</a></span>)
 		</span>
 	</div>
 
@@ -517,7 +591,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33227">33227</a></span>)
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33887">33887</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -530,7 +604,7 @@
 		<span class="method-name">
 			__construct
 		</span>
-					([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$BackwardCompatibilityMode</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$GatewayBackingConfig</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayInterfacesType.html">VMware_VCloud_API_GatewayInterfacesType</a></span>&nbsp;<span class="var-name">$GatewayInterfaces</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayFeaturesType.html">VMware_VCloud_API_GatewayFeaturesType</a></span>&nbsp;<span class="var-name">$EdgeGatewayServiceConfiguration</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$HaEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$UseDefaultRouteForDnsRelay</span> = <span class="var-default">null</span>])
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$BackwardCompatibilityMode</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$GatewayBackingConfig</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayInterfacesType.html">VMware_VCloud_API_GatewayInterfacesType</a></span>&nbsp;<span class="var-name">$GatewayInterfaces</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayFeaturesType.html">VMware_VCloud_API_GatewayFeaturesType</a></span>&nbsp;<span class="var-name">$EdgeGatewayServiceConfiguration</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$HaEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$UseDefaultRouteForDnsRelay</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_SyslogServerType.html">VMware_VCloud_API_SyslogServerType</a></span>&nbsp;<span class="var-name">$SyslogServerSettings</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AdvancedNetworkingEnabled</span> = <span class="var-default">null</span>])
 			</div>
 	
 			<ul class="parameters">
@@ -555,6 +629,12 @@
 					<li>
 				<span class="var-type">boolean</span>
 				<span class="var-name">$UseDefaultRouteForDnsRelay</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_SyslogServerType.html">VMware_VCloud_API_SyslogServerType</a></span>
+				<span class="var-name">$SyslogServerSettings</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$AdvancedNetworkingEnabled</span><span class="var-description">: - [optional]</span>			</li>
 				</ul>
 		
 			<hr class="separator" />
@@ -568,7 +648,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33357">33357</a></span>)
+		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a34041">34041</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -604,7 +684,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33378">33378</a></span>)
+		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a34062">34062</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -640,7 +720,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33386">33386</a></span>)
+		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a34070">34070</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -679,7 +759,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33276">33276</a></span>)
+		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33950">33950</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -727,7 +807,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33306">33306</a></span>)
+		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33980">33980</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -772,7 +852,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33311">33311</a></span>)
+		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33985">33985</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -813,11 +893,34 @@
 					</dl>
 			
 	</div>
-<a name="methodgetBackwardCompatibilityMode" id="getBackwardCompatibilityMode"><!-- --></a>
+<a name="methodgetAdvancedNetworkingEnabled" id="getAdvancedNetworkingEnabled"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getBackwardCompatibilityMode</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33238">33238</a></span>)
+		<span class="method-title">getAdvancedNetworkingEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33942">33942</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getAdvancedNetworkingEnabled
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetBackwardCompatibilityMode" id="getBackwardCompatibilityMode"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getBackwardCompatibilityMode</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33900">33900</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -837,10 +940,10 @@
 			
 	</div>
 <a name="methodgetEdgeGatewayServiceConfiguration" id="getEdgeGatewayServiceConfiguration"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getEdgeGatewayServiceConfiguration</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33256">33256</a></span>)
+		<span class="method-title">getEdgeGatewayServiceConfiguration</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33918">33918</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -860,10 +963,10 @@
 			
 	</div>
 <a name="methodgetGatewayBackingConfig" id="getGatewayBackingConfig"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getGatewayBackingConfig</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33244">33244</a></span>)
+		<span class="method-title">getGatewayBackingConfig</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33906">33906</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -883,10 +986,10 @@
 			
 	</div>
 <a name="methodgetGatewayInterfaces" id="getGatewayInterfaces"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getGatewayInterfaces</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33250">33250</a></span>)
+		<span class="method-title">getGatewayInterfaces</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33912">33912</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -906,10 +1009,10 @@
 			
 	</div>
 <a name="methodgetHaEnabled" id="getHaEnabled"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getHaEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33262">33262</a></span>)
+		<span class="method-title">getHaEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33924">33924</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -928,11 +1031,34 @@
 		
 			
 	</div>
+<a name="methodgetSyslogServerSettings" id="getSyslogServerSettings"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSyslogServerSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33936">33936</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getSyslogServerSettings
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
 <a name="methodgetUseDefaultRouteForDnsRelay" id="getUseDefaultRouteForDnsRelay"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getUseDefaultRouteForDnsRelay</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33268">33268</a></span>)
+		<span class="method-title">getUseDefaultRouteForDnsRelay</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33930">33930</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -955,7 +1081,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33274">33274</a></span>)
+		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33948">33948</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -983,7 +1109,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33342">33342</a></span>)
+		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a34024">34024</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1007,11 +1133,39 @@
 					</dl>
 			
 	</div>
-<a name="methodsetBackwardCompatibilityMode" id="setBackwardCompatibilityMode"><!-- --></a>
+<a name="methodsetAdvancedNetworkingEnabled" id="setAdvancedNetworkingEnabled"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setBackwardCompatibilityMode</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33241">33241</a></span>)
+		<span class="method-title">setAdvancedNetworkingEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33945">33945</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setAdvancedNetworkingEnabled
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$AdvancedNetworkingEnabled</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$AdvancedNetworkingEnabled</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetBackwardCompatibilityMode" id="setBackwardCompatibilityMode"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setBackwardCompatibilityMode</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33903">33903</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1036,10 +1190,10 @@
 			
 	</div>
 <a name="methodsetEdgeGatewayServiceConfiguration" id="setEdgeGatewayServiceConfiguration"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setEdgeGatewayServiceConfiguration</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33259">33259</a></span>)
+		<span class="method-title">setEdgeGatewayServiceConfiguration</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33921">33921</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1064,10 +1218,10 @@
 			
 	</div>
 <a name="methodsetGatewayBackingConfig" id="setGatewayBackingConfig"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setGatewayBackingConfig</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33247">33247</a></span>)
+		<span class="method-title">setGatewayBackingConfig</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33909">33909</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1092,10 +1246,10 @@
 			
 	</div>
 <a name="methodsetGatewayInterfaces" id="setGatewayInterfaces"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setGatewayInterfaces</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33253">33253</a></span>)
+		<span class="method-title">setGatewayInterfaces</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33915">33915</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1120,10 +1274,10 @@
 			
 	</div>
 <a name="methodsetHaEnabled" id="setHaEnabled"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setHaEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33265">33265</a></span>)
+		<span class="method-title">setHaEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33927">33927</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1147,11 +1301,39 @@
 		
 			
 	</div>
+<a name="methodsetSyslogServerSettings" id="setSyslogServerSettings"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setSyslogServerSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33939">33939</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setSyslogServerSettings
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$SyslogServerSettings</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$SyslogServerSettings</span>			</li>
+				</ul>
+		
+			
+	</div>
 <a name="methodsetUseDefaultRouteForDnsRelay" id="setUseDefaultRouteForDnsRelay"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setUseDefaultRouteForDnsRelay</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33271">33271</a></span>)
+		<span class="method-title">setUseDefaultRouteForDnsRelay</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33933">33933</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1179,7 +1361,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33275">33275</a></span>)
+		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a33949">33949</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1235,7 +1417,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Mon, 26 Aug 2013 10:58:58 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Sat, 30 May 2015 00:41:09 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>

@@ -24,7 +24,7 @@
 <p class="description"><p>PHP version 5</p><p>Copyright VMware, Inc. 2010-2013.  All Rights Reserved.</p></p>
 	<ul class="tags">
 				<li><span class="field">author:</span> Ecosystem Engineering</li>
-				<li><span class="field">version:</span> 5.5.0</li>
+				<li><span class="field">version:</span> 8.0.0</li>
 				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2013.  All Rights Reserved.</li>
 				<li><span class="field">filesource:</span> <a href="../__filesource/fsource_VMware_VCloud_API__API.php.html">Source Code for this file</a></li>
 			</ul>
@@ -44,6 +44,14 @@
 				<tr>
 					<th class="class-table-header">Class</th>
 					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_TaskPrototypeType.html">VMware_VCloud_API_TaskPrototypeType</a>
+					</td>
+					<td>
+											Describes an asynchronous operation to be performed by vCloud Director extension.
+										</td>
 				</tr>
 								<tr>
 					<td style="padding-right: 2em; vertical-align: top">
@@ -75,6 +83,14 @@
 					</td>
 					<td>
 											The standard error message type used in the vCloud REST API.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_TenantErrorType.html">VMware_VCloud_API_TenantErrorType</a>
+					</td>
+					<td>
+											The tenant view of the error, when the containing error is an  administrator view of the error.
 										</td>
 				</tr>
 								<tr>
@@ -194,7 +210,7 @@
 						<a href="../VMware_VCloud_API/VMware_VCloud_API_MetadataDomainTagType.html">VMware_VCloud_API_MetadataDomainTagType</a>
 					</td>
 					<td>
-											One of: &lt; br &gt;  GENERAL &lt; br &gt;  SYSTEM
+											A value of SYSTEM places this MetadataEntry in the SYSTEM  domain. Omit or leave empty to place this MetadataEntry in the  GENERAL domain.
 										</td>
 				</tr>
 								<tr>
@@ -815,6 +831,22 @@
 				</tr>
 								<tr>
 					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_TenantSyslogServerSettingsType.html">VMware_VCloud_API_TenantSyslogServerSettingsType</a>
+					</td>
+					<td>
+											Tenant syslog server settings.  If logging is configured for firewall rules, the logs will be directed to these syslog servers  along with the provider syslog servers.  Only one tenant syslog server ip can be configured.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayBackingRefType.html">VMware_VCloud_API_GatewayBackingRefType</a>
+					</td>
+					<td>
+											Provides information to access edge gateway via VC
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
 						<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayConfigurationType.html">VMware_VCloud_API_GatewayConfigurationType</a>
 					</td>
 					<td>
@@ -839,6 +871,14 @@
 				</tr>
 								<tr>
 					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_SyslogServerType.html">VMware_VCloud_API_SyslogServerType</a>
+					</td>
+					<td>
+											Allows a user to configure syslog server settings for the gateway
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
 						<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayFeaturesType.html">VMware_VCloud_API_GatewayFeaturesType</a>
 					</td>
 					<td>
@@ -859,6 +899,14 @@
 					</td>
 					<td>
 											Container for references to storage profiles associated with a vDC.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_VdcStorageProfileIopsSettingsType.html">VMware_VCloud_API_VdcStorageProfileIopsSettingsType</a>
+					</td>
+					<td>
+											Grouping of IOPs related settings associated with a particular VdcStorageProfile, i.e. a particular  Vdc + StorageProfile pairing.
 										</td>
 				</tr>
 								<tr>
@@ -1047,6 +1095,14 @@
 				</tr>
 								<tr>
 					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_VmGeneralParamsType.html">VMware_VCloud_API_VmGeneralParamsType</a>
+					</td>
+					<td>
+											A set of overrides to source VM properties to apply to target VM during copying.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
 						<a href="../VMware_VCloud_API/VMware_VCloud_API_ComposeVAppParamsType.html">VMware_VCloud_API_ComposeVAppParamsType</a>
 					</td>
 					<td>
@@ -1114,7 +1170,7 @@
 						<a href="../VMware_VCloud_API/VMware_VCloud_API_LocalityParamsType.html">VMware_VCloud_API_LocalityParamsType</a>
 					</td>
 					<td>
-											Represents locality parameters. Locality parameters provide a  hint that may help the placement engine optimize placement of  a Vm and an independent a Disk so that the Vm can make  efficient use of the disk.
+											Locality parameters provide a hint that may help optimize  placement of a VM with respect to another VM or an independent  disk.  See &lt; a href=&quot;http://kb.vmware.com/kb/2105352&quot; &gt; KB 2105352 &lt; /a &gt; .
 										</td>
 				</tr>
 								<tr>
@@ -1122,7 +1178,7 @@
 						<a href="../VMware_VCloud_API/VMware_VCloud_API_SourcedVmInstantiationParamsType.html">VMware_VCloud_API_SourcedVmInstantiationParamsType</a>
 					</td>
 					<td>
-											Represents instantiation parameters.
+											Represents instantiation parameters. Deprecated in favor of  SourcedCompositionItemParamType
 										</td>
 				</tr>
 								<tr>
@@ -1274,7 +1330,7 @@
 						<a href="../VMware_VCloud_API/VMware_VCloud_API_ComplianceResultType.html">VMware_VCloud_API_ComplianceResultType</a>
 					</td>
 					<td>
-											Represents the results of a compliance check.
+											Represents the results of a  GET /vApp/vm-{id}/complianceResult  request. Empty if such a request has never been made.
 										</td>
 				</tr>
 								<tr>
@@ -1307,6 +1363,86 @@
 					</td>
 					<td>
 											Parameters required by a cloneMedia request.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_TimeType.html">VMware_VCloud_API_TimeType</a>
+					</td>
+					<td>
+											
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_RelativeTimeType.html">VMware_VCloud_API_RelativeTimeType</a>
+					</td>
+					<td>
+											Specifies an earlier time relative to the current time
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_AbsoluteTimeType.html">VMware_VCloud_API_AbsoluteTimeType</a>
+					</td>
+					<td>
+											Specifies an absolute time in UTC
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_SimpleMetricType.html">VMware_VCloud_API_SimpleMetricType</a>
+					</td>
+					<td>
+											A simple scalar metric value
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_SampleType.html">VMware_VCloud_API_SampleType</a>
+					</td>
+					<td>
+											Represents a data point in a metric series
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_TimeSeriesMetricType.html">VMware_VCloud_API_TimeSeriesMetricType</a>
+					</td>
+					<td>
+											A sequence of metric values measured at specified times
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_CurrentUsageSpecType.html">VMware_VCloud_API_CurrentUsageSpecType</a>
+					</td>
+					<td>
+											Specifies which current usage metrics to retrieve
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_CurrentUsageType.html">VMware_VCloud_API_CurrentUsageType</a>
+					</td>
+					<td>
+											A collection of simple metrics representing real time usage statistics
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_HistoricUsageSpecType.html">VMware_VCloud_API_HistoricUsageSpecType</a>
+					</td>
+					<td>
+											Specifies which historic usage metrics to retrieve
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_HistoricUsageType.html">VMware_VCloud_API_HistoricUsageType</a>
+					</td>
+					<td>
+											A collection of time-based metrics representing historic usage statistics
 										</td>
 				</tr>
 								<tr>
@@ -2023,6 +2159,22 @@
 				</tr>
 								<tr>
 					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_QueryResultVchsEdgeGatewayRecordType.html">VMware_VCloud_API_QueryResultVchsEdgeGatewayRecordType</a>
+					</td>
+					<td>
+											Type for a single vchsEdgeGateway query result in records format.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_QueryResultVchsOrgVdcNetworkRecordType.html">VMware_VCloud_API_QueryResultVchsOrgVdcNetworkRecordType</a>
+					</td>
+					<td>
+											Type for a single vchsOrgVdcNetwork query result in records format.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
 						<a href="../VMware_VCloud_API/VMware_VCloud_API_SessionType.html">VMware_VCloud_API_SessionType</a>
 					</td>
 					<td>
@@ -2051,6 +2203,78 @@
 					</td>
 					<td>
 											Represents a file required by an extension API definition.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_HybridOrgType.html">VMware_VCloud_API_HybridOrgType</a>
+					</td>
+					<td>
+											Lists links to hybrid operations and entities in the context of an Org.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_ToCloudTunnelCreateParamsType.html">VMware_VCloud_API_ToCloudTunnelCreateParamsType</a>
+					</td>
+					<td>
+											Parameters for creating to-the-cloud tunnel
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_FromCloudTunnelCreateParamsType.html">VMware_VCloud_API_FromCloudTunnelCreateParamsType</a>
+					</td>
+					<td>
+											Parameters for creating from-the-cloud tunnel
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_FromCloudTunnelListenerCreateParamsType.html">VMware_VCloud_API_FromCloudTunnelListenerCreateParamsType</a>
+					</td>
+					<td>
+											Parameters for creating from-the-cloud tunnel listener
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_FromCloudTunnelListenerListType.html">VMware_VCloud_API_FromCloudTunnelListenerListType</a>
+					</td>
+					<td>
+											A list of the existing from-the-cloud tunnel listeners.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_HybridTicketType.html">VMware_VCloud_API_HybridTicketType</a>
+					</td>
+					<td>
+											Ticket for establishing a connection to Cloud Proxy.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_TunnelingApplicationRegisterParamsType.html">VMware_VCloud_API_TunnelingApplicationRegisterParamsType</a>
+					</td>
+					<td>
+											Parameters for registering cloud part of the tunneling application.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_TunnelingApplicationListType.html">VMware_VCloud_API_TunnelingApplicationListType</a>
+					</td>
+					<td>
+											A list of registered tunneling applications.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_HybridSettingsType.html">VMware_VCloud_API_HybridSettingsType</a>
+					</td>
+					<td>
+											Public URL and certificate of the Cloud Proxy end point.
 										</td>
 				</tr>
 								<tr>
@@ -2287,10 +2511,98 @@
 				</tr>
 								<tr>
 					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_VdcTemplatesType.html">VMware_VCloud_API_VdcTemplatesType</a>
+					</td>
+					<td>
+											Container for VdcTemplateType
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_VdcTemplateType.html">VMware_VCloud_API_VdcTemplateType</a>
+					</td>
+					<td>
+											A reference to a VDC template.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_VdcTemplateListType.html">VMware_VCloud_API_VdcTemplateListType</a>
+					</td>
+					<td>
+											Represents a list of VDC templates.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_VdcTemplateSpecificationType.html">VMware_VCloud_API_VdcTemplateSpecificationType</a>
+					</td>
+					<td>
+											
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_AllocationPoolVdcTemplateSpecificationType.html">VMware_VCloud_API_AllocationPoolVdcTemplateSpecificationType</a>
+					</td>
+					<td>
+											Specification for a VDC template using the AllocationPool allocation model.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_AllocationVappVdcTemplateSpecificationType.html">VMware_VCloud_API_AllocationVappVdcTemplateSpecificationType</a>
+					</td>
+					<td>
+											Specification for a VDC template using the AllocationVApp allocation model.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_ReservationPoolVdcTemplateSpecificationType.html">VMware_VCloud_API_ReservationPoolVdcTemplateSpecificationType</a>
+					</td>
+					<td>
+											Specification for a VDC template using the ReservationPool allocation model.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_VdcTemplateSpecificationGatewayConfigurationType.html">VMware_VCloud_API_VdcTemplateSpecificationGatewayConfigurationType</a>
+					</td>
+					<td>
+											Defines a gateway and NAT Routed organization VDC network to be created.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVdcTemplateParamsType.html">VMware_VCloud_API_InstantiateVdcTemplateParamsType</a>
+					</td>
+					<td>
+											A basic type used to pass arguments to the instantiate VDC template operation,  this provides a name and optional description for a VDC instantiated from a template.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
 						<a href="../VMware_VCloud_API/VMware_VCloud_API_NetworksType.html">VMware_VCloud_API_NetworksType</a>
 					</td>
 					<td>
 											Container for references to ExternalNetwork objects.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgAssociationsType.html">VMware_VCloud_API_OrgAssociationsType</a>
+					</td>
+					<td>
+											Container for OrgAssociationType
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgAssociationType.html">VMware_VCloud_API_OrgAssociationType</a>
+					</td>
+					<td>
+											A reference to another organization
 										</td>
 				</tr>
 								<tr>
@@ -2331,6 +2643,30 @@
 					</td>
 					<td>
 											Represents federation settings for identity federation.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgOAuthSettingsType.html">VMware_VCloud_API_OrgOAuthSettingsType</a>
+					</td>
+					<td>
+											Contains OAuth identity provider settings for an organization.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_OAuthKeyConfigurationsListType.html">VMware_VCloud_API_OAuthKeyConfigurationsListType</a>
+					</td>
+					<td>
+											Contains a list of OAuth Key configurations.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_OAuthKeyConfigurationType.html">VMware_VCloud_API_OAuthKeyConfigurationType</a>
+					</td>
+					<td>
+											OAuth Key Configuration
 										</td>
 				</tr>
 								<tr>
@@ -2442,7 +2778,7 @@
 						<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgOperationLimitsSettingsType.html">VMware_VCloud_API_OrgOperationLimitsSettingsType</a>
 					</td>
 					<td>
-											Represents operation limits settings for an organization.
+											Represents operation limits settings for an organization. An  operation is defined as resource-intensive if it returns a Task  object. The default value for all operation limits settings is  0, which specifies no limit.
 										</td>
 				</tr>
 								<tr>
@@ -2463,10 +2799,34 @@
 				</tr>
 								<tr>
 					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_EventPropertiesType.html">VMware_VCloud_API_EventPropertiesType</a>
+					</td>
+					<td>
+											List of event-specific properties.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_EventProperty.html">VMware_VCloud_API_EventProperty</a>
+					</td>
+					<td>
+											Property name.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
 						<a href="../VMware_VCloud_API/VMware_VCloud_API_EventType.html">VMware_VCloud_API_EventType</a>
 					</td>
 					<td>
 											Parameters for creating an event.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_AuditEventType.html">VMware_VCloud_API_AuditEventType</a>
+					</td>
+					<td>
+											Audit event
 										</td>
 				</tr>
 								<tr>
@@ -2535,6 +2895,62 @@
 				</tr>
 								<tr>
 					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_AmqpConfigurationType.html">VMware_VCloud_API_AmqpConfigurationType</a>
+					</td>
+					<td>
+											Represents a list of AMQP Configuration items
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_AmqpComponentConfigurationsType.html">VMware_VCloud_API_AmqpComponentConfigurationsType</a>
+					</td>
+					<td>
+											Represents an AMQP Component Configuration list
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_AmqpComponentConfigurationType.html">VMware_VCloud_API_AmqpComponentConfigurationType</a>
+					</td>
+					<td>
+											Represents an AMQP Component Configuration.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_AmqpConfigListType.html">VMware_VCloud_API_AmqpConfigListType</a>
+					</td>
+					<td>
+											Represents an AMQP Configuration key value pair list
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_AmqpConfigEntryType.html">VMware_VCloud_API_AmqpConfigEntryType</a>
+					</td>
+					<td>
+											AMQP Component config entry.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_AmqpBrokersType.html">VMware_VCloud_API_AmqpBrokersType</a>
+					</td>
+					<td>
+											Represents a list of AMQP broker configurations.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_AmqpBrokerConfigurationType.html">VMware_VCloud_API_AmqpBrokerConfigurationType</a>
+					</td>
+					<td>
+											Represents configuration for an AMQP broker
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
 						<a href="../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a>
 					</td>
 					<td>
@@ -2591,94 +3007,6 @@
 				</tr>
 								<tr>
 					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API/VMware_VCloud_API_QueryResultLicensingReportRecordType.html">VMware_VCloud_API_QueryResultLicensingReportRecordType</a>
-					</td>
-					<td>
-											Type for a single licensingReport query result in records format.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API/VMware_VCloud_API_QueryResultLicensingReportSampleRecordType.html">VMware_VCloud_API_QueryResultLicensingReportSampleRecordType</a>
-					</td>
-					<td>
-											Type for a single licensingReportSample query result in records format.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API/VMware_VCloud_API_QueryResultLicensingManagedServerRecordType.html">VMware_VCloud_API_QueryResultLicensingManagedServerRecordType</a>
-					</td>
-					<td>
-											Type for a single licensingManagedServer query result in records format.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API/VMware_VCloud_API_QueryResultLicensingVirtualMachineRecordType.html">VMware_VCloud_API_QueryResultLicensingVirtualMachineRecordType</a>
-					</td>
-					<td>
-											Type for a single licensingVirtualMachine query result in records format.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API/VMware_VCloud_API_QueryResultAdminEventCBMRecordType.html">VMware_VCloud_API_QueryResultAdminEventCBMRecordType</a>
-					</td>
-					<td>
-											Type for a single adminEventCBM query result in records format.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API/VMware_VCloud_API_QueryResultServiceOfferingInstanceRecordType.html">VMware_VCloud_API_QueryResultServiceOfferingInstanceRecordType</a>
-					</td>
-					<td>
-											Type for a single serviceOfferingInstance query result in records format.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API/VMware_VCloud_API_QueryResultServiceOfferingRecordType.html">VMware_VCloud_API_QueryResultServiceOfferingRecordType</a>
-					</td>
-					<td>
-											Type for a single serviceOffering query result in records format.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API/VMware_VCloud_API_QueryResultVmServiceOfferingInstanceRecordType.html">VMware_VCloud_API_QueryResultVmServiceOfferingInstanceRecordType</a>
-					</td>
-					<td>
-											Type for a single vmServiceOfferingInstance query result in records format.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API/VMware_VCloud_API_QueryResultVdcServiceOfferingRecordType.html">VMware_VCloud_API_QueryResultVdcServiceOfferingRecordType</a>
-					</td>
-					<td>
-											Type for a single vdcServiceOffering query result in records format.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API/VMware_VCloud_API_QueryResultAdminServiceOfferingInstanceRecordType.html">VMware_VCloud_API_QueryResultAdminServiceOfferingInstanceRecordType</a>
-					</td>
-					<td>
-											Type for a single adminServiceOfferingInstance query result in records format.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API/VMware_VCloud_API_QueryResultServiceExtensionRecordType.html">VMware_VCloud_API_QueryResultServiceExtensionRecordType</a>
-					</td>
-					<td>
-											Type for a single serviceExtension query result in records format.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
 						<a href="../VMware_VCloud_API/VMware_VCloud_API_ExternalNetworkType.html">VMware_VCloud_API_ExternalNetworkType</a>
 					</td>
 					<td>
@@ -2715,6 +3043,38 @@
 					</td>
 					<td>
 											Represents the user view of an organization vDC.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_TunnelingApplicationType.html">VMware_VCloud_API_TunnelingApplicationType</a>
+					</td>
+					<td>
+											Describes cloud part of a tunneling application registered with VCD.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_FromCloudTunnelListenerType.html">VMware_VCloud_API_FromCloudTunnelListenerType</a>
+					</td>
+					<td>
+											Properties of a from-the-cloud tunnel listener. A from-the-cloud listener associates  a port with a particular (traffic type, endpoint tag) tuple. Ports are unique and  (traffic type, endpoint tag) tuples are unique.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_FromCloudTunnelType.html">VMware_VCloud_API_FromCloudTunnelType</a>
+					</td>
+					<td>
+											Describes from-the-cloud tunnel
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_ToCloudTunnelType.html">VMware_VCloud_API_ToCloudTunnelType</a>
+					</td>
+					<td>
+											Describes to-the-cloud tunnel
 										</td>
 				</tr>
 								<tr>
@@ -2787,6 +3147,22 @@
 					</td>
 					<td>
 											Represents the admin view of an organization vDC.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_AdminFromCloudTunnelType.html">VMware_VCloud_API_AdminFromCloudTunnelType</a>
+					</td>
+					<td>
+											Describes the administrator view of a from-the-cloud tunnel
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API/VMware_VCloud_API_AdminToCloudTunnelType.html">VMware_VCloud_API_AdminToCloudTunnelType</a>
+					</td>
+					<td>
+											Describes the administrator view of a to-the-cloud tunnel
 										</td>
 				</tr>
 								<tr>
@@ -3450,7 +3826,7 @@
 						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_NotificationType.html">VMware_VCloud_API_Extension_NotificationType</a>
 					</td>
 					<td>
-											
+											vCloud Director AMQP notification in XML format. This  notification format has been deprecated in favor of a JSON  format. It might be removed in a future release.
 										</td>
 				</tr>
 								<tr>
@@ -3671,166 +4047,6 @@
 				</tr>
 								<tr>
 					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html">VMware_VCloud_API_Extension_UberAdminSettingsType</a>
-					</td>
-					<td>
-											Internal use only.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SerialPortConfigType.html">VMware_VCloud_API_Extension_SerialPortConfigType</a>
-					</td>
-					<td>
-											Internal use only.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html">VMware_VCloud_API_Extension_SystemConfigurationSettingsType</a>
-					</td>
-					<td>
-											Represents enumeration of system configuration settings.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html">VMware_VCloud_API_Extension_SystemConfigurationSettingType</a>
-					</td>
-					<td>
-											Represents a single system configuration setting.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingValueType.html">VMware_VCloud_API_Extension_SystemConfigurationSettingValueType</a>
-					</td>
-					<td>
-											A value to be applied to a system configuration setting.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html">VMware_VCloud_API_Extension_ComponentManagerSettingsType</a>
-					</td>
-					<td>
-											Represents parameters to register vCloud Director  with Component Manager.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CbmDataType.html">VMware_VCloud_API_Extension_CbmDataType</a>
-					</td>
-					<td>
-											Internal use only.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html">VMware_VCloud_API_Extension_ExtensionObjectRefType</a>
-					</td>
-					<td>
-											Represents the id and the type of an extension object and its associated extension reference.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType.html">VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType</a>
-					</td>
-					<td>
-											Meta info of a service offering parameter.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType.html">VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType</a>
-					</td>
-					<td>
-											Parameter meta info list of a service offering.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html">VMware_VCloud_API_Extension_ServiceOfferingType</a>
-					</td>
-					<td>
-											Represents an extension service offering.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType.html">VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType</a>
-					</td>
-					<td>
-											Parameters to associate a service offering to a vCloud entity.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType.html">VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType</a>
-					</td>
-					<td>
-											Parameters to disassociate a service offering to a vCloud entity.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType.html">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType</a>
-					</td>
-					<td>
-											Parameter info of a service offering instance.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType.html">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType</a>
-					</td>
-					<td>
-											Parameter list for a service offering instance.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html">VMware_VCloud_API_Extension_ServiceOfferingInstanceType</a>
-					</td>
-					<td>
-											Represents an extension service offering instance.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType.html">VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType</a>
-					</td>
-					<td>
-											Parameters for creating an extension service offering instance.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType</a>
-					</td>
-					<td>
-											Parameters for updating an extension service offering instance.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType.html">VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType</a>
-					</td>
-					<td>
-											Parameters to associate a service offering instance to a vCloud entity.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType.html">VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType</a>
-					</td>
-					<td>
-											Parameters to disassociate a service offering instance to a vCloud entity.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
 						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html">VMware_VCloud_API_Extension_VMWExtensionType</a>
 					</td>
 					<td>
@@ -3899,6 +4115,14 @@
 					</td>
 					<td>
 											A list of references to virtual machines in vCenter inventory.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportedDiskType.html">VMware_VCloud_API_Extension_ImportedDiskType</a>
+					</td>
+					<td>
+											Represents a virtual disk of the VM.
 										</td>
 				</tr>
 								<tr>
@@ -4295,6 +4519,86 @@
 				</tr>
 								<tr>
 					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType.html">VMware_VCloud_API_Extension_VMWVdcTemplateSpecificationType</a>
+					</td>
+					<td>
+											
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AutomaticNetworkPoolReferenceType.html">VMware_VCloud_API_Extension_AutomaticNetworkPoolReferenceType</a>
+					</td>
+					<td>
+											
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWAllocationPoolVdcTemplateSpecificationType.html">VMware_VCloud_API_Extension_VMWAllocationPoolVdcTemplateSpecificationType</a>
+					</td>
+					<td>
+											Specification for a VDC template using the AllocationPool allocation model.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWAllocationVappVdcTemplateSpecificationType.html">VMware_VCloud_API_Extension_VMWAllocationVappVdcTemplateSpecificationType</a>
+					</td>
+					<td>
+											Specification for a VDC template using the AllocationVApp allocation model.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWReservationPoolVdcTemplateSpecificationType.html">VMware_VCloud_API_Extension_VMWReservationPoolVdcTemplateSpecificationType</a>
+					</td>
+					<td>
+											Specification for a VDC template using the ReservationPool allocation model.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateType.html">VMware_VCloud_API_Extension_VMWVdcTemplateType</a>
+					</td>
+					<td>
+											A reference to a VDC template.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateProviderVdcSpecificationType.html">VMware_VCloud_API_Extension_VMWVdcTemplateProviderVdcSpecificationType</a>
+					</td>
+					<td>
+											A reference to a Provider VDC.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateBindingType.html">VMware_VCloud_API_Extension_VMWVdcTemplateBindingType</a>
+					</td>
+					<td>
+											A Binding pairs a Name element that contains a user-specified identifier  in URN format with a Value element that contains a reference to an object.  The Name can then be used anywhere in the request where a reference to that  type of object is allowed. For example, when specifying multiple Provider  VDCs in a VMWVdcTemplate, create a Binding where the Value is a reference  to an external network in a candidate Provider VDC, then use the Name from  that binding in place of the href attribute required by the Network element  in the GatewayConfiguration of the VdcTemplateSpecification. When the  template is instantiated, the Name is replaced by the network reference  in the Value part of the Binding associated with the Provider VDC that  the system selects during instantiation.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplatesType.html">VMware_VCloud_API_Extension_VMWVdcTemplatesType</a>
+					</td>
+					<td>
+											Container for VMWVdcTemplateType
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
+						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWVdcTemplateListType.html">VMware_VCloud_API_Extension_VMWVdcTemplateListType</a>
+					</td>
+					<td>
+											Represents a list of VDC templates.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top">
 						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionServicesType.html">VMware_VCloud_API_Extension_ExtensionServicesType</a>
 					</td>
 					<td>
@@ -4338,7 +4642,7 @@
 						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionsType.html">VMware_VCloud_API_Extension_AdminApiDefinitionsType</a>
 					</td>
 					<td>
-											Represents a list of extension service API definitions.
+											Represen ts a list of extension service API definitions.
 										</td>
 				</tr>
 								<tr>
@@ -4487,18 +4791,18 @@
 				</tr>
 								<tr>
 					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VmObjectRefType.html">VMware_VCloud_API_Extension_VmObjectRefType</a>
+						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_DiskDatastoreType.html">VMware_VCloud_API_Extension_DiskDatastoreType</a>
 					</td>
 					<td>
-											A reference to a virtual machine in vCenter inventory.
+											A pair of VM disk's instance ID and the datastore where the disk is located.
 										</td>
 				</tr>
 								<tr>
 					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html">VMware_VCloud_API_Extension_AdminServiceExtensionType</a>
+						<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VmObjectRefType.html">VMware_VCloud_API_Extension_VmObjectRefType</a>
 					</td>
 					<td>
-											Represents a service extension (Data Director or Cloud Foundry).
+											A reference to a virtual machine in vCenter inventory.
 										</td>
 				</tr>
 								<tr>
@@ -4566,7 +4870,7 @@
 	
 	
 	<p class="notes" id="credit">
-		Documentation generated on Mon, 26 Aug 2013 10:51:49 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Sat, 30 May 2015 00:35:58 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>

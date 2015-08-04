@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2013. All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2014. All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,7 +16,7 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.5.0
+ * @SDK version 5.7.0
  */
 
 require_once dirname(__FILE__) . '/config.php';
@@ -264,7 +264,7 @@ if ($flag==true)
     catch (Exception $e)
     {
         $errMessage = VMware_VCloud_SDK_Helper::getObjByXml($e->getMessage());
-        echo $errMessage->get_majorErrorCode() . ' : ' . $errMessage->get_message() ."\n";
+        echo " " . $errMessage->get_majorErrorCode() . ' : ' . $errMessage->get_message() ."\n";
     }
     try {
         echo "\n VcloudClient 2\n";
@@ -273,7 +273,7 @@ if ($flag==true)
     catch (Exception $e)
     {
         $errMessage = VMware_VCloud_SDK_Helper::getObjByXml($e->getMessage());
-        echo $errMessage->get_majorErrorCode() . ' : ' . $errMessage->get_message() ."\n";
+        echo " " . $errMessage->get_majorErrorCode() . ' : ' . $errMessage->get_message() ."\n";
     }
 }
 else
@@ -295,14 +295,14 @@ function usage()
     echo "     -u|--user <username>             [req] User name in the form user@organization\n";
     echo "                                            for the vCloud Director.\n";
     echo "     -p|--pswd <password>             [req] Password for user.\n";
-    echo "     -v|--sdkver <sdkversion>         [req] SDK Version e.g. 1.5, 5.1 and 5.5.\n";
+    echo "     -v|--sdkver <sdkversion>         [req] SDK Version e.g. 1.5, 5.1, 5.5, 5.6 and 5.7.\n";
     echo "\n";
     echo "     -c|--certpath <certificatepath>  [opt] Local certificate's full path.\n";
 
     echo "\n";
     echo "  [Examples]\n";
-    echo "     # php sessionmanagement.php -s 127.0.0.1 -u admin@Org -p password -v 5.5\n";
-    echo "     # php sessionmanagement.php -s 127.0.0.1 -u admin@Org -p password -v 5.5 c= certificatepath\n";
+    echo "     # php sessionmanagement.php -s 127.0.0.1 -u admin@Org -p password -v 5.7\n";
+    echo "     # php sessionmanagement.php -s 127.0.0.1 -u admin@Org -p password -v 5.7 c= certificatepath\n";
     echo "     # php sessionmanagement.php // using config.php to set login credentials\n\n";
 }
 ?>

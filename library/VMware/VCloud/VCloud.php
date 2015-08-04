@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2013. All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2014. All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,7 +16,7 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.5.0
+ * @SDK version 5.7.0
  */
 
 /**
@@ -220,6 +220,57 @@ class VMware_VCloud_SDK_Org extends VMware_VCloud_SDK_Abstract
     {
         return $this->svc->get($this->getMetadataUrl($key, $domain));
     }
+
+    /**
+     * Instantiate a vdc template based on the ParamsType. Only the name and description can be overridden.
+     *
+     * @param VMware_VCloud_API_InstantiateVdcTemplateParamsType $params
+     * @return VMware_VCloud_API_TaskType
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function instantiateVdcTemplate($params)
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::ACTION_INSTANTIATE_URL;
+        $type = VMware_VCloud_SDK_Constants::INSTANTIATE_VDC_TEMPLATE_PARAMS_CONTENT_TYPE;
+        return $this->svc->post($url, 202, $type, $params);
+    }
+
+    /**
+     * EnabledForReplicationVdcs.
+     *
+     * @since Version 8.0.0
+     */
+    public function enabledForReplicationVdcs()
+    {
+        $url = $this->url . '/enabledForReplicationVdcs';
+        return $this->svc->get($url, 200);
+    }
+
+    /**
+     * GetReplicationRefs
+     *
+     * @since Version 8.0.0
+     */
+    public function getReplicationRefs($name=null)
+    {
+        $url  = $this->url . '/replications';
+        $refs = $this->svc->get($url, 200)->getReference();
+        $objs = $this->getObjsByContainedRefs($refs);
+        return VMware_VCloud_SDK_Helper::getObjsByName($objs, $name);
+    }
+
+    /**
+     * GetReplications
+     *
+     * @since Version 8.0.0
+     */
+    public function getReplications($name=null)
+    {
+        $refs = $this->getReplicationRefs($name);
+        return $this->getObjsByContainedRefs($refs);
+    }
+
 }
 // end of class VMware_VCloud_SDK_Org
 
@@ -262,6 +313,21 @@ class VMware_VCloud_SDK_Vdc extends VMware_VCloud_SDK_Abstract
     public function getId()
     {
         return 'urn:vcloud:vdc:' . $this->getUuid();
+    }
+
+    /**
+     * Modify the name and/or description of an organization vDC.
+     * This operation is asynchronous and returns a task that you can monitor to track the progress of the request.
+     *
+     * @param VMware_VCloud_API_VdcType $params
+     * @return VMware_VCloud_API_TaskType
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function updateVdc($params)
+    {
+        $type = VMware_VCloud_SDK_Constants::VDC_CONTENT_TYPE;
+        return $this->svc->put($this->url, 202, $type, $params);
     }
 
     /**
@@ -971,8 +1037,91 @@ $vdcStorageProfileRef, $catalogRef)
         $type = VMware_VCloud_SDK_Constants::INSTANTIATE_OVF_PARAMS_CONTENT_TYPE;
         return $this->svc->post($url, 201, $type, $params);
     }
+
+    /**
+     * Delete an organization vDC.
+     * You must disable the virtual datacenter before delete it.
+     *
+     * @return VMware_VCloud_API_TaskType
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function delete()
+    {
+        $task = $this->svc->delete($this->url, 202);
+        $this->destroy();
+        return $task;
+    }
+
+    /**
+     * EnableReplication.
+     *
+     * @since Version 8.0.0
+     */
+    public function enableReplication()
+    {
+        $url = $this->url . '/action/enableReplication';
+        return $this->svc->post($url, 200);
+    }
+
+    /**
+     * DisableReplication.
+     *
+     * @since Version 8.0.0
+     */
+    public function disableReplication()
+    {
+        $url = $this->url . '/action/disableReplication';
+        return $this->svc->post($url, 200);
+    }
+
 }
 // end of class VMware_VCloud_SDK_Vdc
+
+
+/**
+ * A class provides convenient methods on a VMware vCloud VdcTemplate.
+ *
+ * @package VMware_VCloud_SDK
+ */
+class VMware_VCloud_SDK_VdcTemplate extends VMware_VCloud_SDK_Abstract
+{
+    /**
+     * Returns the vdc template.
+     *
+     * @return VMware_VCloud_API_ReferenceType
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function getVdcTemplateRef()
+    {
+        return $this->getRef(VMware_VCloud_SDK_Constants::VDC_TEMPLATE_CONTENT_TYPE);
+    }
+
+    /**
+     * Get a VMware vCloud vdc template entity.
+     *
+     * @return VMware_VCloud_API_VdcTemplateType
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function getVdcTemplate()
+    {
+        return $this->getDataObj();
+    }
+
+    /**
+     * Constructs vCloud ID of this vDC template from its UUID.
+     *
+     * @return string
+     * @since SDK Version 5.7.0
+     */
+    public function getId()
+    {
+        return 'urn:vcloud:vdctemplate:' . $this->getUuid();
+    }
+}
+// end of class VMware_VCloud_SDK_VdcTemplate
 
 
 /**
@@ -2851,6 +3000,94 @@ snapshots, any existing user created snapshots associated with the virtual machi
         $shadowvmsRefs = $this->svc->get($url);
         return $this->getContainedRefs(null, $name, 'getReference', $shadowvmsRefs);
     }
+
+    /**
+     * Gets the current usage for all available VM metrics.
+     *
+     * @return VMware_VCloud_API_CurrentUsageType
+     * @since API Version 5.6.0
+     * @since SDK Version 5.6.3
+     */
+    public function getCurrentMetrics()
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::CURRENT_METRICS_URL;
+        return $this->svc->get($url);
+    }
+
+    /**
+     * Gets the current usage for VM metrics according to the provided spec object.
+     * The spec object can contain a collection of wildcard-style metric name patterns to fine-tune the list of returned metrics.
+     *
+     * @param VMware_VCloud_API_CurrentUsageSpecType $params
+     * @return VMware_VCloud_API_CurrentUsageType
+     * @since API Version 5.6.0
+     * @since SDK Version 5.6.3
+     */
+    public function currentMetrics($params)
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::CURRENT_METRICS_URL;
+        $type = VMware_VCloud_SDK_Constants::
+                METRICS_CURRENT_USAGE_CONTENT_TYPE;
+        return $this->svc->post($url, 200, $type, $params);
+    }
+
+    /**
+     * Gets the past 24 hours worth of samples for all available VM metrics.
+     *
+     * @return VMware_VCloud_API_HistoricUsageType
+     * @since API Version 5.6.0
+     * @since SDK Version 5.6.3
+     */
+    public function getHistoricMetrics()
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::HISTORIC_METRICS_URL;
+        return $this->svc->get($url);
+    }
+
+    /**
+     * Gets the historic usage for VM metrics according to the provided spec object.
+     * The spec object can contain a collection of wildcard-style metric name patterns to fine-tune the list of returned metrics, as well as a start and end time (either relative or absolute) to refine the set of sample points to a specific date range.
+     *
+     * @param VMware_VCloud_API_HistoricUsageSpecType $params
+     * @return VMware_VCloud_API_HistoricUsageType
+     * @since API Version 5.6.0
+     * @since SDK Version 5.6.3
+     */
+    public function historicMetrics($params)
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::HISTORIC_METRICS_URL;
+        $type = VMware_VCloud_SDK_Constants::
+                METRICS_HISTORIC_USAGE_CONTENT_TYPE;
+        return $this->svc->post($url, 200, $type, $params);
+    }
+
+    /**
+     * Force guest customization on next power on.
+     *
+     * @since API Version 5.6.0
+     * @since SDK Version 5.6.3
+     */
+    public function forceGuestCustomization()
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::ACTION_CUSTOMIZE_AT_NEXT_POWER_ON_URL;
+        $this->svc->post($url, 204);
+    }
+
+    /**
+     * Reloads VM state from VC. Checks VM's extra configuration properties to ensure that
+     * they include all the default properties required for cloud-managed VMs and do not include any blacklisted properties or values.
+     * Reconfigures VM to add default properties and remove blacklisted properties and values if needed.
+     * This API is available to sysadmin users only.
+     *
+     * @return VMware_VCloud_API_TaskType
+     * @since API Version 5.6.3
+     * @since SDK Version 5.6.3
+     */
+    public function reloadFromVC()
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::ACTION_RELOAD_FROM_VC_URL;
+        return $this->svc->post($url, 202);
+    }
 }
 // end of class VMware_VCloud_SDK_Vm
 
@@ -3479,6 +3716,97 @@ class VMware_VCloud_SDK_VAppTemplate extends VMware_VCloud_SDK_Abstract
     {
         $url = $this->getMetadataUrl($key, $domain);
         return $this->svc->delete($url, 202);
+    }
+
+    /**
+     * Retrieve the virtual hardware section of a VM.
+     * This operation retrieves the entire VirtualHardwareSection of a VM. You can also retrieve many RASD item elements of a VirtualHardwareSection
+     * individually, or as groups of related items.
+     *
+     * @return VMware_VCloud_API_OVF_VirtualHardwareSection_Type
+     * @since API Version 5.6.0
+     * @since SDK Version 5.6.3
+     */
+    public function getVirtualHardwareSettings()
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::VIRTUAL_HARDWARE_SECTION_URL;
+        return $this->svc->get($url);
+    }
+
+    /**
+     * Retrieve the RASD item that specifies CPU properties of a VM.
+     *
+     * @return VMware_VCloud_API_OVF_RASD_Type
+     * @since API Version 5.6.0
+     * @since SDK Version 5.6.3
+     */
+    public function getVirtualCpu()
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::VIRTUAL_HARDWARE_SECTION_URL . VMware_VCloud_SDK_Constants::CPU_URL;
+        return $this->svc->get($url, '', true, 'VMware_VCloud_API_OVF_RASD_Type');
+    }
+
+    /**
+     * Retrieve the RASD item that specifies memory properties of a VM.
+     *
+     * @return VMware_VCloud_API_OVF_RASD_Type
+     * @since API Version 5.6.0
+     * @since SDK Version 5.6.3
+     */
+    public function getVirtualMemory()
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::VIRTUAL_HARDWARE_SECTION_URL . VMware_VCloud_SDK_Constants::MEMORY_URL;
+        return $this->svc->get($url, '', true, 'VMware_VCloud_API_OVF_RASD_Type');
+    }
+
+    /**
+     * Get a list of virtual hardware items.
+     *
+     * @param string $item
+     * @return VMware_VCloud_API_RasdItemsListType
+     * @access private
+     */
+    private function getVirtualHardwareItems($item)
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::VIRTUAL_HARDWARE_SECTION_URL . $item;
+        return $this->svc->get($url);
+    }
+
+    /**
+     * Retrieve all RASD items that specify hard disk and hard disk controller properties of a VM.
+     *
+     * @return VMware_VCloud_API_RasdItemsListType
+     * @since API Version 5.6.0
+     * @since SDK Version 5.6.3
+     */
+    public function getVirtualDisks()
+    {
+        return $this->getVirtualHardwareItems(VMware_VCloud_SDK_Constants::DISKS_URL);
+    }
+
+    /**
+     * Retrieve all RASD items that specify network card properties of a VM.
+     *
+     * @return VMware_VCloud_API_RasdItemsListType
+     * @since API Version 5.6.0
+     * @since SDK Version 5.6.3
+     */
+    public function getVirtualNetworkCards()
+    {
+        return $this->getVirtualHardwareItems(VMware_VCloud_SDK_Constants::NETWORK_CARDS_URL);
+    }
+
+    /**
+     * Retrieve all RASD items that specify CD-ROM, DVD, and floppy disk device and controller properties
+     * of this VM.
+     *
+     * @return VMware_VCloud_API_RasdItemsListType
+     * @since API Version 5.6.0
+     * @since SDK Version 5.6.3
+     */
+    public function getVirtualMedia()
+    {
+        return $this->getVirtualHardwareItems(VMware_VCloud_SDK_Constants::MEDIA_URL);
     }
 }
 // end of class VMware_VCloud_SDK_VAppTemplate
@@ -4922,6 +5250,91 @@ class VMware_VCloud_SDK_ShadowVm extends
 }
 // end of class VMware_VCloud_SDK_ShadowVm
 
+
+/**
+ * A class provides convenient methods on a VMware vCloud replicationGroup.
+ *
+ * @package VMware_VCloud_SDK
+ */
+class VMware_VCloud_SDK_ReplicationGroup extends
+      VMware_VCloud_SDK_Abstract
+{
+    /**
+     * Returns the replicationGroup.
+     *
+     * @return VMware_VCloud_API_ReferencesType
+     * @since Version 8.0.0
+     */
+    public function getReplicationGroupRef()
+    {
+        return $this->getRef(
+                       VMware_VCloud_SDK_Constants::REPLICATION_GROUP_TYPE);
+    }
+
+    /**
+     * Gets the replicationGroup data object.
+     *
+     * @return VMware_VCloud_API_ReferencesType
+     * @since Version 8.0.0
+     */
+    public function getReplicationGroup()
+    {
+        return $this->getDataObj();
+    }
+
+    /**
+     * Delete replicationGroup.
+     *
+     * @return VMware_VCloud_API_TaskType
+     * @since Version 8.0.0
+     */
+    public function delete()
+    {
+        $task = $this->svc->delete($this->url, 202);
+        $this->destroy();
+        return $task;
+    }
+
+    /**
+     * Failover replicationGroup.
+     *
+     * @return VMware_VCloud_API_TaskType
+     * @since Version 8.0.0
+     */
+    public function failover($params)
+    {
+        $url = $this->url . '/action/failover';
+        $type = VMware_VCloud_SDK_Constants::FAILOVER_PAEAMS_TYPE;
+        return $this->svc->post($url, 200, $type, $params);
+    }
+
+    /**
+     * TestFailover replicationGroup.
+     *
+     * @return VMware_VCloud_API_TaskType
+     * @since Version 8.0.0
+     */
+    public function testFailover($params)
+    {
+        $url = $this->url . '/action/testFailover';
+        $type = VMware_VCloud_SDK_Constants::TEST_FAILOVER_PAEAMS_TYPE;
+        return $this->svc->post($url, 200, $type, $params);
+    }
+
+    /**
+     * TestCleanup replicationGroup.
+     *
+     * @return VMware_VCloud_API_TaskType
+     * @since Version 8.0.0
+     */
+    public function testCleanup()
+    {
+        $url = $this->url . '/action/testCleanup';
+        return $this->svc->post($url, 200);
+    }
+
+}
+// end of class VMware_VCloud_SDK_ReplicationGroup
 
 /**
  * A class provides convenient methods on a VMware vCloud taskslist.

@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2013. All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2014. All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,7 +16,7 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.5.0
+ * @SDK version 5.7.0
  */
 
 /**
@@ -397,6 +397,35 @@ class VMware_VCloud_SDK_Service extends VMware_VCloud_SDK_Service_Abstract
             array_push($orgs, $this->get($ref->get_href()));
         }
         return $orgs;
+    }
+
+    /**
+     * Retrieve a list of vDC templates.
+     * The system administrator has access to all templates.
+     *
+     * @return VMware_VCloud_API_VdcTemplateListType
+     * @access private
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    private function getVdcTemplates()
+    {
+        $url = $this->baseUrl . VMware_VCloud_SDK_Constants::VDC_TEMPLATES_URL;
+        return $this->get($url);
+    }
+
+    /**
+     * Retrieve references of vDC templates.
+     * The system administrator has access to all templates.
+     *
+     * @return array  VMware_VCloud_API_ReferenceType object array
+     * @since API Version 5.7.0
+     * @since SDK Version 5.7.0
+     */
+    public function getVdcTemplateRefs()
+    {
+        $vdcTemplates = $this->getVdcTemplates();
+        return $vdcTemplates->getVdcTemplate();
     }
 
     /**

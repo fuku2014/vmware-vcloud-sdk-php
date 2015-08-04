@@ -25,11 +25,11 @@
 <p class="short-description">Represents a vSphere VM information.</p>
 	<ul class="tags">
 				<li><span class="field">author:</span> Ecosystem Engineering</li>
-				<li><span class="field">version:</span> 5.5.0</li>
+				<li><span class="field">version:</span> 8.0.0</li>
 				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2013.  All Rights Reserved.</li>
 			</ul>
 		<p class="notes">
-			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111252">111252</a></span>)
+			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114173">114173</a></span>)
 		</p>
 		
 				
@@ -56,7 +56,7 @@
 					static <span class="var-type">mixed</span>
 					<a href="#$defaultNS" title="details" class="var-name">$defaultNS</a>
 				</div>
-																																																																				<div class="var-title">
+																																																																												<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$DatastoreVimObjectRef" title="details" class="var-name">$DatastoreVimObjectRef</a>
 				</div>
@@ -82,6 +82,10 @@
 				</div>
 																<div class="var-title">
 					<span class="var-type">mixed</span>
+					<a href="#$VmDiskDatastores" title="details" class="var-name">$VmDiskDatastores</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
 					<a href="#$VmVimObjectRef" title="details" class="var-name">$VmVimObjectRef</a>
 				</div>
 											</div>
@@ -100,11 +104,17 @@
 		</div>
 		<div class="info-box-body">			
 			<div class="method-summary">
-																																																																																																																																																														
+																																																																																																																																																																																						
 				<div class="method-definition">
 											<span class="method-result">VMware_VCloud_API_Extension_VmVimInfoType</span>
 										<a href="#__construct" title="details" class="method-name">__construct</a>
-											([<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VimObjectRefType.html">VMware_VCloud_API_Extension_VimObjectRefType</a></span>&nbsp;<span class="var-name">$VmVimObjectRef</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VimObjectRefType.html">VMware_VCloud_API_Extension_VimObjectRefType</a></span>&nbsp;<span class="var-name">$DatastoreVimObjectRef</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VimObjectRefType.html">VMware_VCloud_API_Extension_VimObjectRefType</a></span>&nbsp;<span class="var-name">$HostVimObjectRef</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$VirtualDisksMaxChainLength</span> = <span class="var-default">null</span>])
+											([<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VimObjectRefType.html">VMware_VCloud_API_Extension_VimObjectRefType</a></span>&nbsp;<span class="var-name">$VmVimObjectRef</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VimObjectRefType.html">VMware_VCloud_API_Extension_VimObjectRefType</a></span>&nbsp;<span class="var-name">$DatastoreVimObjectRef</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$VmDiskDatastores</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VimObjectRefType.html">VMware_VCloud_API_Extension_VimObjectRefType</a></span>&nbsp;<span class="var-name">$HostVimObjectRef</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$VirtualDisksMaxChainLength</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addVmDiskDatastores" title="details" class="method-name">addVmDiskDatastores</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$value</span>)
 									</div>
 														
 				<div class="method-definition">
@@ -163,6 +173,12 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
+										<a href="#getVmDiskDatastores" title="details" class="method-name">getVmDiskDatastores</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
 										<a href="#getVmVimObjectRef" title="details" class="method-name">getVmVimObjectRef</a>
 										()
 									</div>
@@ -199,6 +215,12 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
+										<a href="#setVmDiskDatastores" title="details" class="method-name">setVmDiskDatastores</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$VmDiskDatastores</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
 										<a href="#setVmVimObjectRef" title="details" class="method-name">setVmVimObjectRef</a>
 											(<span class="var-type"></span>&nbsp;<span class="var-name">$VmVimObjectRef</span>)
 									</div>
@@ -226,13 +248,13 @@
 					</div>
 		<div class="info-box-body">
 			<a name="var$defaultNS" id="$defaultNS"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			static <span class="var-type">mixed</span>
 			<span class="var-name">$defaultNS</span>
-			 = <span class="var-default"> 'http://www.vmware.com/vcloud/extension/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111260">111260</a></span>)
+			 = <span class="var-default"> 'http://www.vmware.com/vcloud/extension/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114182">114182</a></span>)
 		</span>
 	</div>
 
@@ -248,13 +270,13 @@
 </div>
 
 <a name="var$DatastoreVimObjectRef" id="$DatastoreVimObjectRef"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$DatastoreVimObjectRef</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111254">111254</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114175">114175</a></span>)
 		</span>
 	</div>
 
@@ -269,13 +291,13 @@
 
 </div>
 <a name="var$HostVimObjectRef" id="$HostVimObjectRef"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$HostVimObjectRef</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111255">111255</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114177">114177</a></span>)
 		</span>
 	</div>
 
@@ -290,13 +312,13 @@
 
 </div>
 <a name="var$namespace" id="$namespace"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespace</span>
-			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111257">111257</a></span>)
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114179">114179</a></span>)
 		</span>
 	</div>
 
@@ -311,13 +333,13 @@
 
 </div>
 <a name="var$namespacedef" id="$namespacedef"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespacedef</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111258">111258</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114180">114180</a></span>)
 		</span>
 	</div>
 
@@ -332,13 +354,13 @@
 
 </div>
 <a name="var$tagName" id="$tagName"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$tagName</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111259">111259</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114181">114181</a></span>)
 		</span>
 	</div>
 
@@ -353,13 +375,34 @@
 
 </div>
 <a name="var$VirtualDisksMaxChainLength" id="$VirtualDisksMaxChainLength"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VirtualDisksMaxChainLength</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111256">111256</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114178">114178</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$VmDiskDatastores" id="$VmDiskDatastores"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$VmDiskDatastores</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114176">114176</a></span>)
 		</span>
 	</div>
 
@@ -380,7 +423,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VmVimObjectRef</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111253">111253</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114174">114174</a></span>)
 		</span>
 	</div>
 
@@ -413,7 +456,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111268">111268</a></span>)
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114191">114191</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -426,7 +469,7 @@
 		<span class="method-name">
 			__construct
 		</span>
-					([<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VimObjectRefType.html">VMware_VCloud_API_Extension_VimObjectRefType</a></span>&nbsp;<span class="var-name">$VmVimObjectRef</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VimObjectRefType.html">VMware_VCloud_API_Extension_VimObjectRefType</a></span>&nbsp;<span class="var-name">$DatastoreVimObjectRef</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VimObjectRefType.html">VMware_VCloud_API_Extension_VimObjectRefType</a></span>&nbsp;<span class="var-name">$HostVimObjectRef</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$VirtualDisksMaxChainLength</span> = <span class="var-default">null</span>])
+					([<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VimObjectRefType.html">VMware_VCloud_API_Extension_VimObjectRefType</a></span>&nbsp;<span class="var-name">$VmVimObjectRef</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VimObjectRefType.html">VMware_VCloud_API_Extension_VimObjectRefType</a></span>&nbsp;<span class="var-name">$DatastoreVimObjectRef</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$VmDiskDatastores</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VimObjectRefType.html">VMware_VCloud_API_Extension_VimObjectRefType</a></span>&nbsp;<span class="var-name">$HostVimObjectRef</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$VirtualDisksMaxChainLength</span> = <span class="var-default">null</span>])
 			</div>
 	
 			<ul class="parameters">
@@ -437,6 +480,9 @@
 				<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VimObjectRefType.html">VMware_VCloud_API_Extension_VimObjectRefType</a></span>
 				<span class="var-name">$DatastoreVimObjectRef</span><span class="var-description">: - [required]</span>			</li>
 					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$VmDiskDatastores</span><span class="var-description">: - [optional] an array of VMware_VCloud_API_Extension_DiskDatastoreType objects</span>			</li>
+					<li>
 				<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VimObjectRefType.html">VMware_VCloud_API_Extension_VimObjectRefType</a></span>
 				<span class="var-name">$HostVimObjectRef</span><span class="var-description">: - [required]</span>			</li>
 					<li>
@@ -446,11 +492,39 @@
 		
 			
 	</div>
-<a name="methodbuild" id="build"><!-- --></a>
+<a name="methodaddVmDiskDatastores" id="addVmDiskDatastores"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111366">111366</a></span>)
+		<span class="method-title">addVmDiskDatastores</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114220">114220</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addVmDiskDatastores
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbuild" id="build"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114305">114305</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -478,10 +552,10 @@
 			
 	</div>
 <a name="methodbuildAttributes" id="buildAttributes"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111387">111387</a></span>)
+		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114326">114326</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -509,10 +583,10 @@
 			
 	</div>
 <a name="methodbuildChildren" id="buildChildren"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111394">111394</a></span>)
+		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114333">114333</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -543,10 +617,10 @@
 			
 	</div>
 <a name="methodexport" id="export"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111302">111302</a></span>)
+		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114235">114235</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -586,10 +660,10 @@
 			
 	</div>
 <a name="methodexportAttributes" id="exportAttributes"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111332">111332</a></span>)
+		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114265">114265</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -626,10 +700,10 @@
 			
 	</div>
 <a name="methodexportChildren" id="exportChildren"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111336">111336</a></span>)
+		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114269">114269</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -666,10 +740,10 @@
 			
 	</div>
 <a name="methodgetDatastoreVimObjectRef" id="getDatastoreVimObjectRef"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getDatastoreVimObjectRef</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111282">111282</a></span>)
+		<span class="method-title">getDatastoreVimObjectRef</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114208">114208</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -689,10 +763,10 @@
 			
 	</div>
 <a name="methodgetHostVimObjectRef" id="getHostVimObjectRef"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getHostVimObjectRef</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111288">111288</a></span>)
+		<span class="method-title">getHostVimObjectRef</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114221">114221</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -712,10 +786,10 @@
 			
 	</div>
 <a name="methodgetVirtualDisksMaxChainLength" id="getVirtualDisksMaxChainLength"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVirtualDisksMaxChainLength</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111294">111294</a></span>)
+		<span class="method-title">getVirtualDisksMaxChainLength</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114227">114227</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -734,11 +808,34 @@
 		
 			
 	</div>
+<a name="methodgetVmDiskDatastores" id="getVmDiskDatastores"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVmDiskDatastores</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114214">114214</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getVmDiskDatastores
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
 <a name="methodgetVmVimObjectRef" id="getVmVimObjectRef"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVmVimObjectRef</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111276">111276</a></span>)
+		<span class="method-title">getVmVimObjectRef</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114202">114202</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -761,7 +858,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111300">111300</a></span>)
+		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114233">114233</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -784,7 +881,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111354">111354</a></span>)
+		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114292">114292</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -807,7 +904,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setDatastoreVimObjectRef</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111285">111285</a></span>)
+		<span class="method-title">setDatastoreVimObjectRef</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114211">114211</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -835,7 +932,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setHostVimObjectRef</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111291">111291</a></span>)
+		<span class="method-title">setHostVimObjectRef</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114224">114224</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -863,7 +960,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVirtualDisksMaxChainLength</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111297">111297</a></span>)
+		<span class="method-title">setVirtualDisksMaxChainLength</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114230">114230</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -887,11 +984,39 @@
 		
 			
 	</div>
-<a name="methodsetVmVimObjectRef" id="setVmVimObjectRef"><!-- --></a>
+<a name="methodsetVmDiskDatastores" id="setVmDiskDatastores"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVmVimObjectRef</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111279">111279</a></span>)
+		<span class="method-title">setVmDiskDatastores</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114217">114217</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setVmDiskDatastores
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$VmDiskDatastores</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$VmDiskDatastores</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetVmVimObjectRef" id="setVmVimObjectRef"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setVmVimObjectRef</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114205">114205</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -916,10 +1041,10 @@
 			
 	</div>
 <a name="methodset_tagName" id="set_tagName"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a111301">111301</a></span>)
+		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a114234">114234</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -949,7 +1074,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Mon, 26 Aug 2013 10:58:55 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Sat, 30 May 2015 00:41:05 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>

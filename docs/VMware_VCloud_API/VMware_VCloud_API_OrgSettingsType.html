@@ -25,11 +25,11 @@
 <p class="short-description">Container for this organization's settings.</p>
 	<ul class="tags">
 				<li><span class="field">author:</span> Ecosystem Engineering</li>
-				<li><span class="field">version:</span> 5.5.0</li>
+				<li><span class="field">version:</span> 8.0.0</li>
 				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2013.  All Rights Reserved.</li>
 			</ul>
 		<p class="notes">
-			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a81950">81950</a></span>)
+			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88629">88629</a></span>)
 		</p>
 		
 				
@@ -60,7 +60,7 @@
 					static <span class="var-type">mixed</span>
 					<a href="#$defaultNS" title="details" class="var-name">$defaultNS</a>
 				</div>
-																																																																																																																				<div class="var-title">
+																																																																																																																												<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$namespace" title="details" class="var-name">$namespace</a>
 				</div>
@@ -83,6 +83,10 @@
 																<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$OrgLdapSettings" title="details" class="var-name">$OrgLdapSettings</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$OrgOAuthSettings" title="details" class="var-name">$OrgOAuthSettings</a>
 				</div>
 																<div class="var-title">
 					<span class="var-type">mixed</span>
@@ -120,11 +124,11 @@
 		</div>
 		<div class="info-box-body">			
 			<div class="method-summary">
-																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																														
 				<div class="method-definition">
 											<span class="method-result">VMware_VCloud_API_OrgSettingsType</span>
 										<a href="#__construct" title="details" class="method-name">__construct</a>
-											([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGeneralSettingsType.html">VMware_VCloud_API_OrgGeneralSettingsType</a></span>&nbsp;<span class="var-name">$OrgGeneralSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgLeaseSettingsType.html">VMware_VCloud_API_OrgLeaseSettingsType</a></span>&nbsp;<span class="var-name">$VAppLeaseSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType.html">VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType</a></span>&nbsp;<span class="var-name">$VAppTemplateLeaseSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgLdapSettingsType.html">VMware_VCloud_API_OrgLdapSettingsType</a></span>&nbsp;<span class="var-name">$OrgLdapSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgEmailSettingsType.html">VMware_VCloud_API_OrgEmailSettingsType</a></span>&nbsp;<span class="var-name">$OrgEmailSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html">VMware_VCloud_API_OrgPasswordPolicySettingsType</a></span>&nbsp;<span class="var-name">$OrgPasswordPolicySettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgOperationLimitsSettingsType.html">VMware_VCloud_API_OrgOperationLimitsSettingsType</a></span>&nbsp;<span class="var-name">$OrgOperationLimitsSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgFederationSettingsType.html">VMware_VCloud_API_OrgFederationSettingsType</a></span>&nbsp;<span class="var-name">$OrgFederationSettings</span> = <span class="var-default">null</span>])
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGeneralSettingsType.html">VMware_VCloud_API_OrgGeneralSettingsType</a></span>&nbsp;<span class="var-name">$OrgGeneralSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgLeaseSettingsType.html">VMware_VCloud_API_OrgLeaseSettingsType</a></span>&nbsp;<span class="var-name">$VAppLeaseSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType.html">VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType</a></span>&nbsp;<span class="var-name">$VAppTemplateLeaseSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgLdapSettingsType.html">VMware_VCloud_API_OrgLdapSettingsType</a></span>&nbsp;<span class="var-name">$OrgLdapSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgEmailSettingsType.html">VMware_VCloud_API_OrgEmailSettingsType</a></span>&nbsp;<span class="var-name">$OrgEmailSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html">VMware_VCloud_API_OrgPasswordPolicySettingsType</a></span>&nbsp;<span class="var-name">$OrgPasswordPolicySettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgOperationLimitsSettingsType.html">VMware_VCloud_API_OrgOperationLimitsSettingsType</a></span>&nbsp;<span class="var-name">$OrgOperationLimitsSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgFederationSettingsType.html">VMware_VCloud_API_OrgFederationSettingsType</a></span>&nbsp;<span class="var-name">$OrgFederationSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgOAuthSettingsType.html">VMware_VCloud_API_OrgOAuthSettingsType</a></span>&nbsp;<span class="var-name">$OrgOAuthSettings</span> = <span class="var-default">null</span>])
 									</div>
 														
 				<div class="method-definition">
@@ -184,6 +188,12 @@
 				<div class="method-definition">
 											<span class="method-result">void</span>
 										<a href="#getOrgLdapSettings" title="details" class="method-name">getOrgLdapSettings</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getOrgOAuthSettings" title="details" class="method-name">getOrgOAuthSettings</a>
 										()
 									</div>
 														
@@ -249,6 +259,12 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
+										<a href="#setOrgOAuthSettings" title="details" class="method-name">setOrgOAuthSettings</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$OrgOAuthSettings</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
 										<a href="#setOrgOperationLimitsSettings" title="details" class="method-name">setOrgOperationLimitsSettings</a>
 											(<span class="var-type"></span>&nbsp;<span class="var-name">$OrgOperationLimitsSettings</span>)
 									</div>
@@ -294,13 +310,13 @@
 					</div>
 		<div class="info-box-body">
 			<a name="var$defaultNS" id="$defaultNS"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			static <span class="var-type">mixed</span>
 			<span class="var-name">$defaultNS</span>
-			 = <span class="var-default"> 'http://www.vmware.com/vcloud/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a81962">81962</a></span>)
+			 = <span class="var-default"> 'http://www.vmware.com/vcloud/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88642">88642</a></span>)
 		</span>
 	</div>
 
@@ -321,13 +337,13 @@
 </div>
 
 <a name="var$namespace" id="$namespace"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespace</span>
-			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a81959">81959</a></span>)
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88639">88639</a></span>)
 		</span>
 	</div>
 
@@ -347,13 +363,13 @@
 
 </div>
 <a name="var$namespacedef" id="$namespacedef"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespacedef</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a81960">81960</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88640">88640</a></span>)
 		</span>
 	</div>
 
@@ -373,13 +389,13 @@
 
 </div>
 <a name="var$OrgEmailSettings" id="$OrgEmailSettings"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$OrgEmailSettings</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a81955">81955</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88634">88634</a></span>)
 		</span>
 	</div>
 
@@ -394,13 +410,13 @@
 
 </div>
 <a name="var$OrgFederationSettings" id="$OrgFederationSettings"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$OrgFederationSettings</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a81958">81958</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88637">88637</a></span>)
 		</span>
 	</div>
 
@@ -415,13 +431,13 @@
 
 </div>
 <a name="var$OrgGeneralSettings" id="$OrgGeneralSettings"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$OrgGeneralSettings</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a81951">81951</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88630">88630</a></span>)
 		</span>
 	</div>
 
@@ -436,13 +452,34 @@
 
 </div>
 <a name="var$OrgLdapSettings" id="$OrgLdapSettings"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$OrgLdapSettings</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a81954">81954</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88633">88633</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$OrgOAuthSettings" id="$OrgOAuthSettings"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$OrgOAuthSettings</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88638">88638</a></span>)
 		</span>
 	</div>
 
@@ -463,7 +500,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$OrgOperationLimitsSettings</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a81957">81957</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88636">88636</a></span>)
 		</span>
 	</div>
 
@@ -484,7 +521,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$OrgPasswordPolicySettings</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a81956">81956</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88635">88635</a></span>)
 		</span>
 	</div>
 
@@ -505,7 +542,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$tagName</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a81961">81961</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88641">88641</a></span>)
 		</span>
 	</div>
 
@@ -531,7 +568,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VAppLeaseSettings</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a81952">81952</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88631">88631</a></span>)
 		</span>
 	</div>
 
@@ -552,7 +589,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VAppTemplateLeaseSettings</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a81953">81953</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88632">88632</a></span>)
 		</span>
 	</div>
 
@@ -605,7 +642,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a81978">81978</a></span>)
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88659">88659</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -618,7 +655,7 @@
 		<span class="method-name">
 			__construct
 		</span>
-					([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGeneralSettingsType.html">VMware_VCloud_API_OrgGeneralSettingsType</a></span>&nbsp;<span class="var-name">$OrgGeneralSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgLeaseSettingsType.html">VMware_VCloud_API_OrgLeaseSettingsType</a></span>&nbsp;<span class="var-name">$VAppLeaseSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType.html">VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType</a></span>&nbsp;<span class="var-name">$VAppTemplateLeaseSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgLdapSettingsType.html">VMware_VCloud_API_OrgLdapSettingsType</a></span>&nbsp;<span class="var-name">$OrgLdapSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgEmailSettingsType.html">VMware_VCloud_API_OrgEmailSettingsType</a></span>&nbsp;<span class="var-name">$OrgEmailSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html">VMware_VCloud_API_OrgPasswordPolicySettingsType</a></span>&nbsp;<span class="var-name">$OrgPasswordPolicySettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgOperationLimitsSettingsType.html">VMware_VCloud_API_OrgOperationLimitsSettingsType</a></span>&nbsp;<span class="var-name">$OrgOperationLimitsSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgFederationSettingsType.html">VMware_VCloud_API_OrgFederationSettingsType</a></span>&nbsp;<span class="var-name">$OrgFederationSettings</span> = <span class="var-default">null</span>])
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGeneralSettingsType.html">VMware_VCloud_API_OrgGeneralSettingsType</a></span>&nbsp;<span class="var-name">$OrgGeneralSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgLeaseSettingsType.html">VMware_VCloud_API_OrgLeaseSettingsType</a></span>&nbsp;<span class="var-name">$VAppLeaseSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType.html">VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType</a></span>&nbsp;<span class="var-name">$VAppTemplateLeaseSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgLdapSettingsType.html">VMware_VCloud_API_OrgLdapSettingsType</a></span>&nbsp;<span class="var-name">$OrgLdapSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgEmailSettingsType.html">VMware_VCloud_API_OrgEmailSettingsType</a></span>&nbsp;<span class="var-name">$OrgEmailSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html">VMware_VCloud_API_OrgPasswordPolicySettingsType</a></span>&nbsp;<span class="var-name">$OrgPasswordPolicySettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgOperationLimitsSettingsType.html">VMware_VCloud_API_OrgOperationLimitsSettingsType</a></span>&nbsp;<span class="var-name">$OrgOperationLimitsSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgFederationSettingsType.html">VMware_VCloud_API_OrgFederationSettingsType</a></span>&nbsp;<span class="var-name">$OrgFederationSettings</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgOAuthSettingsType.html">VMware_VCloud_API_OrgOAuthSettingsType</a></span>&nbsp;<span class="var-name">$OrgOAuthSettings</span> = <span class="var-default">null</span>])
 			</div>
 	
 			<ul class="parameters">
@@ -658,6 +695,9 @@
 					<li>
 				<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgFederationSettingsType.html">VMware_VCloud_API_OrgFederationSettingsType</a></span>
 				<span class="var-name">$OrgFederationSettings</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgOAuthSettingsType.html">VMware_VCloud_API_OrgOAuthSettingsType</a></span>
+				<span class="var-name">$OrgOAuthSettings</span><span class="var-description">: - [optional]</span>			</li>
 				</ul>
 		
 			<hr class="separator" />
@@ -671,7 +711,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82122">82122</a></span>)
+		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88814">88814</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -707,7 +747,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82143">82143</a></span>)
+		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88835">88835</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -743,7 +783,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82151">82151</a></span>)
+		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88843">88843</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -782,7 +822,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82041">82041</a></span>)
+		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88729">88729</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -830,7 +870,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82071">82071</a></span>)
+		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88759">88759</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -875,7 +915,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82076">82076</a></span>)
+		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88764">88764</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -920,7 +960,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getOrgEmailSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82015">82015</a></span>)
+		<span class="method-title">getOrgEmailSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88697">88697</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -943,7 +983,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getOrgFederationSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82033">82033</a></span>)
+		<span class="method-title">getOrgFederationSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88715">88715</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -966,7 +1006,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getOrgGeneralSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a81991">81991</a></span>)
+		<span class="method-title">getOrgGeneralSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88673">88673</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -989,7 +1029,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getOrgLdapSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82009">82009</a></span>)
+		<span class="method-title">getOrgLdapSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88691">88691</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1008,11 +1048,34 @@
 		
 			
 	</div>
-<a name="methodgetOrgOperationLimitsSettings" id="getOrgOperationLimitsSettings"><!-- --></a>
+<a name="methodgetOrgOAuthSettings" id="getOrgOAuthSettings"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getOrgOperationLimitsSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82027">82027</a></span>)
+		<span class="method-title">getOrgOAuthSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88721">88721</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getOrgOAuthSettings
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOrgOperationLimitsSettings" id="getOrgOperationLimitsSettings"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOrgOperationLimitsSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88709">88709</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1032,10 +1095,10 @@
 			
 	</div>
 <a name="methodgetOrgPasswordPolicySettings" id="getOrgPasswordPolicySettings"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getOrgPasswordPolicySettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82021">82021</a></span>)
+		<span class="method-title">getOrgPasswordPolicySettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88703">88703</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1055,10 +1118,10 @@
 			
 	</div>
 <a name="methodgetVAppLeaseSettings" id="getVAppLeaseSettings"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVAppLeaseSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a81997">81997</a></span>)
+		<span class="method-title">getVAppLeaseSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88679">88679</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1078,10 +1141,10 @@
 			
 	</div>
 <a name="methodgetVAppTemplateLeaseSettings" id="getVAppTemplateLeaseSettings"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVAppTemplateLeaseSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82003">82003</a></span>)
+		<span class="method-title">getVAppTemplateLeaseSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88685">88685</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1101,10 +1164,10 @@
 			
 	</div>
 <a name="methodget_tagName" id="get_tagName"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82039">82039</a></span>)
+		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88727">88727</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1129,10 +1192,10 @@
 			
 	</div>
 <a name="methodhasContent" id="hasContent"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82105">82105</a></span>)
+		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88796">88796</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1157,10 +1220,10 @@
 			
 	</div>
 <a name="methodsetOrgEmailSettings" id="setOrgEmailSettings"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setOrgEmailSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82018">82018</a></span>)
+		<span class="method-title">setOrgEmailSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88700">88700</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1185,10 +1248,10 @@
 			
 	</div>
 <a name="methodsetOrgFederationSettings" id="setOrgFederationSettings"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setOrgFederationSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82036">82036</a></span>)
+		<span class="method-title">setOrgFederationSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88718">88718</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1213,10 +1276,10 @@
 			
 	</div>
 <a name="methodsetOrgGeneralSettings" id="setOrgGeneralSettings"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setOrgGeneralSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a81994">81994</a></span>)
+		<span class="method-title">setOrgGeneralSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88676">88676</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1241,10 +1304,10 @@
 			
 	</div>
 <a name="methodsetOrgLdapSettings" id="setOrgLdapSettings"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setOrgLdapSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82012">82012</a></span>)
+		<span class="method-title">setOrgLdapSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88694">88694</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1268,11 +1331,39 @@
 		
 			
 	</div>
+<a name="methodsetOrgOAuthSettings" id="setOrgOAuthSettings"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setOrgOAuthSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88724">88724</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setOrgOAuthSettings
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$OrgOAuthSettings</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$OrgOAuthSettings</span>			</li>
+				</ul>
+		
+			
+	</div>
 <a name="methodsetOrgOperationLimitsSettings" id="setOrgOperationLimitsSettings"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setOrgOperationLimitsSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82030">82030</a></span>)
+		<span class="method-title">setOrgOperationLimitsSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88712">88712</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1300,7 +1391,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setOrgPasswordPolicySettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82024">82024</a></span>)
+		<span class="method-title">setOrgPasswordPolicySettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88706">88706</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1328,7 +1419,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVAppLeaseSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82000">82000</a></span>)
+		<span class="method-title">setVAppLeaseSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88682">88682</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1356,7 +1447,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVAppTemplateLeaseSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82006">82006</a></span>)
+		<span class="method-title">setVAppTemplateLeaseSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88688">88688</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1384,7 +1475,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a82040">82040</a></span>)
+		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a88728">88728</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1461,7 +1552,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Mon, 26 Aug 2013 10:59:06 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Sat, 30 May 2015 00:41:16 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>

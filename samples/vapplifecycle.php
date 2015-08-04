@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2013.  All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2014.  All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,7 +16,7 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.5.0
+ * @SDK version 5.7.0
  */
 
 /**
@@ -476,7 +476,7 @@ function usage()
     echo "     -u|--user <username>             [req] User name in the form user@organization\n";
     echo "                                         for the vCloud Director.\n";
     echo "     -p|--pswd <password>             [req] Password for user.\n";
-    echo "     -v|--sdkver <sdkversion>         [req] SDK Version e.g. 1.5, 5.1 and 5.5.\n";
+    echo "     -v|--sdkver <sdkversion>         [req] SDK Version e.g. 1.5, 5.1, 5.5, 5.6 and 5.7.\n";
     echo "     -o|--org <orgName>               [opt] Name of an existing organization to operate.**\n";
     echo "     -d|--vdc <vdcName>               [opt] Name of an existing vDC in the organization to operate.**\n";
     echo "     -g|--catalog <catalogName>       [opt] Name of an existing catalog to be find in the organization.**\n";
@@ -495,9 +495,9 @@ function usage()
     echo "         entity in the list will be retrieved.  If the list is empty, this sample exits.\n";
     echo "\n";
     echo "  [Examples]\n";
-    echo "     # php vapplifecycle.php -s '127.0.0.1' -u 'admin@Org' -p 'password' -v '5.5'\n";
-    echo "     # php vapplifecycle.php -s 'localhost' -u 'admin@Org' -p 'password' -v '5.5' -o='org' -d='vdc' -g='catalog' -i='catalogItem'\n";
-    echo "     # php vapplifecycle.php -s 'localhost' -u 'admin@Org' -p 'password' -v '5.5' -o='org' -d='vdc' -g='catalog' -i='catalogItem -c certificatepath'\n";
-    echo "     # php vapplifecycle.php -s 'localhost' -u 'admin@Org' -p 'password' -v '5.5' -o='org' -d='vdc' -g='catalog' -i='catalogItem' -a='vapp' -n='vappTemplate' -f='E:/ovf/dsl-with-tools.ovf' -b='description about vappTemplate' -m='true'\n\n";
+    echo "     # php vapplifecycle.php -s '127.0.0.1' -u 'admin@Org' -p 'password' -v '5.7'\n";
+    echo "     # php vapplifecycle.php -s 'localhost' -u 'admin@Org' -p 'password' -v '5.7' -o='org' -d='vdc' -g='catalog' -i='catalogItem'\n";
+    echo "     # php vapplifecycle.php -s 'localhost' -u 'admin@Org' -p 'password' -v '5.7' -o='org' -d='vdc' -g='catalog' -i='catalogItem -c certificatepath'\n";
+    echo "     # php vapplifecycle.php -s 'localhost' -u 'admin@Org' -p 'password' -v '5.7' -o='org' -d='vdc' -g='catalog' -i='catalogItem' -a='vapp' -n='vappTemplate' -f='E:/ovf/dsl-with-tools.ovf' -b='description about vappTemplate' -m='true'\n\n";
 }
 ?>

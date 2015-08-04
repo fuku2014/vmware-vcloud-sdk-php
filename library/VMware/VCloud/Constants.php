@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2013. All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2014. All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,7 +16,7 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.5.0
+ * @SDK version 5.7.0
  */
 
 /**
@@ -56,6 +56,7 @@ final class VMware_VCloud_SDK_Constants
     const NETWORK_CONTENT_TYPE = 'application/vnd.vmware.vcloud.network+xml';
     const NETWORK_SECTION_CONTENT_TYPE = 'application/vnd.vmware.vcloud.networkSection+xml';
     const OPERATING_SYSTEM_SECTION_CONTENT_TYPE = 'application/vnd.vmware.vcloud.operatingSystemSection+xml';
+    const ORGANIZATION_OAUTH_SETTINGS_TYPE = 'application/vnd.vmware.admin.organizationOAuthSettings+xml';
     const ORGANIZATION_CONTENT_TYPE = 'application/vnd.vmware.vcloud.organization+xml';
     const ORG_LIST_CONTENT_TYPE = 'application/vnd.vmware.vcloud.orgList+xml';
     const ORG_NETWORK_CONTENT_TYPE = 'application/vnd.vmware.vcloud.orgNetwork+xml';
@@ -69,6 +70,7 @@ final class VMware_VCloud_SDK_Constants
     const SCREEN_TICKET_CONTENT_TYPE = 'application/vnd.vmware.vcloud.screenTicket+xml';
     const SHADOW_VMS_CONTENT_TYPE = 'application/vnd.vmware.vcloud.shadowvm+xml';
     const STARTUP_SECTION_CONTENT_TYPE = 'application/vnd.vmware.vcloud.startupSection+xml';
+    const SYSLOG_SETTINGS_CONTENT_TYPE = 'application/vnd.vmware.vcloud.SyslogSettings+xml';
     const TASK_CONTENT_TYPE = 'application/vnd.vmware.vcloud.task+xml';
     const TASK_LISTS_CONTENT_TYPE = 'application/vnd.vmware.vcloud.tasksList+xml';
     const UPDATE_AMQP_CERTIFICATE_CONTENT_TYPE = 'application/vnd.vmware.admin.certificateUpdateParams+xml';
@@ -83,10 +85,14 @@ final class VMware_VCloud_SDK_Constants
     const VAPP_TEMPLATE_CONTENT_TYPE = 'application/vnd.vmware.vcloud.vAppTemplate+xml';
     const VDC_CONTENT_TYPE = 'application/vnd.vmware.vcloud.vdc+xml';
     const VDC_STORAGE_PROFILE_CONTENT_TYPE = 'application/vnd.vmware.vcloud.vdcStorageProfile+xml';
+    const VDC_TEMPLATE_CONTENT_TYPE = 'application/vnd.vmware.admin.vdcTemplate+xml';
     const VIRTUAL_HARDWARE_SECTION_CONTENT_TYPE = 'application/vnd.vmware.vcloud.virtualHardwareSection+xml';
     const VM_CAPABILITIES_SECTION_CONTENT_TYPE = 'application/vnd.vmware.vcloud.vmCapabilitiesSection+xml';
     const VM_CONTENT_TYPE = 'application/vnd.vmware.vcloud.vm+xml';
     const VM_PENDING_ANSWER_CONTENT_TYPE = 'application/vnd.vmware.vcloud.vmPendingAnswer+xml';
+    const REPLICATION_GROUP_TYPE = 'application/vnd.vmware.hcs.replicationGroup+xml';
+    const TEST_FAILOVER_PAEAMS_TYPE = 'application/vnd.vmware.hcs.testFailoverParams+xml';
+    const FAILOVER_PAEAMS_TYPE = 'application/vnd.vmware.hcs.failoverParams+xml';
 
     const ADMIN_CATALOG_CONTENT_TYPE = 'application/vnd.vmware.admin.catalog+xml';
     const ADMIN_NETWORK_CONTENT_TYPE = 'application/vnd.vmware.admin.network+xml';
@@ -97,6 +103,10 @@ final class VMware_VCloud_SDK_Constants
     const ADMIN_VDC_CONTENT_TYPE = 'application/vnd.vmware.admin.vdc+xml';
     const ADMIN_VDC_STORAGE_PROFILE_CONTENT_TYPE = 'application/vnd.vmware.admin.vdcStorageProfile+xml';
     const ADMIN_ORG_VDC_NETWORK_CONTENT_TYPE = 'application/vnd.vmware.admin.orgVdcNetwork+xml';
+    const ADMIN_ORGANIZATION_ASSOCIATION_CONTENT_TYPE = 'application/vnd.vmware.admin.organizationAssociation+xml';
+    const ADMIN_ORGANIZATION_ASSOCIATIONS_CONTENT_TYPE = 'application/vnd.vmware.admin.organizationAssociations+xml';
+    const AMQP_BROKERS_CONTENT_TYPE = 'application/vnd.vmware.vcloud.admin.amqpBrokers+xml';
+    const AMQP_CONFIGURATION_CONTENT_TYPE = 'application/vnd.vmware.vcloud.admin.amqpConfiguration+xml';
     const AMQP_SETTINGS_CONTENT_TYPE = 'application/vnd.vmware.admin.amqpSettings+xml';
     const CREATE_VDC_PARAMS_CONTENT_TYPE = 'application/vnd.vmware.admin.createVdcParams+xml';
     const EMAIL_TEMPLATE_CONTENT_TYPE = 'application/vnd.vmware.admin.emailTemplate+xml';
@@ -146,11 +156,14 @@ final class VMware_VCloud_SDK_Constants
     const IMPORT_VM_INTO_EXISTING_VAPP_PARAMS_CONTENT_TYPE = 'application/vnd.vmware.admin.importVmIntoExistingVAppParams+xml';
     const IMPORT_VM_INTO_EXISTING_VAPPTEMPLATE_PARAMS_CONTENT_TYPE = 'application/vnd.vmware.admin.importVmIntoExistingVAppTemplateParams+xml';
     const INSTANTIATE_OVF_PARAMS_CONTENT_TYPE = 'application/vnd.vmware.vcloud.instantiateOvfParams+xml';
+    const INSTANTIATE_VDC_TEMPLATE_PARAMS_CONTENT_TYPE = 'application/vnd.vmware.vcloud.instantiateVdcTemplateParams+xml';
     const LDAP_SETTINGS_CONTENT_TYPE = 'application/vnd.vmware.admin.ldapSettings+xml';
     const LDAP_GROUP_SETTINGS_CONTENT_TYPE = 'application/vnd.vmware.admin.ldapGroupSettings+xml';
     const LDAP_USER_SETTINGS_CONTENT_TYPE = 'application/vnd.vmware.admin.ldapUserSettings+xml';
     const LICENSING_REPORT_CONTENT_TYPE = 'application/vnd.vmware.admin.licensingReport+xml';
     const LICENSE_SETTINGS_CONTENT_TYPE = 'application/vnd.vmware.admin.licenseSettings+xml';
+    const METRICS_CURRENT_USAGE_CONTENT_TYPE = 'application/vnd.vmware.vcloud.metrics.currentUsageSpec+xml';
+    const METRICS_HISTORIC_USAGE_CONTENT_TYPE = 'application/vnd.vmware.vcloud.metrics.historicUsageSpec+xml';
     const MIGRATE_VM_PARAMS_CONTENT_TYPE = 'application/vnd.vmware.admin.migrateVmParams+xml';
     const NETWORK_POOL_CONTENT_TYPE = 'application/vnd.vmware.admin.networkPool+xml';
     const PREPARE_HOST_PARAMS_CONTENT_TYPE = 'application/vnd.vmware.admin.prepareHostParams+xml';
@@ -180,6 +193,7 @@ final class VMware_VCloud_SDK_Constants
     const VIM_SERVER_CONTENT_TYPE = 'application/vnd.vmware.admin.vmwvirtualcenter+xml';
     const VMWEXTENSION_CONTENT_TYPE = 'application/vnd.vmware.admin.vmwExtension+xml';
     const VMW_PROVIDER_VDC_STORAGE_PROFILE_CONTENT_TYPE = 'application/vnd.vmware.admin.vmwPvdcStorageProfile+xml';
+    const VMW_VDC_TEMPLATE_CONTENT_TYPE = 'application/vnd.vmware.admin.vmwVdcTemplate+xml';
     const VSHIELD_MANAGER_CONTENT_TYPE = 'application/vnd.vmware.admin.vshieldmanager+xml';
     const EXTENSION_SERVICE_CONTENT_TYPE = 'application/vnd.vmware.admin.service+xml';
     const EDGE_GATEWAYS_CONTENT_TYPE = 'application/vnd.vmware.admin.edgeGateway+xml';
@@ -199,7 +213,7 @@ final class VMware_VCloud_SDK_Constants
     const ORG_ATTRIBUTE = 'org';
     const SIGNATURE_ATTRIBUTE = 'signature';
     const SIGNATURE_ALGORITHM_ATTRIBUTE = 'signature_alg';
-
+    const FORWARD_SLASH = '/';
 
 
     /**
@@ -207,20 +221,44 @@ final class VMware_VCloud_SDK_Constants
      */
 
     // User Constants
+    const ACTION_CUSTOMIZE_AT_NEXT_POWER_ON_URL = '/action/customizeAtNextPowerOn';
     const ACTION_INSTANTIATE_OVF_URL = '/action/instantiateOvf';
+    const ACTION_INSTANTIATE_URL = '/action/instantiate';
     const ACTION_COPY_CATALOGITEM_URL = '/action/copy';
     const ACTION_MOVE_CATALOGITEM_URL = '/action/move';
     const ACTION_ENABLE_DOWNLOAD_URL = '/action/enableDownload';
     const ACTION_CAPTURE_VAPP_URL = '/action/captureVApp';
+    const ACTION_RELOAD_FROM_VC_URL = '/action/reloadFromVc';
     const ACTION_SYNC_URL = '/action/sync';
+    const ACTION_TAKE_OWNERSHIP_URL = '/action/takeOwnership';
     const ACTION_ACQUIRE_MKSTICKET_URL = '/screen/action/acquireMksTicket';
+    const CPU_URL = '/cpu';
+    const CURRENT_METRICS_URL = '/metrics/current';
+    const DISKS_URL = '/disks';
+    const HISTORIC_METRICS_URL = '/metrics/historic';
+    const MEDIA_URL = '/media';
+    const MEMORY_URL = '/memory';
+    const NETWORK_CARDS_URL = '/networkCards';
+    const VIRTUAL_HARDWARE_SECTION_URL = '/virtualHardwareSection';
+    const VDC_TEMPLATES_URL = '/vdcTemplates';
 
     // Admin Constants
     const ACTION_PUBLISH_TO_EXTERNAL_ORGANIZATIONS_URL = '/action/publishToExternalOrganizations';
     const ACTION_SUBSCRIBE_TO_EXTERNAL_CATALOG_URL = '/action/subscribeToExternalCatalog';
     const ACTION_REGISTER_VAPP_URL = '/action/registerVApp';
+    const SETTINGS_FEDERATION_ACTION_REGENERATE_FEDERATION_CERTIFICATE_URL = '/settings/federation/action/regenerateFederationCertificate';
+    const SETTINGS_OAUTH_URL = '/settings/oauth';
+    const ASSOCIATION_URL = '/associations';
+    const CONFIGURE_SYSLOG_SERVER_SETTINGS_URL = '/action/configureSyslogServerSettings';
+    const AMQP_URL = '/amqp';
+    const AMQP_BROKER_URL = '/amqp/broker';
+    const AMQP_BROKER_ACTION_RESET_AMQP_CERTIFICATE_URL = '/amqp/broker/action/resetAmqpCertificate';
 
     // Admin Extension Constants
+    const ACTION_CONTROL_ACCESS_URL = '/action/controlAccess';
     const CATALOG_SETTINGS_URL = '/settings/catalog';
+    const CONTROL_ACCESS_URL = '/controlAccess';
+    const VMW_VDC_TEMPLATES_URL = '/vdcTemplates';
+    const VMW_VDC_TEMPLATE_REFERENCES_URL = '/vdcTemplateReferences';
 }
 ?>
