@@ -5290,7 +5290,7 @@ class VMware_VCloud_SDK_ReplicationGroup extends
      */
     public function delete()
     {
-        $task = $this->svc->delete($this->url, 202);
+        $task = $this->svc->delete($this->url, 200);
         $this->destroy();
         return $task;
     }
