@@ -1075,6 +1075,30 @@ $vdcStorageProfileRef, $catalogRef)
         return $this->svc->post($url, 200);
     }
 
+    /**
+     * GetReplicationRefs
+     *
+     * @since Version 8.0.0
+     */
+    public function getReplicationRefs($name=null)
+    {
+        $url  = $this->url . '/replications';
+        $refs = $this->svc->get($url, 200)->getReference();
+        $objs = $this->getObjsByContainedRefs($refs);
+        return VMware_VCloud_SDK_Helper::getObjsByName($objs, $name);
+    }
+
+    /**
+     * GetReplications
+     *
+     * @since Version 8.0.0
+     */
+    public function getReplications($name=null)
+    {
+        $refs = $this->getReplicationRefs($name);
+        return $this->getObjsByContainedRefs($refs);
+    }
+
 }
 // end of class VMware_VCloud_SDK_Vdc
 
