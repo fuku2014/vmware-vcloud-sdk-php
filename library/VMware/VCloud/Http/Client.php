@@ -64,6 +64,7 @@ class VMware_VCloud_SDK_Http_Client implements
      * @see HTTP_Request2 $apiVersion variable
      */
     private $apiVersion = null;
+    private $vrVersion = null;
     /**
      * Authentication token used for login to the session
      */
@@ -125,6 +126,17 @@ class VMware_VCloud_SDK_Http_Client implements
     }
 
     /**
+     * Set the API Version
+     *
+     * @param array  $vrVersion  An VR Version
+     * @since SDK Version 8.0.0
+     */
+    public function setVrVersion($vrVersion)
+    {
+        $this->vrVersion = $vrVersion;
+    }
+
+    /**
      * Gets the vcloud token
      *
      * @return String
@@ -165,7 +177,7 @@ class VMware_VCloud_SDK_Http_Client implements
         # 'Accept' header is used to identify VMware vCloud Director version
         $headers['Accept'] = VMware_VCloud_SDK_Constants::VCLOUD_ACCEPT_HEADER .
                              ';' .
-                             'version=' . $this->apiVersion;
+                             'version=' . $this->apiVersion . ';vr-version=' $this->vrVersion;
         try
         {
             $request = clone $this->request;

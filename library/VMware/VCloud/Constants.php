@@ -91,6 +91,7 @@ final class VMware_VCloud_SDK_Constants
     const VM_CONTENT_TYPE = 'application/vnd.vmware.vcloud.vm+xml';
     const VM_PENDING_ANSWER_CONTENT_TYPE = 'application/vnd.vmware.vcloud.vmPendingAnswer+xml';
     const REPLICATION_GROUP_TYPE = 'application/vnd.vmware.hcs.replicationGroup+xml';
+    const FAILBACK_REPLICATION_GROUP_TYPE = 'application/vnd.vmware.hcs.failbackReplicationGroup+xml';
     const TEST_FAILOVER_PAEAMS_TYPE = 'application/vnd.vmware.hcs.testFailoverParams+xml';
     const FAILOVER_PAEAMS_TYPE = 'application/vnd.vmware.hcs.failoverParams+xml';
 

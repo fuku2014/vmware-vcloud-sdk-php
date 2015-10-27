@@ -100,6 +100,17 @@ abstract class VMware_VCloud_SDK_Service_Abstract
     {
         $this->httpClient->setAPIVersion($apiVersion);
     }
+    /**
+     * Sets the Vr Version.
+     *
+     * @return VMware_VCloud_SDK_Http_Client
+     * @since SDK Version 8.0.0
+     */
+    protected function setVrVersion($vrVersion)
+    {
+        $this->httpClient->setVrVersion($vrVersion);
+    }
+
 
    /**
     * Gets the vcloud token

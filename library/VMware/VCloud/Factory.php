@@ -82,7 +82,8 @@ class VMware_VCloud_SDK_Factory extends VMware_VCloud_SDK_Abstract
         VMware_VCloud_SDK_Constants::FILE_DESCRIPTOR_CONTENT_TYPE => 'Extension_File',
         VMware_VCloud_SDK_Constants::API_FILTERS_CONTENT_TYPE => 'Extension_ApiFilter',
         VMware_VCloud_SDK_Constants::EDGE_GATEWAYS_CONTENT_TYPE => 'EdgeGateway',
-        VMware_VCloud_SDK_Constants::REPLICATION_GROUP_TYPE => 'ReplicationGroup'
+        VMware_VCloud_SDK_Constants::REPLICATION_GROUP_TYPE => 'ReplicationGroup',
+        VMware_VCloud_SDK_Constants::FAILBACK_REPLICATION_GROUP_TYPE => 'FailbackReplicationGroup',
     );
 
     private static $urlMap = array (
@@ -104,7 +105,8 @@ class VMware_VCloud_SDK_Factory extends VMware_VCloud_SDK_Abstract
         'tasksList' => 'TasksList',
         'disk' => 'Disk',
         'vdcStorageProfile' => 'VdcStorageProfile',
-        'vr' => 'ReplicationGroup',
+        'vr/replications' => 'ReplicationGroup',
+        'vr/failbackreplications' => 'FailbackReplicationGroup',
         'admin' => 'Admin',
         'admin/role' => 'Role',
         'admin/user' => 'User',

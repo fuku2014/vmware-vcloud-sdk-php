@@ -271,6 +271,31 @@ class VMware_VCloud_SDK_Org extends VMware_VCloud_SDK_Abstract
         return $this->getObjsByContainedRefs($refs);
     }
 
+    /**
+     * GetFailbackReplicationRefs
+     *
+     * @since Version 8.0.0
+     */
+    public function getFailbackReplicationRefs($name=null)
+    {
+        $url  = $this->url . '/failbackreplications';
+        $refs = $this->svc->get($url, 200)->getReference();
+        $objs = $this->getObjsByContainedRefs($refs);
+        return VMware_VCloud_SDK_Helper::getObjsByName($objs, $name);
+    }
+
+    /**
+     * GetFailbackReplicatios
+     *
+     * @since Version 8.0.0
+     */
+    public function getFailbackReplications($name=null)
+    {
+        $refs = $this->getFailbackReplicationRefs($name);
+        return $this->getObjsByContainedRefs($refs);
+    }
+
+
 }
 // end of class VMware_VCloud_SDK_Org
 
@@ -5359,6 +5384,54 @@ class VMware_VCloud_SDK_ReplicationGroup extends
 
 }
 // end of class VMware_VCloud_SDK_ReplicationGroup
+
+/**
+ * A class provides convenient methods on a VMware vCloud failbackReplicationGroup.
+ *
+ * @package VMware_VCloud_SDK
+ */
+class VMware_VCloud_SDK_FailbackReplicationGroup extends
+      VMware_VCloud_SDK_Abstract
+{
+    /**
+     * Returns the failbackReplicationGroup.
+     *
+     * @return VMware_VCloud_API_ReferencesType
+     * @since Version 8.0.0
+     */
+    public function getFailbackReplicationGroupRef()
+    {
+        return $this->getRef(
+                       VMware_VCloud_SDK_Constants::FAILBACK_REPLICATION_GROUP_TYPE);
+    }
+
+    /**
+     * Gets the failbackReplicationGroup. data object.
+     *
+     * @return VMware_VCloud_API_ReferencesType
+     * @since Version 8.0.0
+     */
+    public function getFailbackReplicationGroup()
+    {
+        return $this->getDataObj();
+    }
+
+    /**
+     * Delete failbackReplicationGroup.
+     *
+     * @return VMware_VCloud_API_TaskType
+     * @since Version 8.0.0
+     */
+    public function delete()
+    {
+        $task = $this->svc->delete($this->url, 200);
+        $this->destroy();
+        return $task;
+    }
+
+}
+// end of class VMware_VCloud_SDK_ReplicationGroup
+
 
 /**
  * A class provides convenient methods on a VMware vCloud taskslist.

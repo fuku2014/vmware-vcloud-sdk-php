@@ -100,7 +100,7 @@ class VMware_VCloud_SDK_Service extends VMware_VCloud_SDK_Service_Abstract
      * @since API Version 1.0.0
      * @since SDK Version 5.5.0
      */
-    public function login($server, $auth, $config, $apiVersion)
+    public function login($server, $auth, $config, $apiVersion, $vrVersion = '3.0')
     {
         if (false === strpos($server, 'http'))
         {
@@ -108,6 +108,7 @@ class VMware_VCloud_SDK_Service extends VMware_VCloud_SDK_Service_Abstract
         }
         $this->setConfig($config);
         $this->setAPIVersion($apiVersion);
+        $this->setVrVersion($vrVersion);
         if (!$this->loginUrl)
         {
             $this->loginUrl = $server . '/api/sessions';
