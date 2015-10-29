@@ -5382,6 +5382,20 @@ class VMware_VCloud_SDK_ReplicationGroup extends
         return $this->svc->post($url, 200);
     }
 
+    /**
+     * Get Instances.
+     *
+     * @return 
+     * ReplicationGroupInstanceListType
+     * @since Version 8.0.0
+     */
+    public function getInstanceList()
+    {
+        $url = $this->url . '/instances';
+        return $this->svc->get($url, 200);
+    }
+
+
 }
 // end of class VMware_VCloud_SDK_ReplicationGroup
 

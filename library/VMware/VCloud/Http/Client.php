@@ -177,7 +177,7 @@ class VMware_VCloud_SDK_Http_Client implements
         # 'Accept' header is used to identify VMware vCloud Director version
         $headers['Accept'] = VMware_VCloud_SDK_Constants::VCLOUD_ACCEPT_HEADER .
                              ';' .
-                             'version=' . $this->apiVersion . ';vr-version=' $this->vrVersion;
+                             'version=' . $this->apiVersion . ';vr-version=' . $this->vrVersion;
         try
         {
             $request = clone $this->request;

@@ -94,6 +94,7 @@ final class VMware_VCloud_SDK_Constants
     const FAILBACK_REPLICATION_GROUP_TYPE = 'application/vnd.vmware.hcs.failbackReplicationGroup+xml';
     const TEST_FAILOVER_PAEAMS_TYPE = 'application/vnd.vmware.hcs.testFailoverParams+xml';
     const FAILOVER_PAEAMS_TYPE = 'application/vnd.vmware.hcs.failoverParams+xml';
+    const REPLICATION_GROUP_INSTANCE_LIST_TYPE = 'application/vnd.vmware.hcs.replicationGroupInstanceList+xml';
 
     const ADMIN_CATALOG_CONTENT_TYPE = 'application/vnd.vmware.admin.catalog+xml';
     const ADMIN_NETWORK_CONTENT_TYPE = 'application/vnd.vmware.admin.network+xml';
