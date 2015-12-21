@@ -252,9 +252,9 @@ class VMware_VCloud_SDK_Org extends VMware_VCloud_SDK_Abstract
      *
      * @since Version 8.0.0
      */
-    public function getReplicationRefs($name=null)
+    public function getReplicationRefs($name=null, $page=1, $pageSize=128)
     {
-        $url  = $this->url . '/replications';
+        $url  = $this->url . '/replications?pageSize=' . $pageSize . '&page=' . $page;
         $refs = $this->svc->get($url, 200)->getReference();
         $objs = $this->getObjsByContainedRefs($refs);
         return VMware_VCloud_SDK_Helper::getObjsByName($objs, $name);
@@ -267,8 +267,16 @@ class VMware_VCloud_SDK_Org extends VMware_VCloud_SDK_Abstract
      */
     public function getReplications($name=null)
     {
-        $refs = $this->getReplicationRefs($name);
-        return $this->getObjsByContainedRefs($refs);
+        $allRefs = [];
+        $page    = 1;
+
+        do {
+            $refs = $this->getReplicationRefs($name, $page);
+            $allRefs = array_merge($allRefs, $refs);
+            $page ++;
+        } while (count($refs) >= 1);
+
+        return $this->getObjsByContainedRefs($allRefs);
     }
 
     /**
@@ -276,9 +284,9 @@ class VMware_VCloud_SDK_Org extends VMware_VCloud_SDK_Abstract
      *
      * @since Version 8.0.0
      */
-    public function getFailbackReplicationRefs($name=null)
+    public function getFailbackReplicationRefs($name=null, $page=1, $pageSize=128)
     {
-        $url  = $this->url . '/failbackreplications';
+        $url  = $this->url . '/failbackreplications?pageSize=' . $pageSize . '&page=' . $page;
         $refs = $this->svc->get($url, 200)->getReference();
         $objs = $this->getObjsByContainedRefs($refs);
         return VMware_VCloud_SDK_Helper::getObjsByName($objs, $name);
@@ -291,10 +299,18 @@ class VMware_VCloud_SDK_Org extends VMware_VCloud_SDK_Abstract
      */
     public function getFailbackReplications($name=null)
     {
-        $refs = $this->getFailbackReplicationRefs($name);
-        return $this->getObjsByContainedRefs($refs);
-    }
+        $allRefs = [];
+        $page    = 1;
 
+        do {
+            $refs = $this->getFailbackReplicationRefs($name, $page);
+            $allRefs = array_merge($allRefs, $refs);
+            $page ++;
+        } while (count($refs) >= 1);
+
+        return $this->getObjsByContainedRefs($allRefs);
+
+    }
 
 }
 // end of class VMware_VCloud_SDK_Org
@@ -1105,9 +1121,9 @@ $vdcStorageProfileRef, $catalogRef)
      *
      * @since Version 8.0.0
      */
-    public function getReplicationRefs($name=null)
+    public function getReplicationRefs($name=null, $page=1, $pageSize=128)
     {
-        $url  = $this->url . '/replications';
+        $url  = $this->url . '/replications?pageSize=' . $pageSize . '&page=' . $page;
         $refs = $this->svc->get($url, 200)->getReference();
         $objs = $this->getObjsByContainedRefs($refs);
         return VMware_VCloud_SDK_Helper::getObjsByName($objs, $name);
@@ -1120,8 +1136,16 @@ $vdcStorageProfileRef, $catalogRef)
      */
     public function getReplications($name=null)
     {
-        $refs = $this->getReplicationRefs($name);
-        return $this->getObjsByContainedRefs($refs);
+        $allRefs = [];
+        $page    = 1;
+
+        do {
+            $refs = $this->getReplicationRefs($name, $page);
+            $allRefs = array_merge($allRefs, $refs);
+            $page ++;
+        } while (count($refs) >= 1);
+
+        return $this->getObjsByContainedRefs($allRefs);
     }
 
 }
